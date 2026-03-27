@@ -71,12 +71,12 @@ export default function Home() {
               { name: 'Hyderabad Kingsmen', link: '/hyderabad-kingsmen-squad', cap: 'Marnus Labuschagne', logo: '/Hyderabad_Houston_Kingsmen_logo.png' },
             ].map((team, idx) => (
               <Link href={team.link} key={idx} style={{ textDecoration: 'none' }}>
-                <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.75rem', backgroundColor: '#f9fafb', display: 'flex', alignItems: 'center', gap: '1.25rem' }} className="team-card">
-                  <div style={{ flexShrink: 0, width: '60px', height: '60px', position: 'relative' }}>
-                     <Image src={team.logo} alt={`${team.name} Official Logo PSL 2026`} fill style={{ objectFit: 'contain' }} sizes="60px" />
+                <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.75rem', backgroundColor: '#f9fafb', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', textAlign: 'center' }} className="team-card">
+                  <div style={{ flexShrink: 0, width: '80px', height: '80px', position: 'relative' }}>
+                     <Image src={team.logo} alt={`${team.name} Official Logo PSL 2026`} fill style={{ objectFit: 'contain' }} sizes="80px" />
                   </div>
                   <div>
-                    <h3 style={{ color: '#0A3258', marginBottom: '0.2rem', fontSize: '1.2rem' }}>{team.name}</h3>
+                    <h3 style={{ color: '#0A3258', marginBottom: '0.4rem', fontSize: '1.2rem' }}>{team.name}</h3>
                     <p style={{ color: '#008236', fontSize: '0.9rem', margin: 0, fontWeight: '600' }}>Capt: {team.cap}</p>
                   </div>
                 </div>

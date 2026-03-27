@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://psllive-lemon.vercel.app'; // Accurate Vercel Deployment URL
+  const baseUrl = 'https://psllive.vercel.app'; // Accurate Vercel Deployment URL
   
   const coreRoutes = [
     '',

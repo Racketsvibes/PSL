@@ -3,8 +3,8 @@ export default function robots() {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      Disallow: '/api/',
     },
-    sitemap: 'https://psllive-lemon.vercel.app/sitemap.xml',
+    sitemap: 'https://psllive.vercel.app/sitemap.xml',
   };
 }

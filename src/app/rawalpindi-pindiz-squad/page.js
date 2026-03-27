@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Rawalpindi Pindiz Squad PSL 11 | Complete 2026 Player Roster',
   description: 'Explore the highly anticipated squad of the all-new Rawalpindi Pindiz franchise debuting in PSL 11 (2026), captained by Mohammad Rizwan.',
@@ -7,7 +9,10 @@ export default function PindizSquadPage() {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
       <article className="content-wrapper">
-        <h1>Rawalpindi Pindiz Squad - PSL 11 (2026)</h1>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <Image src="/Rawalpindiz_Logo.png" alt="Rawalpindi Pindiz Official Team Logo Form PSL 2026" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+        </div>
+        <h1 style={{ textAlign: 'center' }}>Rawalpindi Pindiz Squad - PSL 11 (2026)</h1>
         
         <p>The <strong>Rawalpindi Pindiz</strong> enter the Pakistan Super League as a fierce new expansion franchise, debuting in the 2026 PSL 11 season. Bolstered by massive financial backing and strategic draft picks, the team immediately stamped their authority as contenders by securing the phenomenal <strong>Mohammad Rizwan</strong> as their captain.</p>
         

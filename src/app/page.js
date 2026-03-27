@@ -61,19 +61,24 @@ export default function Home() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
             {[
-              { name: 'Lahore Qalandars', link: '/lahore-qalandars-squad', cap: 'Shaheen Afridi' },
-              { name: 'Quetta Gladiators', link: '/quetta-gladiators-squad', cap: 'Saud Shakeel' },
-              { name: 'Islamabad United', link: '/islamabad-united-squad', cap: 'Shadab Khan' },
-              { name: 'Karachi Kings', link: '/karachi-kings-squad', cap: 'David Warner' },
-              { name: 'Multan Sultans', link: '/multan-sultans-squad', cap: 'Mohammad Rizwan' },
-              { name: 'Peshawar Zalmi', link: '/peshawar-zalmi-squad', cap: 'Babar Azam' },
-              { name: 'Rawalpindi Pindiz', link: '/rawalpindi-pindiz-squad', cap: 'Mohammad Rizwan' },
-              { name: 'Hyderabad Kingsmen', link: '/hyderabad-kingsmen-squad', cap: 'Marnus Labuschagne' },
+              { name: 'Lahore Qalandars', link: '/lahore-qalandars-squad', cap: 'Shaheen Afridi', logo: '/Lahore_Qalandars.png' },
+              { name: 'Quetta Gladiators', link: '/quetta-gladiators-squad', cap: 'Saud Shakeel', logo: '/Quetta_Gladiators.png' },
+              { name: 'Islamabad United', link: '/islamabad-united-squad', cap: 'Shadab Khan', logo: '/Islamabad_United.png' },
+              { name: 'Karachi Kings', link: '/karachi-kings-squad', cap: 'David Warner', logo: '/Karachi_Kings.png' },
+              { name: 'Multan Sultans', link: '/multan-sultans-squad', cap: 'Mohammad Rizwan', logo: '/MultanSultans.png' },
+              { name: 'Peshawar Zalmi', link: '/peshawar-zalmi-squad', cap: 'Babar Azam', logo: '/Peshawar_Zalmi_logo.png' },
+              { name: 'Rawalpindi Pindiz', link: '/rawalpindi-pindiz-squad', cap: 'Mohammad Rizwan', logo: '/Rawalpindiz_Logo.png' },
+              { name: 'Hyderabad Kingsmen', link: '/hyderabad-kingsmen-squad', cap: 'Marnus Labuschagne', logo: '/Hyderabad_Houston_Kingsmen_logo.png' },
             ].map((team, idx) => (
               <Link href={team.link} key={idx} style={{ textDecoration: 'none' }}>
-                <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.75rem', backgroundColor: '#f9fafb' }} className="team-card">
-                  <h3 style={{ color: '#0A3258', marginBottom: '0.5rem', fontSize: '1.25rem' }}>{team.name}</h3>
-                  <p style={{ color: '#008236', fontSize: '0.95rem', margin: 0, fontWeight: '500' }}>Capt: {team.cap}</p>
+                <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.75rem', backgroundColor: '#f9fafb', display: 'flex', alignItems: 'center', gap: '1.25rem' }} className="team-card">
+                  <div style={{ flexShrink: 0, width: '60px', height: '60px', position: 'relative' }}>
+                     <Image src={team.logo} alt={`${team.name} Official Logo PSL 2026`} fill style={{ objectFit: 'contain' }} sizes="60px" />
+                  </div>
+                  <div>
+                    <h3 style={{ color: '#0A3258', marginBottom: '0.2rem', fontSize: '1.2rem' }}>{team.name}</h3>
+                    <p style={{ color: '#008236', fontSize: '0.9rem', margin: 0, fontWeight: '600' }}>Capt: {team.cap}</p>
+                  </div>
                 </div>
               </Link>
             ))}

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Karachi Kings Squad PSL 11 | Complete 2026 Player Roster',
   description: 'Authentic 2026 Karachi Kings squad for PSL 11 captained by David Warner. Full breakdown of batsmen, bowlers, all-rounders, and overseas players.',
@@ -7,7 +9,10 @@ export default function KarachiSquadPage() {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
       <article className="content-wrapper">
-        <h1>Karachi Kings Squad - PSL 11 (2026)</h1>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <Image src="/Karachi_Kings.png" alt="Karachi Kings Official Team Logo PSL 2026" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+        </div>
+        <h1 style={{ textAlign: 'center' }}>Karachi Kings Squad - PSL 11 (2026)</h1>
         
         <p>The Karachi Kings are determined to reclaim glory in PSL 2026. Making monumental shifts in their structural recruitment pool, the biggest splash of the season includes securing legendary Australian hitter <strong>David Warner</strong> as their lead captain and strategic cornerstone.</p>
         

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Peshawar Zalmi Squad PSL 11 | Complete 2026 Player Roster',
   description: 'Detailed PSL 2026 Peshawar Zalmi squad information. View the full team led by Babar Azam alongside local and international cricketers.',
@@ -7,7 +9,10 @@ export default function PeshawarSquadPage() {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
       <article className="content-wrapper">
-        <h1>Peshawar Zalmi Squad - PSL 11 (2026)</h1>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <Image src="/Peshawar_Zalmi_logo.png" alt="Peshawar Zalmi Official Team Logo PSL 11" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+        </div>
+        <h1 style={{ textAlign: 'center' }}>Peshawar Zalmi Squad - PSL 11 (2026)</h1>
         
         <p>The Peshawar Zalmi are universally loved for their passionate fan base and explosive batting lineup. Their strategic structure for PSL 11 leans massively into overwhelming batting stability, led from the front by the incredible <strong>Babar Azam</strong>, who anchors an explosive collection of power hitters and dynamic fast bowlers.</p>
         

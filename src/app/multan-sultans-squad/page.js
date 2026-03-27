@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Multan Sultans Squad PSL 11 | Complete 2026 Player Roster',
   description: 'Review the latest 2026 Multan Sultans squad for PSL 11. Learn about their powerful international lineup led by Mohammad Rizwan alongside Steve Smith and Tabraiz Shamsi.',
@@ -7,7 +9,10 @@ export default function MultanSquadPage() {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
       <article className="content-wrapper">
-        <h1>Multan Sultans Squad - PSL 11 (2026)</h1>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <Image src="/MultanSultans.png" alt="Multan Sultans Official Team Logo PSL 2026" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+        </div>
+        <h1 style={{ textAlign: 'center' }}>Multan Sultans Squad - PSL 11 (2026)</h1>
         
         <p>Known for their spectacular consistency throughout the group stages over recent years, the Multan Sultans have curated a spectacular squad for 2026. Bringing immense defensive leadership is <strong>Mohammad Rizwan</strong>, who leads a team packed with international specialists ranging from Steve Smith to Tabraiz Shamsi.</p>
         

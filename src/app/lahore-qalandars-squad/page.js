@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Lahore Qalandars Squad PSL 11 (2026) | Full Player List',
   description: 'Authentic and complete Lahore Qalandars squad for PSL 11 2026. See the full player list captained by Shaheen Shah Afridi.',
@@ -7,7 +9,10 @@ export default function LahoreSquadPage() {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
       <article className="content-wrapper">
-        <h1>Lahore Qalandars Squad - PSL 11 (2026)</h1>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <Image src="/Lahore_Qalandars.png" alt="Lahore Qalandars Official Logo PSL 2026 HBL" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+        </div>
+        <h1 style={{ textAlign: 'center' }}>Lahore Qalandars Squad - PSL 11 (2026)</h1>
         
         <p>The Lahore Qalandars enter PSL 2026 (PSL 11) with an immensely powerful roster, boasting a lethal pace attack and explosive top-order batsmen. Defending their legacy as one of the tournament's most fierce competitors, the team is captained by their spearhead fast bowler, <strong>Shaheen Shah Afridi</strong>.</p>
         

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Quetta Gladiators Squad PSL 11 (2026) | Full Player List',
   description: 'Authentic and complete Quetta Gladiators squad for PSL 11 2026. See the full player list captained by Saud Shakeel.',
@@ -7,7 +9,10 @@ export default function QuettaSquadPage() {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
       <article className="content-wrapper">
-        <h1>Quetta Gladiators Squad - PSL 11 (2026)</h1>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <Image src="/Quetta_Gladiators.png" alt="Quetta Gladiators Official Logo PSL 2026 HBL" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+        </div>
+        <h1 style={{ textAlign: 'center' }}>Quetta Gladiators Squad - PSL 11 (2026)</h1>
         
         <p>Looking to claim the title in PSL 2026, the Quetta Gladiators are leaning heavily into a mix of emerging local stars and established international talent. This year, the team is captained by <strong>Saud Shakeel</strong> and coached by legacy figures including Sarfaraz Ahmed.</p>
         

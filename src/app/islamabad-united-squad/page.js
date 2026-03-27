@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Islamabad United Squad PSL 11 | Complete 2026 Player Roster',
   description: 'View the official and authentic Islamabad United squad for PSL 11 (2026) captained by Shadab Khan. Detailed player roster, overseas picks, and replacements.',
@@ -7,7 +9,10 @@ export default function IslamabadSquadPage() {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
       <article className="content-wrapper">
-        <h1>Islamabad United Squad - PSL 11 (2026)</h1>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <Image src="/Islamabad_United.png" alt="Islamabad United Official Logo PSL 2026 HBL" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+        </div>
+        <h1 style={{ textAlign: 'center' }}>Islamabad United Squad - PSL 11 (2026)</h1>
         
         <p>Islamabad United enters the 2026 Pakistan Super League looking stronger than ever. Consistently built around data-driven strategies, their latest retention metrics and draft acquisitions have fortified their lineup. The team is proudly captained by Pakistan's premier all-rounder, <strong>Shadab Khan</strong>.</p>
         

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Hyderabad Kingsmen Squad PSL 11 | Complete 2026 Player Roster',
   description: 'View the historic debut squad of the Hyderabad Kingsmen for PSL 11 (2026). Check out their powerhouse roster captained by Marnus Labuschagne and featuring Glenn Maxwell.',
@@ -7,7 +9,10 @@ export default function HyderabadSquadPage() {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
       <article className="content-wrapper">
-        <h1>Hyderabad Kingsmen Squad - PSL 11 (2026)</h1>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <Image src="/Hyderabad_Houston_Kingsmen_logo.png" alt="Hyderabad Kingsmen Official Logo 2026 Franchise" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+        </div>
+        <h1 style={{ textAlign: 'center' }}>Hyderabad Kingsmen Squad - PSL 11 (2026)</h1>
         
         <p>Marking a historic era for the Pakistan Super League expansion, the <strong>Hyderabad Kingsmen</strong> debuted as a foundational team in PSL 2026. The franchise shocked the tournament draft by pulling exclusively from the highest echelon of overseas batting talent, naming Australian genius <strong>Marnus Labuschagne</strong> as captain and introducing the "Big Show" Glenn Maxwell to the PSL.</p>
         

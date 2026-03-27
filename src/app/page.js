@@ -34,6 +34,46 @@ export default function Home() {
           "@type": "Answer",
           "text": "You can stream all games live exclusively on Tamasha app, Tapmad, and Willow TV globally."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Which teams are playing in PSL 11?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 8 franchises are: Lahore Qalandars, Karachi Kings, Quetta Gladiators, Islamabad United, Multan Sultans, Peshawar Zalmi, Rawalpindi Pindiz, and Hyderabad Kingsmen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are matches only in Lahore and Karachi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For severe logistical and austerity measures stemming from a regional fuel crisis, the venues were reduced strictly to two major locations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who won PSL 10?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The defending champions context is built directly into current rivalry dynamics leading up to PSL 11."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will there be an opening ceremony in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, the grand opening ceremony was officially canceled due to security and austerity allocations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What time do PSL 2026 matches start?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Day matches start at 2:30 PM (PKT) and night matches begin at 7:00 PM (PKT)."
+        }
       }
     ]
   };
@@ -167,6 +207,22 @@ export default function Home() {
             <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', background: '#f9fafb' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#0A3258' }}>Where to stream matches live?</h3>
               <p style={{ margin: 0, color: '#4b5563' }}>You can stream all games live exclusively on Tamasha app, Tapmad, and Willow TV globally.</p>
+            </div>
+            <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', background: '#f9fafb' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#0A3258' }}>Which teams are playing in PSL 11?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>The 8 teams: Lahore Qalandars, Karachi Kings, Quetta Gladiators, Islamabad United, Multan Sultans, Peshawar Zalmi, and the new franchises Rawalpindi Pindiz and Hyderabad Kingsmen.</p>
+            </div>
+            <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', background: '#f9fafb' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#0A3258' }}>Why are matches only in Lahore and Karachi?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>Due to massive austerity logistics and security needs, the PCB reduced the 6 original cities down to just Gaddafi Stadium and National Bank Stadium.</p>
+            </div>
+            <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', background: '#f9fafb' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#0A3258' }}>Will there be an opening ceremony in 2026?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>No, the opening ceremony was entirely scrubbed to minimize crowd liabilities and save energy grid resources.</p>
+            </div>
+            <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', background: '#f9fafb' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#0A3258' }}>What time do PSL 2026 matches start?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>The standard times for PSL 11 are 2:30 PM (PKT) for day games, and 7:00 PM (PKT) for night games under standard lighting.</p>
             </div>
           </div>
         </section>

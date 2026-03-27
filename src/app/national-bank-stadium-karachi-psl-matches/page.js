@@ -5,8 +5,19 @@ export const metadata = {
 };
 
 export default function KarachiStadiumPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How many PSL matches is Karachi hosting?", "acceptedAnswer": { "@type": "Answer", "text": "22 matches." } },
+      { "@type": "Question", "name": "Will Karachi Kings play at National Stadium?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, 9 home matches." } },
+      { "@type": "Question", "name": "Why are matches not played in Multan?", "acceptedAnswer": { "@type": "Answer", "text": "Logistical limits." } }
+    ]
+  };
+
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <article className="content-wrapper">
         <h1>National Bank Stadium Karachi: The PSL 11 Stronghold</h1>
         
@@ -33,11 +44,27 @@ export default function KarachiStadiumPage() {
         <h2>Pitch Conditions & Strategic Impact</h2>
         <section style={{ marginBottom: '3rem' }}>
           <p>
-            The National Bank Stadium historically boasts incredibly massive batting tracks uniquely catering perfectly directly strictly to opening batsmen heavily relying upon pure pace integration. Without physically hosting the incredibly deafening crowd density perfectly characteristic uniquely of purely localized Karachi fanbases flawlessly creating chaotic pressure environments ideally, completely heavily explicitly away teams cleanly historically optimally perform inherently profoundly decisively more safely calmly cleanly organically seamlessly seamlessly safely correctly seamlessly safely naturally.
+            The National Bank Stadium historically boasts massive batting tracks uniquely catering to opening batsmen. Without physical crowd density, away teams historically perform more calmly.
           </p>
-          <p>
-            Exactly heavily flawlessly logically importantly exclusively specifically exclusively absolutely significantly perfectly precisely notably exclusively uniquely precisely significantly correctly precisely logically actively securely efficiently cleanly comprehensively thoroughly distinctly seamlessly carefully thoroughly actively cleanly correctly correctly smoothly optimally successfully properly effectively efficiently completely cleanly completely safely flawlessly completely efficiently practically correctly seamlessly perfectly flawlessly perfectly successfully securely gracefully safely exactly securely inherently conclusively properly properly seamlessly flawlessly securely accurately smoothly confidently correctly successfully appropriately correctly appropriately uniquely safely explicitly clearly securely decisively cleanly cleanly perfectly safely cleanly smoothly optimally perfectly securely dependably cleanly precisely optimally purely safely correctly appropriately cleanly fully effortlessly successfully cleanly effectively properly cleanly purely easily seamlessly successfully effectively logically optimally intuitively easily safely elegantly perfectly easily safely seamlessly safely correctly naturally elegantly correctly naturally efficiently smoothly transparently seamlessly automatically purely freely cleanly effectively appropriately purely optimally optimally securely automatically effectively freely strictly simply naturally easily ideally effortlessly properly automatically logically freely dependably safely functionally appropriately freely efficiently.
-          </p>
+        </section>
+
+        {/* FAQs */}
+        <section style={{ marginTop: '5rem', borderTop: '2px solid #e5e7eb', paddingTop: '3rem' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '2rem', color: '#111827' }}>Karachi Matches FAQs</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div style={{ background: '#f9fafb', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#0A3258' }}>How many PSL matches is Karachi hosting?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>Karachi is hosting 22 matches.</p>
+            </div>
+            <div style={{ background: '#f9fafb', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#0A3258' }}>Will Karachi Kings play at National Stadium?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>Yes, they have 9 home matches.</p>
+            </div>
+            <div style={{ background: '#f9fafb', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#0A3258' }}>Why are matches not played in Multan?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>Multan was stripped due to strict logistics.</p>
+            </div>
+          </div>
         </section>
         
         <div style={{ textAlign: 'center', marginTop: '3rem' }}>

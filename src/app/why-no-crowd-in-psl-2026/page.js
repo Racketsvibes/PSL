@@ -5,8 +5,19 @@ export const metadata = {
 };
 
 export default function NoCrowdPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is there a crowd in PSL 2026?", "acceptedAnswer": { "@type": "Answer", "text": "No, all 44 matches are strictly behind closed doors." } },
+      { "@type": "Question", "name": "Will the PSL 2026 final have crowds?", "acceptedAnswer": { "@type": "Answer", "text": "Unfortunately no, the strict mandate covers the playoffs and the final." } },
+      { "@type": "Question", "name": "How bad is the fuel crisis affecting PSL?", "acceptedAnswer": { "@type": "Answer", "text": "It was severe enough to ban crowds and secure resources." } }
+    ]
+  };
+
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <article className="content-wrapper">
         <h1>Why is there No Crowd in PSL 2026? (Official Reason)</h1>
         
@@ -44,6 +55,25 @@ export default function NoCrowdPage() {
             <h3 style={{ margin: '0 0 1rem 0', color: '#0369a1' }}>Where Can I Watch Since I Can't Attend?</h3>
             <p style={{ color: '#0c4a6e', marginBottom: '1.5rem' }}>Don't miss the aggressive action simply because the stadium gates physically slammed shut. Explore exactly our completely free authorized broadcast listings right now.</p>
             <a href="/psl-live" className="btn" style={{ backgroundColor: '#0284c7' }}>Find Live Streaming Services</a>
+          </div>
+        </section>
+
+        {/* FAQs */}
+        <section style={{ marginTop: '5rem', borderTop: '2px solid #e5e7eb', paddingTop: '3rem' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '2rem', color: '#111827' }}>Behind Closed Doors FAQs</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div style={{ background: '#f9fafb', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#0A3258' }}>Is there a crowd in PSL 2026?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>No, all 44 matches are strictly behind closed doors.</p>
+            </div>
+            <div style={{ background: '#f9fafb', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#0A3258' }}>Will the PSL 2026 final have crowds?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>Unfortunately no, the strict mandate covers the playoffs and final.</p>
+            </div>
+            <div style={{ background: '#f9fafb', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#0A3258' }}>How bad is the fuel crisis affecting PSL?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>It was severe enough to legally ban stadium gatherings.</p>
+            </div>
           </div>
         </section>
 

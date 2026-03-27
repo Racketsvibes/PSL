@@ -12,7 +12,6 @@ export const metadata = {
   },
   other: {
     'google-adsense-account': 'ca-pub-8638783199172001',
-    'msvalidate.01': '9A28B5EAA881497F8AC75521B1B08EC4',
   },
   openGraph: {
     title: 'PSL Live Streaming & Scores',
@@ -35,6 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="msvalidate.01" content="9A28B5EAA881497F8AC75521B1B08EC4" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

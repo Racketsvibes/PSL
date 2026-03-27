@@ -19,6 +19,15 @@ export async function GET() {
     }
 
     const data = await response.json();
+
+    // Natively filter the live matches to ONLY show Pakistan Super League matches securely
+    if (data.data && Array.isArray(data.data)) {
+        data.data = data.data.filter(match => 
+            match.league?.name?.toLowerCase().includes('pakistan super league') || 
+            match.league?.name?.toLowerCase().includes('psl')
+        );
+    }
+
     return Response.json(data);
   } catch (error) {
     console.error("Live Score Fetch Error:", error);

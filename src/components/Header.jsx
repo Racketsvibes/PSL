@@ -10,9 +10,16 @@ export default function Header() {
         <nav>
           <ul className="nav-links">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/psl-live">PSL Live</Link></li>
-            <li><Link href="/where-to-watch-quetta-vs-lahore">Quetta vs Lahore</Link></li>
-            <li><Link href="/about">About Us</Link></li>
+            <li><Link href="/hbl-psl-2026">PSL 2026</Link></li>
+            <li><Link href="/psl-live">Live Stream</Link></li>
+            <li><Link href="/points-table">Points Table</Link></li>
+            <li className="dropdown">
+              <span style={{ cursor: 'pointer', fontWeight: 500 }}>PSL Teams ▾</span>
+              <div className="dropdown-content">
+                <Link href="/lahore-qalandars-squad">Lahore Qalandars</Link>
+                <Link href="/quetta-gladiators-squad">Quetta Gladiators</Link>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>

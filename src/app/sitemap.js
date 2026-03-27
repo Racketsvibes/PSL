@@ -38,10 +38,28 @@ export default function sitemap() {
 
   const allRoutes = [...coreRoutes, ...squadRoutes, ...newSeoPages];
 
-  return allRoutes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'daily',
-    priority: route === '' ? 1 : 0.8,
-  }));
+  return allRoutes.map((route) => {
+    let priority = 0.8;
+    let changeFreq = 'daily';
+    let lastMod = new Date();
+
+    if (route === '') {
+      priority = 1.0;
+    }
+
+    if (['/about', '/contact', '/privacy-policy', '/terms-of-service'].includes(route)) {
+      priority = 0.5;
+      lastMod = new Date('2026-03-27');
+      changeFreq = 'monthly';
+    } else if (route === '/psl-live' || route === '/points-table') {
+      changeFreq = 'always';
+    }
+
+    return {
+      url: `${baseUrl}${route}`,
+      lastModified: lastMod,
+      changeFrequency: changeFreq,
+      priority: priority,
+    };
+  });
 }

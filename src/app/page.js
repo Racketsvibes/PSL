@@ -101,6 +101,44 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Latest Tournament News */}
+        <section style={{ marginBottom: '4rem' }}>
+          <h2 style={{ fontSize: '2rem', textAlign: 'center', marginBottom: '2rem', color: '#111827' }}>Latest PSL Updates</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+             <Link href="/why-no-crowd-in-psl-2026" className="team-card" style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.75rem', textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                <h3 style={{ color: '#0A3258', marginBottom: '0.5rem' }}>Why No Crowd in PSL 2026?</h3>
+                <p style={{ color: '#4b5563', margin: 0 }}>Read the official PCB statement on why matches are behind closed doors.</p>
+             </Link>
+             <Link href="/psl-11-behind-closed-doors-reason" className="team-card" style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.75rem', textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                <h3 style={{ color: '#008236', marginBottom: '0.5rem' }}>Behind Closed Doors Context</h3>
+                <p style={{ color: '#4b5563', margin: 0 }}>Exploring the economic and security reasons restricting crowds.</p>
+             </Link>
+             <Link href="/psl-2026-venue-changes" className="team-card" style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.75rem', textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                <h3 style={{ color: '#b91c1c', marginBottom: '0.5rem' }}>2026 Venue Changes</h3>
+                <p style={{ color: '#4b5563', margin: 0 }}>Learn why matches were moved exclusively to Lahore and Karachi stadiums.</p>
+             </Link>
+          </div>
+        </section>
+
+        {/* FAQs */}
+        <section style={{ marginBottom: '4rem' }}>
+          <h2 style={{ fontSize: '2rem', textAlign: 'center', marginBottom: '2rem', color: '#111827' }}>Frequently Asked Questions</h2>
+          <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', background: '#f9fafb' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#0A3258' }}>When is the PSL 2026 final?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>The grand final takes place on May 3, 2026, at Gaddafi Stadium, Lahore.</p>
+            </div>
+            <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', background: '#f9fafb' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#0A3258' }}>Where can I buy tickets for PSL 11?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>As PSL 11 is strictly behind closed doors, no public tickets are available.</p>
+            </div>
+            <div style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', background: '#f9fafb' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#0A3258' }}>Where to stream matches live?</h3>
+              <p style={{ margin: 0, color: '#4b5563' }}>You can stream all games live exclusively on Tamasha app, Tapmad, and Willow TV globally.</p>
+            </div>
+          </div>
+        </section>
+
       </div>
     </>
   );

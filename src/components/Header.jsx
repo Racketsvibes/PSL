@@ -56,10 +56,15 @@ export default function Header() {
               </div>
             </li>
             <li className="dropdown">
-              <span style={{ cursor: 'pointer', fontWeight: 500 }}>Company ▾</span>
+              <span style={{ cursor: 'pointer', fontWeight: 500 }}>About Us ▾</span>
               <div className="dropdown-content">
-                <Link href="/about">About Us</Link>
-                <Link href="/contact">Contact</Link>
+                <Link href="/about">About</Link>
+                <Link href="/contact">Contact Us</Link>
+              </div>
+            </li>
+            <li className="dropdown">
+              <span style={{ cursor: 'pointer', fontWeight: 500 }}>Policies ▾</span>
+              <div className="dropdown-content">
                 <Link href="/privacy-policy">Privacy Policy</Link>
                 <Link href="/terms-of-service">Terms of Service</Link>
               </div>

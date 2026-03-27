@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://psl-t20.com/sitemap.xml',
+    sitemap: 'https://psllive-lemon.vercel.app/sitemap.xml',
   };
 }

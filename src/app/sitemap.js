@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://psl-t20.com'; // Resolved for Google Search Console
+  const baseUrl = 'https://psllive-lemon.vercel.app'; // Accurate Vercel Deployment URL
   
   const coreRoutes = [
     '',

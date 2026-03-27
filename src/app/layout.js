@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "PSL Live 2026",
-    "url": "https://psl-t20.com/",
+    "url": "https://psllive-lemon.vercel.app/",
     "description": "Your ultimate destination for HBL PSL 11 (2026) live streaming, points table, and real-time match scores."
   };
 

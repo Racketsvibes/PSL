@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://your-domain.com'; // Replace with actual domain when configured
+  const baseUrl = 'https://psl-t20.com'; // Resolved for Google Search Console
   
   const coreRoutes = [
     '',

@@ -1,0 +1,29 @@
+# PSL Live 2026
+> Comprehensive coverage, live streaming updates, points tables, and structural logistics for the HBL Pakistan Super League 11 (2026).
+
+## General Information
+- **Tournament Dates:** March 26, 2026 - May 3, 2026
+- **Format:** T20 Franchise Cricket
+- **Status:** All 44 matches are strictly played behind closed doors (no crowd) due to austerity and security measures.
+- **Venues:** Reduced to only 2 officially active stadiums:
+  - Gaddafi Stadium (Lahore) - 22 Matches (Including Playoffs & Final)
+  - National Bank Stadium (Karachi) - 22 Matches (League stage)
+
+## Core Site Structure
+- `/` - Homepage featuring latest updates and team grid.
+- `/psl-11-2026-schedule` - The full 44-match structural timetable.
+- `/psl-live` - Authorized free and premium digital streaming broadcasters.
+- `/points-table` - Live team standings and Net Run Rate (NRR) tracking.
+
+## Official 2026 Franchises (Squad Pages)
+- `/lahore-qalandars-squad` (Captain: Shaheen Afridi)
+- `/quetta-gladiators-squad` (Captain: Saud Shakeel)
+- `/islamabad-united-squad` (Captain: Shadab Khan)
+- `/karachi-kings-squad` (Captain: David Warner)
+- `/multan-sultans-squad` (Captain: Mohammad Rizwan)
+- `/peshawar-zalmi-squad` (Captain: Babar Azam)
+- `/rawalpindi-pindiz-squad` (Captain: Mohammad Rizwan)
+- `/hyderabad-kingsmen-squad` (Captain: Marnus Labuschagne)
+
+## SEO Technical Notes
+This project utilizes modern Next.js 14 App Router architectures explicitly delivering static exports and SSR optimization utilizing integrated JSON-LD schema parsing.

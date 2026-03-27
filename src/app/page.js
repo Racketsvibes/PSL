@@ -13,6 +13,13 @@ export default function Home() {
       <section className="hero" style={{ background: 'linear-gradient(135deg, #0A3258 0%, #008236 100%)', color: 'white', padding: '6rem 2rem', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
           <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1.2rem', lineHeight: '1.2' }}>Experience the Thrill of <br/><span style={{ color: '#c7fa3b' }}>HBL PSL 11 (2026)</span></h1>
+          
+          <div style={{ backgroundColor: 'rgba(0,0,0,0.2)', display: 'inline-block', padding: '0.75rem 1.5rem', borderRadius: '2rem', border: '1px solid rgba(255,255,255,0.2)', marginBottom: '2rem' }}>
+            <p style={{ margin: 0, color: '#e2e8f0', fontWeight: '600', letterSpacing: '1px', fontSize: '0.95rem' }}>
+              🗓️ <strong>TOURNAMENT DATES:</strong> MARCH 26 - MAY 3, 2026
+            </p>
+          </div>
+
           <p style={{ fontSize: '1.2rem', marginBottom: '2.5rem', margin: '0 auto 2rem auto', opacity: '0.9', lineHeight: '1.6' }}>
             Get instant access to live streaming guides, real-time points tables, official match schedules, and exclusive coverage of the biggest T20 league in Pakistan.
           </p>

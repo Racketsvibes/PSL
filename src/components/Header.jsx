@@ -19,15 +19,9 @@ export default function Header() {
         <nav>
           <ul className="nav-links">
             <li><Link href="/">Home</Link></li>
-            <li className="dropdown">
-              <span style={{ cursor: 'pointer', fontWeight: 500 }}>Tournament ▾</span>
-              <div className="dropdown-content">
-                <Link href="/hbl-psl-2026">PSL 2026 Hub</Link>
-                <Link href="/psl-11-2026-schedule">Match Schedule</Link>
-                <Link href="/psl-live">Live Streaming Links</Link>
-                <Link href="/points-table">Points Table</Link>
-              </div>
-            </li>
+            <li><Link href="/psl-11-2026-schedule">Schedule</Link></li>
+            <li><Link href="/psl-live">Live Streams & Scores</Link></li>
+            <li><Link href="/points-table">Points Table</Link></li>
             <li className="dropdown">
               <span style={{ cursor: 'pointer', fontWeight: 500 }}>Teams ▾</span>
               <div className="dropdown-content">

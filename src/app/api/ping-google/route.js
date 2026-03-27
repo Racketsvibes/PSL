@@ -24,7 +24,7 @@ async function getAccessToken() {
 export async function GET() {
   try {
     const accessToken = await getAccessToken();
-    const urls = ["https://psllive-lemon.vercel.app/live-score", "https://psllive-lemon.vercel.app/points-table", "https://psllive-lemon.vercel.app/"];
+    const urls = ["https://psllive.vercel.app/live-score", "https://psllive.vercel.app/points-table", "https://psllive.vercel.app/"];
     const results = [];
     
     for (const url of urls) {

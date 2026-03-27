@@ -1,7 +1,8 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Where to Watch Quetta Gladiators vs Lahore Qalandars | Schedule & Broadcasters',
   description: 'Find out exactly where to watch Quetta Gladiators vs Lahore Qalandars. Get schedules, TV broadcasters, live streaming apps, and match dates for PSL 11 (2026).',
-  keywords: 'where to watch quetta gladiators vs lahore qalandars, quetta gladiators vs lahore qalandars schedule, qg vs lah, psl 11 broadcasters, tamasha live',
 };
 
 export default function QuettaVsLahorePage() {
@@ -10,8 +11,16 @@ export default function QuettaVsLahorePage() {
       <article className="content-wrapper">
         <h1>Where to Watch Quetta Gladiators vs Lahore Qalandars (PSL 11)</h1>
 
-        <section style={{ marginBottom: '2rem' }}>
-          <p>For fans in Pakistan, the upcoming Quetta Gladiators vs. Lahore Qalandars matches in PSL 11 (2026) will be broadcast live on PTV Sports, A Sports, Geo Super, and Ten Sports. This rivalry has blossomed into one of the most anticipated fixtures on the cricketing calendar.</p>
+        <section style={{ marginBottom: '2rem', textAlign: 'center' }}>
+          <Image 
+            src="/where-to-watch.jpg" 
+            alt="Where to watch Quetta Gladiators vs Lahore Qalandars PSL 2026 Live Broadcast" 
+            width={800} 
+            height={450} 
+            style={{ width: '100%', maxWidth: '800px', height: 'auto', borderRadius: '0.5rem', marginBottom: '1.5rem' }} 
+            priority
+          />
+          <p style={{ textAlign: 'left' }}>For fans in Pakistan, the upcoming Quetta Gladiators vs. Lahore Qalandars matches in PSL 11 (2026) will be broadcast live on PTV Sports, A Sports, Geo Super, and Ten Sports. This rivalry has blossomed into one of the most anticipated fixtures on the cricketing calendar.</p>
         </section>
 
         <h2>Upcoming Match Schedule (PSL 2026)</h2>

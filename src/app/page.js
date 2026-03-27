@@ -7,8 +7,40 @@ export const metadata = {
 };
 
 export default function Home() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When is the PSL 2026 final?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The grand final takes place on May 3, 2026, at Gaddafi Stadium, Lahore."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I buy tickets for PSL 11?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As PSL 11 is strictly behind closed doors, no public tickets are available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where to stream matches live?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can stream all games live exclusively on Tamasha app, Tapmad, and Willow TV globally."
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* Hero Section */}
       <section className="hero" style={{ background: 'linear-gradient(135deg, #0A3258 0%, #008236 100%)', color: 'white', padding: '6rem 2rem', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '900px' }}>

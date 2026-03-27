@@ -12,6 +12,7 @@ export const metadata = {
   },
   other: {
     'google-adsense-account': 'ca-pub-8638783199172001',
+    'msvalidate.01': '9A28B5EAA881497F8AC75521B1B08EC4',
   },
   openGraph: {
     title: 'PSL Live Streaming & Scores',

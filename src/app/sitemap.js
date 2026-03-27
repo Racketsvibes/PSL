@@ -7,6 +7,7 @@ export default function sitemap() {
     '/psl-live',
     '/points-table',
     '/psl-11-2026-schedule',
+    '/live-score',
     '/where-to-watch-quetta-vs-lahore',
     '/about',
     '/contact',
@@ -51,7 +52,7 @@ export default function sitemap() {
       priority = 0.5;
       lastMod = new Date('2026-03-27');
       changeFreq = 'monthly';
-    } else if (route === '/psl-live' || route === '/points-table') {
+    } else if (route === '/psl-live' || route === '/points-table' || route === '/live-score') {
       changeFreq = 'always';
     }
 

@@ -18,10 +18,10 @@ export default function Header() {
         </Link>
         <nav>
           <ul className="nav-links">
-            <li><Link href="/">Home</Link></li>
             <li><Link href="/psl-11-2026-schedule">Schedule</Link></li>
-            <li><Link href="/psl-live">Live Streams & Scores</Link></li>
-            <li><Link href="/points-table">Points Table</Link></li>
+            <li><Link href="/psl-live">Live Stream</Link></li>
+            <li><Link href="/live-score">Live Score</Link></li>
+            <li><Link href="/points-table">Points Table</Link>
             <li className="dropdown">
               <span style={{ cursor: 'pointer', fontWeight: 500 }}>Teams ▾</span>
               <div className="dropdown-content">

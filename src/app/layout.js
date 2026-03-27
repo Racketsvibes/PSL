@@ -6,6 +6,9 @@ export const metadata = {
   title: 'PSL Live Streaming & Scores | Pakistan Super League',
   description: 'Get comprehensive coverage of PSL matches, live streaming updates, scores, and exclusive details on Quetta Gladiators vs Lahore Qalandars.',
   keywords: 'psl live, psl live score, where to watch quetta gladiators vs lahore qalandars, psl match today live',
+  verification: {
+    google: 'xZGj4aLHKeyq9Xx01DC0vBUOBNJMDohKVK7R8uWk1zE',
+  },
   openGraph: {
     title: 'PSL Live Streaming & Scores',
     description: 'Get comprehensive coverage of PSL matches and live streaming options.',

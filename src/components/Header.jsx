@@ -18,6 +18,12 @@ export default function Header() {
               <div className="dropdown-content">
                 <Link href="/lahore-qalandars-squad">Lahore Qalandars</Link>
                 <Link href="/quetta-gladiators-squad">Quetta Gladiators</Link>
+                <Link href="/islamabad-united-squad">Islamabad United</Link>
+                <Link href="/karachi-kings-squad">Karachi Kings</Link>
+                <Link href="/multan-sultans-squad">Multan Sultans</Link>
+                <Link href="/peshawar-zalmi-squad">Peshawar Zalmi</Link>
+                <Link href="/rawalpindi-pindiz-squad">Rawalpindi Pindiz</Link>
+                <Link href="/hyderabad-kingsmen-squad">Hyderabad Kingsmen</Link>
               </div>
             </li>
           </ul>

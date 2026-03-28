@@ -12,15 +12,17 @@ export default function LiveScorePage() {
     <div className="container" style={{ padding: '4rem 0', minHeight: '60vh' }}>
       <article className="content-wrapper" style={{ textAlign: 'center' }}>
         <h1 style={{ color: '#0A3258', marginBottom: '1.5rem', fontSize: '2.5rem' }}>PSL 2026 Live Match Center</h1>
-        
-        <div style={{ backgroundColor: '#f0fdf4', border: '1px solid #bbf7d0', padding: '2rem 1rem', borderRadius: '1rem', marginBottom: '1rem' }}>
-          <h2 style={{ color: '#166534', margin: '0 0 0.5rem 0' }}>Secured API Connection Active</h2>
-          <p style={{ fontSize: '1.1rem', color: '#15803d', margin: 0 }}>
-            Fetching from Sportmonks Cricket API recursively every 15 seconds.
+        <LiveScoreboard />
+
+        <div style={{ textAlign: 'left', marginTop: '3rem', padding: '2.5rem', backgroundColor: '#ffffff', borderRadius: '1rem', boxShadow: 'var(--shadow-sm)' }}>
+          <h2 style={{ color: 'var(--brand-blue)', fontSize: '1.8rem', marginBottom: '1rem' }}>Welcome to the PSL 2026 Live Match Center</h2>
+          <p style={{ color: 'var(--text-light)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '1.5rem' }}>
+            Stay on top of the action with ball-by-ball updates throughout the <strong>HBL Pakistan Super League 11 (2026)</strong>. Whether it's the high-voltage clash between the Lahore Qalandars and Karachi Kings, or the debut matches of the new Hyderabad Kingsmen, our live scoreboard guarantees you won't miss a single boundary, hat-trick, or dramatic finish.
+          </p>
+          <p style={{ color: 'var(--text-light)', lineHeight: '1.8', fontSize: '1.1rem' }}>
+            Keep this tab open while you watch to track the current run rate, player partnerships, and detailed batting or bowling figures. To check what's up next, simply head over to our schedule page or jump into the live stream to catch the visuals as they unfold, pitch-side.
           </p>
         </div>
-
-        <LiveScoreboard />
 
         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', marginTop: '2rem' }}>
           <Link href="/psl-11-2026-schedule" className="btn" style={{ backgroundColor: '#2563eb', color: '#fff' }}>View Full Schedule</Link>

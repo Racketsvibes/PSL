@@ -54,7 +54,6 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <Header />
         <div className="fixture-ticker" aria-label="PSL 2026 Fixture Schedule">
           <div className="fixture-ticker-track">
             {/* Fixtures duplicated for seamless loop */}
@@ -92,6 +91,7 @@ export default function RootLayout({ children }) {
             ))}
           </div>
         </div>
+        <Header />
         <main>{children}</main>
         <Footer />
       </body>

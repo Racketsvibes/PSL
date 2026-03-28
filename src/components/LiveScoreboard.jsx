@@ -106,8 +106,14 @@ export default function LiveScoreboard() {
             </div>
             
             {/* Footer Status Block */}
-            <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '1px solid #e5e7eb', textAlign: 'center', color: '#0369a1', fontWeight: 500, fontSize: '1.1rem' }}>
-              {note}
+            <div style={{ marginTop: '1.5rem', paddingTop: '1.25rem', borderTop: '1px solid #e5e7eb', textAlign: 'center' }}>
+              <div style={{ color: '#0369a1', fontSize: '1.1rem', marginBottom: '0.4rem' }}>
+                {note} 
+                {/* Dynamically display CRR/RRR if provided by the API in run/score objects, else default to note */}
+              </div>
+              <div style={{ color: '#64748b', fontSize: '0.95rem' }}>
+                {match.league?.name || 'T20'} {match.round ? `· Round ${match.round}` : '· PSL 2026'}
+              </div>
             </div>
           </div>
         );

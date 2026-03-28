@@ -36,8 +36,9 @@ export default function Header() {
               </div>
             </li>
             <li className="dropdown">
-              <span style={{ cursor: 'pointer', fontWeight: 500 }}>News ▾</span>
+              <Link href="/news" style={{ fontWeight: 500 }}>News ▾</Link>
               <div className="dropdown-content">
+                <Link href="/quetta-gladiators-vs-hyderabad-kingsmen">Quetta vs Hyderabad</Link>
                 <Link href="/why-no-crowd-in-psl-2026">Why No Crowd?</Link>
                 <Link href="/psl-11-behind-closed-doors-reason">Closed Doors Context</Link>
                 <Link href="/psl-2026-venue-changes">2026 Venue Updates</Link>

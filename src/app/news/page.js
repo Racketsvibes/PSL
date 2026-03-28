@@ -15,6 +15,14 @@ const newsItems = [
     borderColor: '#3b82f6',
     articles: [
       {
+        href: '/lahore-qalandars-vs-karachi-kings',
+        title: 'Lahore Qalandars vs Karachi Kings – PSL 2026 Match 6 | El Clásico Preview',
+        desc: 'The biggest rivalry in PSL history: Match 6 on March 29 at 7:00 PM PKT, Gaddafi Stadium. Head-to-head, key players, squads & live streaming guide.',
+        badge: 'LIVE NOW',
+        badgeColor: '#C8102E',
+        date: 'Mar 29, 2026',
+      },
+      {
         href: '/quetta-gladiators-vs-hyderabad-kingsmen',
         title: 'Quetta Gladiators vs Hyderabad Kingsmen – PSL 2026 Match 5',
         desc: 'Full preview: March 29 at Gaddafi Stadium. Key players, squads, recent form, and where to watch live.',

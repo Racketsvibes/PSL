@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -6,7 +7,15 @@ export default function Footer() {
       <div className="container">
         <div className="footer-inner">
           <div className="footer-block">
-            <h4>About PSL Live 2026</h4>
+            <Link href="/" style={{ display: 'inline-block', marginBottom: '1rem' }}>
+              <Image
+                src="/psl-logo.jpg"
+                alt="PSL Live 2026 – Pakistan Super League Official Logo"
+                width={120}
+                height={60}
+                style={{ objectFit: 'contain', borderRadius: '6px' }}
+              />
+            </Link>
             <p>Your ultimate destination for live streaming info, scores, and deep dives into everything Pakistan Super League. Follow your favorite teams like Quetta Gladiators and Lahore Qalandars here.</p>
           </div>
           <div className="footer-block">

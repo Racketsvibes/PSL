@@ -17,25 +17,7 @@ export default function Header() {
           />
         </Link>
 
-        {/* Live Score Widget */}
-        <Link href="/live-score" className="header-live-widget" aria-label="Live Match Score">
-          <div className="live-teams">
-            <div className="team-info">
-              <Image src="/Quetta_Gladiators.png" alt="Quetta Gladiators" width={24} height={24} className="team-icon" />
-              <span className="team-name">QG</span>
-            </div>
-            <div className="score-details">
-              <span className="current-score">145/3</span>
-              <span className="overs">(15.2)</span>
-            </div>
-            <span className="vs-text">v</span>
-            <div className="team-info">
-              <span className="team-name">HK</span>
-              <Image src="/Hyderabad_Houston_Kingsmen_logo.png" alt="Hyderabad Kingsmen" width={24} height={24} className="team-icon" />
-            </div>
-          </div>
-          <span className="live-indicator">LIVE</span>
-        </Link>
+
 
         <nav>
           <ul className="nav-links">

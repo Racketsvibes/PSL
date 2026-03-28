@@ -1,5 +1,17 @@
 "use client";
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+
+const LOGO_MAP = {
+  'Peshawar Zalmi': '/Peshawar_Zalmi_logo.png',
+  'Rawalpindiz': '/Rawalpindiz_Logo.png',
+  'Quetta Gladiators': '/Quetta_Gladiators.png',
+  'Hyderabad Kingsmen': '/Hyderabad_Houston_Kingsmen_logo.png',
+  'Lahore Qalandars': '/Lahore_Qalandars.png',
+  'Islamabad United': '/Islamabad_United.png',
+  'Karachi Kings': '/Karachi_Kings.png',
+  'Multan Sultans': '/MultanSultans.png',
+};
 
 export default function LiveScoreboard() {
   const [matches, setMatches] = useState([]);
@@ -68,22 +80,28 @@ export default function LiveScoreboard() {
             
             {/* Score Grid Block */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <div style={{ textAlign: 'left', flex: 1 }}>
-                <h3 style={{ margin: 0, fontSize: '1.5rem', color: '#111827' }}>{localTeam}</h3>
-                <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#0A3258', margin: '0.5rem 0 0 0' }}>
-                  {localRuns ? `${localRuns.score}/${localRuns.wickets} (${localRuns.overs})` : 'Yet to bat / TBD'}
-                </p>
+              <div style={{ textAlign: 'left', flex: 1, display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <Image src={LOGO_MAP[localTeam] || '/psl-logo.jpg'} alt={localTeam} width={48} height={48} style={{ objectFit: 'contain' }} />
+                <div>
+                  <h3 style={{ margin: 0, fontSize: '1.5rem', color: '#111827' }}>{localTeam}</h3>
+                  <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#0A3258', margin: '0.5rem 0 0 0' }}>
+                    {localRuns ? `${localRuns.score}/${localRuns.wickets} (${localRuns.overs})` : 'Yet to bat / TBD'}
+                  </p>
+                </div>
               </div>
               
               <div style={{ flex: '0 0 60px', textAlign: 'center', fontSize: '1.2rem', color: '#9ca3af', fontWeight: 'bold' }}>
                 VS
               </div>
               
-              <div style={{ textAlign: 'right', flex: 1 }}>
-                <h3 style={{ margin: 0, fontSize: '1.5rem', color: '#111827' }}>{visitorTeam}</h3>
-                <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#0A3258', margin: '0.5rem 0 0 0' }}>
-                  {visitorRuns ? `${visitorRuns.score}/${visitorRuns.wickets} (${visitorRuns.overs})` : 'Yet to bat / TBD'}
-                </p>
+              <div style={{ textAlign: 'right', flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '1rem' }}>
+                <div style={{ textAlign: 'right' }}>
+                  <h3 style={{ margin: 0, fontSize: '1.5rem', color: '#111827' }}>{visitorTeam}</h3>
+                  <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#0A3258', margin: '0.5rem 0 0 0' }}>
+                    {visitorRuns ? `${visitorRuns.score}/${visitorRuns.wickets} (${visitorRuns.overs})` : 'Yet to bat / TBD'}
+                  </p>
+                </div>
+                <Image src={LOGO_MAP[visitorTeam] || '/psl-logo.jpg'} alt={visitorTeam} width={48} height={48} style={{ objectFit: 'contain' }} />
               </div>
             </div>
             

@@ -1,6 +1,7 @@
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LiveWidget from '@/components/LiveWidget';
 import Script from 'next/script';
 
 export const metadata = {
@@ -54,9 +55,10 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <div className="fixture-ticker" aria-label="PSL 2026 Fixture Schedule">
-          <div className="fixture-ticker-track">
-            {/* Fixtures duplicated for seamless loop */}
+        <div className="top-bar-container">
+          <div className="fixture-ticker" aria-label="PSL 2026 Fixture Schedule">
+            <div className="fixture-ticker-track">
+              {/* Fixtures duplicated for seamless loop */}
             {[
               { match: 'Quetta Gladiators vs Hyderabad Kingsmen', venue: 'Gaddafi Stadium, Lahore', time: 'Mar 29 · 2:30 PM PKT' },
               { match: 'Lahore Qalandars vs Karachi Kings', venue: 'Gaddafi Stadium, Lahore', time: 'Mar 29 · 7:00 PM PKT' },
@@ -89,7 +91,9 @@ export default function RootLayout({ children }) {
                 <span className="ticker-separator">★</span>
               </span>
             ))}
+            </div>
           </div>
+          <LiveWidget />
         </div>
         <Header />
         <main>{children}</main>

@@ -55,6 +55,43 @@ export default function RootLayout({ children }) {
           }}
         />
         <Header />
+        <div className="fixture-ticker" aria-label="PSL 2026 Fixture Schedule">
+          <div className="fixture-ticker-track">
+            {/* Fixtures duplicated for seamless loop */}
+            {[
+              { match: 'Quetta Gladiators vs Hyderabad Kingsmen', venue: 'Gaddafi Stadium, Lahore', time: 'Mar 29 · 2:30 PM PKT' },
+              { match: 'Lahore Qalandars vs Karachi Kings', venue: 'Gaddafi Stadium, Lahore', time: 'Mar 29 · 7:00 PM PKT' },
+              { match: 'Islamabad United vs Peshawar Zalmi', venue: 'Gaddafi Stadium, Lahore', time: 'Mar 31 · 7:00 PM PKT' },
+              { match: 'Multan Sultans vs Hyderabad Kingsmen', venue: 'Gaddafi Stadium, Lahore', time: 'Apr 1 · 7:00 PM PKT' },
+              { match: 'Quetta Gladiators vs Islamabad United', venue: 'Gaddafi Stadium, Lahore', time: 'Apr 2 · 2:30 PM PKT' },
+              { match: 'Rawalpindi Pindiz vs Karachi Kings', venue: 'Gaddafi Stadium, Lahore', time: 'Apr 2 · 7:00 PM PKT' },
+              { match: 'Lahore Qalandars vs Multan Sultans', venue: 'Gaddafi Stadium, Lahore', time: 'Apr 3 · 7:00 PM PKT' },
+              { match: 'Hyderabad Kingsmen vs Peshawar Zalmi', venue: 'National Bank Stadium, Karachi', time: 'Apr 8 · 7:00 PM PKT' },
+              { match: 'Karachi Kings vs Peshawar Zalmi', venue: 'National Bank Stadium, Karachi', time: 'Apr 9 · 7:00 PM PKT' },
+              { match: 'PSL 2026 Final', venue: 'Gaddafi Stadium, Lahore', time: 'May 3 · 7:00 PM PKT' },
+            ].concat([
+              { match: 'Quetta Gladiators vs Hyderabad Kingsmen', venue: 'Gaddafi Stadium, Lahore', time: 'Mar 29 · 2:30 PM PKT' },
+              { match: 'Lahore Qalandars vs Karachi Kings', venue: 'Gaddafi Stadium, Lahore', time: 'Mar 29 · 7:00 PM PKT' },
+              { match: 'Islamabad United vs Peshawar Zalmi', venue: 'Gaddafi Stadium, Lahore', time: 'Mar 31 · 7:00 PM PKT' },
+              { match: 'Multan Sultans vs Hyderabad Kingsmen', venue: 'Gaddafi Stadium, Lahore', time: 'Apr 1 · 7:00 PM PKT' },
+              { match: 'Quetta Gladiators vs Islamabad United', venue: 'Gaddafi Stadium, Lahore', time: 'Apr 2 · 2:30 PM PKT' },
+              { match: 'Rawalpindi Pindiz vs Karachi Kings', venue: 'Gaddafi Stadium, Lahore', time: 'Apr 2 · 7:00 PM PKT' },
+              { match: 'Lahore Qalandars vs Multan Sultans', venue: 'Gaddafi Stadium, Lahore', time: 'Apr 3 · 7:00 PM PKT' },
+              { match: 'Hyderabad Kingsmen vs Peshawar Zalmi', venue: 'National Bank Stadium, Karachi', time: 'Apr 8 · 7:00 PM PKT' },
+              { match: 'Karachi Kings vs Peshawar Zalmi', venue: 'National Bank Stadium, Karachi', time: 'Apr 9 · 7:00 PM PKT' },
+              { match: 'PSL 2026 Final', venue: 'Gaddafi Stadium, Lahore', time: 'May 3 · 7:00 PM PKT' },
+            ]).map((fixture, idx) => (
+              <span key={idx} className="fixture-ticker-item">
+                🏏 <span className="ticker-match">{fixture.match}</span>
+                <span className="ticker-separator">|</span>
+                <span className="ticker-meta">🏟️ {fixture.venue}</span>
+                <span className="ticker-separator">|</span>
+                <span className="ticker-meta">🕑 {fixture.time}</span>
+                <span className="ticker-separator">★</span>
+              </span>
+            ))}
+          </div>
+        </div>
         <main>{children}</main>
         <Footer />
       </body>

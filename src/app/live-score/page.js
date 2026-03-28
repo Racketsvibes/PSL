@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import LiveScoreboard from '@/components/LiveScoreboard';
+import RecentMatch from '@/components/RecentMatch';
 
 export const metadata = {
   title: 'HBL PSL 11 (2026) Live Score & Match Center',
@@ -13,6 +14,7 @@ export default function LiveScorePage() {
       <article className="content-wrapper" style={{ textAlign: 'center' }}>
         <h1 style={{ color: '#0A3258', marginBottom: '1.5rem', fontSize: '2.5rem' }}>PSL 2026 Live Match Center</h1>
         <LiveScoreboard />
+        <RecentMatch />
 
         <div style={{ textAlign: 'left', marginTop: '3rem', padding: '2.5rem', backgroundColor: '#ffffff', borderRadius: '1rem', boxShadow: 'var(--shadow-sm)' }}>
           <h2 style={{ color: 'var(--brand-blue)', fontSize: '1.8rem', marginBottom: '1rem' }}>Welcome to the PSL 2026 Live Match Center</h2>

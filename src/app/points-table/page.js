@@ -32,6 +32,14 @@ export default function PointsTablePage() {
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', fontWeight: 'bold' }}>2</td>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', color: 'green' }}>+3.450</td>
             </tr>
+            <tr style={{ backgroundColor: '#f0fdf4' }}>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', textAlign: 'left' }}><strong>Rawalpindi Pindiz</strong></td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>1</td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>1</td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', fontWeight: 'bold' }}>2</td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', color: 'green' }}>+1.700</td>
+            </tr>
             <tr>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', textAlign: 'left' }}>Islamabad United</td>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
@@ -42,14 +50,6 @@ export default function PointsTablePage() {
             </tr>
             <tr>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', textAlign: 'left' }}>Multan Sultans</td>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0.000</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', textAlign: 'left' }}>Peshawar Zalmi</td>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
@@ -73,12 +73,12 @@ export default function PointsTablePage() {
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0.000</td>
             </tr>
             <tr>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', textAlign: 'left' }}>Rawalpindi Pindiz</td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', textAlign: 'left' }}>Peshawar Zalmi</td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>1</td>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>1</td>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0</td>
-              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>0.000</td>
+              <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', color: 'red' }}>-1.700</td>
             </tr>
             <tr>
               <td style={{ padding: '0.75rem', borderBottom: '1px solid #eee', textAlign: 'left' }}>Hyderabad Kingsmen</td>

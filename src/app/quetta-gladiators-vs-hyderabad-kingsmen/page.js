@@ -183,7 +183,7 @@ export default function QuettaVsHyderabadPage() {
                 {[
                   { team: '🦅 Quetta Gladiators', player: 'Hasan Nawaz', role: 'Batter', stat: '357 runs in last 10 matches | Avg: 71.40 | SR: 169.19', highlight: true },
                   { team: '🦅 Quetta Gladiators', player: 'Rilee Rossouw', role: 'Batter', stat: '207 runs in last 9 matches | SR: 168.29 — explosive opener', highlight: true },
-                  { team: '🦅 Quetta Gladiators', player: 'Saud Shakeel (c)', role: 'Batter / Captain', stat: 'Experienced Pakistan Test captain anchoring Quetta's middle-order', highlight: true },
+                  { team: '🦅 Quetta Gladiators', player: 'Saud Shakeel (c)', role: 'Batter / Captain', stat: "Experienced Pakistan Test captain anchoring Quetta's middle-order", highlight: true },
                   { team: '👑 Hyderabad Kingsmen', player: 'Marnus Labuschagne (c)', role: 'Top-Order Batter', stat: 'Scored 26 runs in opening match — needs a big knock today', highlight: false },
                   { team: '👑 Hyderabad Kingsmen', player: 'Saim Ayub', role: 'All-Rounder', stat: 'High score of 121 in recent pre-season warm-ups — devastating in full flow', highlight: false },
                   { team: '👑 Hyderabad Kingsmen', player: 'Glenn Maxwell', role: 'All-Rounder', stat: 'World-class big-hitter who can change a match in a single over', highlight: false },
@@ -273,7 +273,7 @@ export default function QuettaVsHyderabadPage() {
               { q: 'When is Quetta Gladiators vs Hyderabad Kingsmen?', a: 'The match is on Sunday, March 29, 2026 at 2:30 PM PKT at Gaddafi Stadium, Lahore.' },
               { q: 'Where to watch Quetta vs Hyderabad live?', a: 'Watch live on Tamasha (free), Tapmad (paid), A Sports, and Geo Super on TV. International fans can stream on Willow TV.' },
               { q: 'What is the head-to-head record between Quetta and Hyderabad?', a: 'As a newly formed expansion franchise in PSL 2026, Hyderabad Kingsmen have no prior head-to-head record against Quetta Gladiators. This is their inaugural meeting.' },
-              { q: 'Who will win Quetta vs Hyderabad today?', a: 'Quetta Gladiators are considered slight favourites given their experience, but Hyderabad's explosive batting lineup featuring Glenn Maxwell and Saim Ayub could surprise. Check our live score page for ball-by-ball updates.' },
+              { q: 'Who will win Quetta vs Hyderabad today?', a: "Quetta Gladiators are considered slight favourites given their experience, but Hyderabad's explosive batting lineup featuring Glenn Maxwell and Saim Ayub could surprise. Check our live score page for ball-by-ball updates." },
             ].map((item, idx) => (
               <div key={idx} style={{ padding: '1.25rem 1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', backgroundColor: '#f9fafb' }}>
                 <h3 style={{ fontSize: '1.05rem', marginBottom: '0.5rem', color: '#0A3258' }}>{item.q}</h3>

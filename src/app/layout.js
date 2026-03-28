@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        {/* Google Analytics */}
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-XSPCXP9J40" />
         <Script
           id="google-analytics"
@@ -55,6 +56,20 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        {/* Ad Network — popunder/banner loader */}
+        <Script
+          id="ad-network-loader"
+          strategy="afterInteractive"
+          src="https://pl29001918.profitablecpmratenetwork.com/93/e6/08/93e6084be46971ae06e5f7b32468c45d.js"
+        />
+        {/* Ad Network — invoke banner */}
+        <Script
+          id="ad-network-invoke"
+          strategy="afterInteractive"
+          data-cfasync="false"
+          src="https://pl29001919.profitablecpmratenetwork.com/3cd6091f42a516070e4b1349e3ae7468/invoke.js"
+        />
+        <div id="container-3cd6091f42a516070e4b1349e3ae7468"></div>
         <div className="top-bar-container">
           <div className="fixture-ticker" aria-label="PSL 2026 Fixture Schedule">
             <div className="fixture-ticker-track">

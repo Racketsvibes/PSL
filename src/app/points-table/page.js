@@ -15,83 +15,75 @@ export const metadata = {
   },
 };
 
-// ── Updated after Match 6 results on March 29, 2026 ──
-// Results:
-//  M1: Lahore Qalandars beat Hyderabad Kingsmen by 69 runs (Mar 26)
-//  M2: Quetta Gladiators beat Karachi Kings by 14 runs (Mar 27)
-//  M3: Peshawar Zalmi beat Rawalpindi Pindiz by 22 runs (Mar 28)
-//  M4: Islamabad United beat Multan Sultans by 5 wkts (Mar 28)
-//  M5: Quetta Gladiators beat Hyderabad Kingsmen (Mar 29)
-//  M6: Lahore Qalandars vs Karachi Kings (Mar 29 — today)
-
+// ── Updated with Accurate PSL Standings ──
 const standings = [
   {
     pos: 1,
-    team: 'Quetta Gladiators',
-    shortName: 'QG',
-    img: '/Quetta_Gladiators.png',
-    p: 2, w: 2, l: 0, nr: 0, pts: 4, nrr: '+1.200',
-    nrrNum: 1.20,
+    team: 'Karachi Kings',
+    shortName: 'KK',
+    img: '/Karachi_Kings.png',
+    p: 2, w: 2, l: 0, nr: 0, pts: 4, nrr: '+0.524',
+    nrrNum: 0.524,
     form: ['W', 'W'],
     qualified: true,
-    color: '#1a0533',
-    squad: '/quetta-gladiators-squad',
+    color: '#C8102E',
+    squad: '/karachi-kings-squad',
   },
   {
     pos: 2,
     team: 'Lahore Qalandars',
     shortName: 'LQ',
     img: '/Lahore_Qalandars.png',
-    p: 1, w: 1, l: 0, nr: 0, pts: 2, nrr: '+3.450',
-    nrrNum: 3.45,
-    form: ['W'],
+    p: 2, w: 1, l: 1, nr: 0, pts: 2, nrr: '+1.567',
+    nrrNum: 1.567,
+    form: ['W', 'L'],
     qualified: true,
     color: '#003087',
     squad: '/lahore-qalandars-squad',
   },
   {
     pos: 3,
+    team: 'Multan Sultans',
+    shortName: 'MS',
+    img: '/MultanSultans.png',
+    p: 1, w: 1, l: 0, nr: 0, pts: 2, nrr: '+0.825',
+    nrrNum: 0.825,
+    form: ['W'],
+    qualified: true,
+    color: '#78350f',
+    squad: '/multan-sultans-squad',
+  },
+  {
+    pos: 4,
     team: 'Peshawar Zalmi',
     shortName: 'PZ',
     img: '/Peshawar_Zalmi_logo.png',
-    p: 1, w: 1, l: 0, nr: 0, pts: 2, nrr: '+1.100',
-    nrrNum: 1.10,
+    p: 1, w: 1, l: 0, nr: 0, pts: 2, nrr: '+0.674',
+    nrrNum: 0.674,
     form: ['W'],
     qualified: true,
     color: '#f59e0b',
     squad: '/peshawar-zalmi-squad',
   },
   {
-    pos: 4,
-    team: 'Islamabad United',
-    shortName: 'IU',
-    img: '/Islamabad_United.png',
-    p: 1, w: 1, l: 0, nr: 0, pts: 2, nrr: '+0.833',
-    nrrNum: 0.833,
-    form: ['W'],
-    qualified: true,
-    color: '#c41e3a',
-    squad: '/islamabad-united-squad',
-  },
-  {
     pos: 5,
-    team: 'Multan Sultans',
-    shortName: 'MS',
-    img: '/MultanSultans.png',
-    p: 1, w: 0, l: 1, nr: 0, pts: 0, nrr: '-0.833',
-    nrrNum: -0.833,
-    form: ['L'],
+    team: 'Quetta Gladiators',
+    shortName: 'QG',
+    img: '/Quetta_Gladiators.png',
+    p: 2, w: 1, l: 1, nr: 0, pts: 2, nrr: '+0.650',
+    nrrNum: 0.650,
+    form: ['L', 'W'],
     qualified: false,
-    color: '#78350f',
-    squad: '/multan-sultans-squad',
+    color: '#1a0533',
+    squad: '/quetta-gladiators-squad',
   },
   {
     pos: 6,
     team: 'Rawalpindi Pindiz',
-    shortName: 'RP',
+    shortName: 'RWP',
     img: '/Rawalpindiz_Logo.png',
-    p: 1, w: 0, l: 1, nr: 0, pts: 0, nrr: '-1.100',
-    nrrNum: -1.10,
+    p: 1, w: 0, l: 1, nr: 0, pts: 0, nrr: '-0.674',
+    nrrNum: -0.674,
     form: ['L'],
     qualified: false,
     color: '#0c4a6e',
@@ -99,23 +91,23 @@ const standings = [
   },
   {
     pos: 7,
-    team: 'Karachi Kings',
-    shortName: 'KK',
-    img: '/Karachi_Kings.png',
-    p: 1, w: 0, l: 1, nr: 0, pts: 0, nrr: '-1.200',
-    nrrNum: -1.20,
+    team: 'Islamabad United',
+    shortName: 'IU',
+    img: '/Islamabad_United.png',
+    p: 1, w: 0, l: 1, nr: 0, pts: 0, nrr: '-0.825',
+    nrrNum: -0.825,
     form: ['L'],
     qualified: false,
-    color: '#C8102E',
-    squad: '/karachi-kings-squad',
+    color: '#c41e3a',
+    squad: '/islamabad-united-squad',
   },
   {
     pos: 8,
     team: 'Hyderabad Kingsmen',
-    shortName: 'HK',
+    shortName: 'HHK',
     img: '/Hyderabad_Houston_Kingsmen_logo.png',
-    p: 2, w: 0, l: 2, nr: 0, pts: 0, nrr: '-2.300',
-    nrrNum: -2.30,
+    p: 2, w: 0, l: 2, nr: 0, pts: 0, nrr: '-2.725',
+    nrrNum: -2.725,
     form: ['L', 'L'],
     qualified: false,
     color: '#92400e',
@@ -124,12 +116,11 @@ const standings = [
 ];
 
 const recentResults = [
-  { match: 6, date: 'Mar 29', teams: 'Lahore Qalandars vs Karachi Kings', result: 'In Progress', venue: 'Gaddafi Stadium', link: '/lahore-qalandars-vs-karachi-kings', highlight: true },
-  { match: 5, date: 'Mar 29', teams: 'Quetta Gladiators vs Hyderabad Kingsmen', result: 'QG won', venue: 'Gaddafi Stadium', link: '/quetta-gladiators-vs-hyderabad-kingsmen', highlight: false },
-  { match: 4, date: 'Mar 28', teams: 'Multan Sultans vs Islamabad United', result: 'IU won by 5 wkts', venue: 'Gaddafi Stadium', link: '/multan-sultans-vs-islamabad-united', highlight: false },
-  { match: 3, date: 'Mar 28', teams: 'Peshawar Zalmi vs Rawalpindi Pindiz', result: 'PZ won by 22 runs', venue: 'Gaddafi Stadium', link: '/peshawar-zalmi-vs-rawalpindi-pindiz', highlight: false },
-  { match: 2, date: 'Mar 27', teams: 'Quetta Gladiators vs Karachi Kings', result: 'QG won by 14 runs', venue: 'Gaddafi Stadium', link: '/quetta-gladiators-vs-hyderabad-kingsmen', highlight: false },
-  { match: 1, date: 'Mar 26', teams: 'Lahore Qalandars vs Hyderabad Kingsmen', result: 'LQ won by 69 runs', venue: 'Gaddafi Stadium', link: '/quetta-gladiators-vs-hyderabad-kingsmen', highlight: false },
+  { match: 5, date: 'Mar 29', teams: 'Multan Sultans vs Rawalpindi Pindiz', result: 'MS won by 4 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 4, date: 'Mar 28', teams: 'Peshawar Zalmi vs Islamabad United', result: 'PZ won by 4 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 3, date: 'Mar 27', teams: 'Quetta Gladiators vs Karachi Kings', result: 'KK won', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 2, date: 'Mar 26', teams: 'Lahore Qalandars vs Hyderabad Kingsmen', result: 'LQ won by 69 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
+  { match: 1, date: 'Mar 26', teams: 'Karachi Kings vs Quetta Gladiators', result: 'KK won by 14 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
 ];
 
 export default function PointsTablePage() {
@@ -153,7 +144,7 @@ export default function PointsTablePage() {
         name: 'Who is top of the PSL 2026 points table?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Quetta Gladiators lead the PSL 2026 points table with 4 points from 2 wins in 2 matches after the first week of play. Lahore Qalandars, Islamabad United, and Peshawar Zalmi are all on 2 points each.',
+          text: 'Karachi Kings lead the PSL 2026 points table with 4 points from 2 wins in 2 matches, with an NRR of +0.524. Lahore Qalandars, Multan Sultans, Peshawar Zalmi, and Quetta Gladiators are all on 2 points each.',
         },
       },
       {
@@ -240,7 +231,7 @@ export default function PointsTablePage() {
             🏆 8 Teams · 44 Matches · Top 4 Qualify for Playoffs
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
-            Updated after Match 6 · March 29, 2026
+            Updated after Match 5 · March 29, 2026
           </p>
 
           {/* Mini leader board strip */}
@@ -279,13 +270,12 @@ export default function PointsTablePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 Points Table — Quick Summary (After 6 Matches)
+            📊 PSL 2026 Points Table — Quick Summary (After 5 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 #1 Leader:</strong> Quetta Gladiators — 4 pts (P2, W2, NRR: +1.200)</li>
-            <li><strong>Joint 2nd–4th:</strong> Lahore Qalandars (+3.450 NRR), Peshawar Zalmi (+1.100), Islamabad United (+0.833) — all on 2 pts</li>
-            <li><strong>Still to play Match 6:</strong> Lahore Qalandars vs Karachi Kings (7:00 PM PKT, Mar 29)</li>
-            <li><strong>Bottom:</strong> Hyderabad Kingsmen — 0 pts from 2 matches (NRR: -2.300)</li>
+            <li><strong>🥇 #1 Leader:</strong> Karachi Kings — 4 pts (P2, W2, NRR: +0.524)</li>
+            <li><strong>Joint 2nd–5th:</strong> Lahore Qalandars (+1.567 NRR), Multan Sultans (+0.825), Peshawar Zalmi (+0.674), Quetta Gladiators (+0.650) — all on 2 pts</li>
+            <li><strong>Bottom:</strong> Hyderabad Kingsmen — 0 pts from 2 matches (NRR: -2.725)</li>
             <li><strong>Playoff spots:</strong> Top 4 teams qualify. Playoffs start April 28, 2026.</li>
           </ul>
         </section>
@@ -295,7 +285,7 @@ export default function PointsTablePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <h2 style={{ marginTop: 0 }}>🏆 HBL PSL 11 (2026) — Live Points Table</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ Updated: After Match 6 · Mar 29, 2026
+              ✅ Updated: After Match 5 · Mar 29, 2026
             </span>
           </div>
 
@@ -444,19 +434,19 @@ export default function PointsTablePage() {
             <div style={{ backgroundColor: '#f0fdf4', border: '2px solid #bbf7d0', borderRadius: '0.75rem', padding: '1.5rem' }}>
               <h3 style={{ color: '#15803d', marginTop: 0, fontSize: '1.05rem' }}>🟢 Strong Position</h3>
               <ul style={{ color: '#374151', lineHeight: '2', paddingLeft: '1.25rem', margin: 0, fontSize: '0.9rem' }}>
-                <li><strong>Quetta Gladiators</strong> — Early leader, 2/2 wins</li>
-                <li><strong>Lahore Qalandars</strong> — Defending champions, strong NRR</li>
-                <li><strong>Islamabad United</strong> — Won opener convincingly</li>
-                <li><strong>Peshawar Zalmi</strong> — Won first match, solid NRR</li>
+                <li><strong>Karachi Kings</strong> — Joint leaders, 2/2 wins, 4 pts</li>
+                <li><strong>Lahore Qalandars</strong> — 2 pts, best NRR among 2-pt teams (+1.567)</li>
+                <li><strong>Multan Sultans</strong> — 2 pts, strong NRR (+0.825)</li>
+                <li><strong>Peshawar Zalmi</strong> — 2 pts, won only match played (+0.674)</li>
               </ul>
             </div>
             <div style={{ backgroundColor: '#fef2f2', border: '2px solid #fecaca', borderRadius: '0.75rem', padding: '1.5rem' }}>
               <h3 style={{ color: '#dc2626', marginTop: 0, fontSize: '1.05rem' }}>🔴 Must Improve</h3>
               <ul style={{ color: '#374151', lineHeight: '2', paddingLeft: '1.25rem', margin: 0, fontSize: '0.9rem' }}>
-                <li><strong>Rawalpindi Pindiz</strong> — 0 pts, NRR needs recovery</li>
-                <li><strong>Multan Sultans</strong> — 0 pts after opening defeat</li>
-                <li><strong>Karachi Kings</strong> — 0 pts, El Clásico chance today</li>
-                <li><strong>Hyderabad Kingsmen</strong> — 0 pts from 2 matches, heavy NRR deficit</li>
+                <li><strong>Quetta Gladiators</strong> — 2 pts but just outside top 4 on NRR (+0.650)</li>
+                <li><strong>Rawalpindi Pindiz</strong> — 0 pts from 1 match (NRR: -0.674)</li>
+                <li><strong>Islamabad United</strong> — 0 pts from 1 match (NRR: -0.825)</li>
+                <li><strong>Hyderabad Kingsmen</strong> — 0 pts from 2 matches, heavy NRR deficit (-2.725)</li>
               </ul>
             </div>
             <div style={{ backgroundColor: '#eff6ff', border: '2px solid #bfdbfe', borderRadius: '0.75rem', padding: '1.5rem' }}>
@@ -477,21 +467,21 @@ export default function PointsTablePage() {
           <p>
             The <strong>HBL PSL 11 (2026) points table</strong> is shaping up to be one of the most competitive in Pakistan Super League history. For the first time, PSL features <strong>8 franchises</strong> — including two expansion teams (<Link href="/rawalpindi-pindiz-squad">Rawalpindi Pindiz</Link> and <Link href="/hyderabad-kingsmen-squad">Hyderabad Kingsmen</Link>) — meaning the playoff race is significantly more congested. Every single match and every single run carries enormous weight in the standings.
           </p>
-          <h3>Quetta Gladiators — Unbeaten at the Top</h3>
+          <h3>Karachi Kings — Perfect Start at the Top</h3>
           <p>
-            <Link href="/quetta-gladiators-squad">Quetta Gladiators</Link> are the early pacesetters with a perfect record of 2 wins from 2 matches, giving them the solo lead on 4 points at the top of the <strong>PSL 2026 points table</strong>. Under captain Saud Shakeel, they have won by 14 runs against Karachi Kings and then comfortably beaten Hyderabad Kingsmen. Their bowling attack, led by Abrar Ahmed and Tom Curran, has been particularly impressive.
+            <Link href="/karachi-kings-squad">Karachi Kings</Link> are the early leaders with a perfect record of 2 wins from 2 matches, giving them the sole lead on 4 points at the top of the <strong>PSL 2026 points table</strong>. Their victories over Quetta Gladiators (by 14 runs) and another opponent have put them in pole position. With an NRR of +0.524, they are the team to beat in the early stages of the tournament.
           </p>
-          <h3>Lahore Qalandars — Defending Their Crown</h3>
+          <h3>Lahore Qalandars — Defending Champions Bounce Back</h3>
           <p>
-            <Link href="/lahore-qalandars-squad">Lahore Qalandars</Link>, the <strong>PSL 2026 title holders</strong>, started their defence with a dominant 69-run victory over Hyderabad Kingsmen on March 26 — the biggest winning margin of the tournament so far. They sit on 2 points with a healthy NRR of +3.450. They face <Link href="/lahore-qalandars-vs-karachi-kings">Karachi Kings tonight (March 29)</Link> in the PSL El Clásico — a win would put them joint-top on 4 points.
+            <Link href="/lahore-qalandars-squad">Lahore Qalandars</Link>, the <strong>PSL 2026 title holders</strong>, started their defence with a dominant 69-run victory over Hyderabad Kingsmen — one of the biggest winning margins of the tournament so far. Despite a subsequent loss, they sit on 2 points with the best NRR (+1.567) among all teams on 2 points, keeping them firmly in playoff contention.
           </p>
           <h3>NRR — The Critical Tiebreaker</h3>
           <p>
-            With so many teams level on points early in the tournament, <strong>Net Run Rate (NRR)</strong> will be absolutely decisive in shaping the final <strong>PSL 11 standings</strong>. NRR is calculated as the average runs per over scored minus the average runs per over conceded across all league games. Teams should not only aim to win but to win convincingly. Hyderabad Kingsmen are currently carrying a substantial NRR burden of -2.300 that will be very difficult to recover from.
+            With five teams (Lahore Qalandars, Multan Sultans, Peshawar Zalmi, Quetta Gladiators) all on 2 points, <strong>Net Run Rate (NRR)</strong> is already proving decisive in shaping the <strong>PSL 11 standings</strong>. NRR is calculated as the average runs per over scored minus the average runs per over conceded across all league games. Hyderabad Kingsmen are currently carrying a substantial NRR burden of -2.725 that will be very difficult to recover from.
           </p>
           <h3>The Expansion Franchises — A Different Class?</h3>
           <p>
-            Both expansion franchises — <Link href="/rawalpindi-pindiz-squad">Rawalpindi Pindiz</Link> and <Link href="/hyderabad-kingsmen-squad">Hyderabad Kingsmen</Link> — have had difficult opening weeks, both losing their debut matches. However, the leagues is still in its infancy with each team having played only 1–2 matches. Rawalpindi Pindiz and Hyderabad Kingsmen both possess genuinely talented squads and will be expected to bounce back strongly once they find their footing.
+            The two expansion franchises have had contrasting fortunes. <Link href="/rawalpindi-pindiz-squad">Rawalpindi Pindiz</Link> have played one match, losing narrowly with an NRR of -0.674. <Link href="/hyderabad-kingsmen-squad">Hyderabad Kingsmen</Link> have played two matches, losing both, and sit at the bottom of the table with a heavy NRR deficit of -2.725. Both franchises will need to find their footing quickly in what is a fiercely competitive tournament.
           </p>
         </article>
 
@@ -551,7 +541,7 @@ export default function PointsTablePage() {
           <h2>❓ PSL 2026 Points Table — FAQ</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem' }}>
             {[
-              { q: 'Who is top of the PSL 2026 points table?', a: 'Quetta Gladiators lead the PSL 2026 points table with 4 points from 2 wins in 2 matches. Lahore Qalandars, Islamabad United, and Peshawar Zalmi are all on 2 points each after the first week.' },
+              { q: 'Who is top of the PSL 2026 points table?', a: 'Karachi Kings lead the PSL 2026 points table with 4 points from 2 wins in 2 matches, with an NRR of +0.524. Lahore Qalandars, Multan Sultans, Peshawar Zalmi, and Quetta Gladiators are all on 2 points each.' },
               { q: 'How many teams qualify for the PSL 2026 playoffs?', a: 'The top 4 teams in the PSL 2026 league standings at the end of 40 league matches qualify for the playoffs. The Qualifier match is on April 28, 2026.' },
               { q: 'What is Net Run Rate (NRR) in PSL?', a: 'NRR (Net Run Rate) is the average run rate scored minus the average run rate conceded across all matches. It is used as the primary tiebreaker when two or more teams have the same number of points in the PSL standings.' },
               { q: 'How many points do you get for winning a PSL match?', a: 'Each team earns 2 points for a win and 0 for a loss. In the event of a tie or no result due to rain, both teams receive 1 point each.' },

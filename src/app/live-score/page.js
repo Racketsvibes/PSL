@@ -33,7 +33,7 @@ const pastMatches = [
     winner: 'Quetta Gladiators',
     venue: 'Gaddafi Stadium, Lahore',
     potm: 'Mohammad Nawaz',
-    highlight: 'Nawaz smashes 68* (40) to power Quetta's  imposing total',
+    highlight: "Nawaz smashes 68* (40) to power Quetta's imposing total",
     logo1: '/Quetta_Gladiators.png',
     logo2: '/Hyderabad_Houston_Kingsmen_logo.png',
   },
@@ -51,7 +51,7 @@ const pastMatches = [
     winner: 'Islamabad United',
     venue: 'Gaddafi Stadium, Lahore',
     potm: 'Shadab Khan',
-    highlight: 'Shadab strikes 2/24 & 41 to lead United's successful chase',
+    highlight: "Shadab strikes 2/24 & 41 to lead United's successful chase",
     logo1: '/MultanSultans.png',
     logo2: '/Islamabad_United.png',
   },
@@ -87,7 +87,7 @@ const pastMatches = [
     winner: 'Karachi Kings',
     venue: 'National Bank Stadium, Karachi',
     potm: 'Mohammad Amir',
-    highlight: 'Amir tears through Quetta's middle order with 4/28',
+    highlight: "Amir tears through Quetta's middle order with 4/28",
     logo1: '/Karachi_Kings.png',
     logo2: '/Quetta_Gladiators.png',
   },
@@ -501,8 +501,8 @@ export default function LiveScorePage() {
               { q: 'Which channel is showing PSL 2026 live in Pakistan?', a: 'PSL 2026 is broadcast live on PTV Sports and ARY Zap in Pakistan. Both channels offer free-to-air coverage throughout the tournament. Visit our live streaming page for online options.' },
               { q: 'How many matches have been played in PSL 2026 so far?', a: 'As of March 29, 2026, 5 matches have been completed in HBL PSL 11. Karachi Kings lead the points table with 4 points (W2), while Lahore Qalandars, Peshawar Zalmi, Multan Sultans, and Quetta Gladiators each have 2 points.' },
               { q: 'Who is the highest scorer in PSL 2026?', a: 'Fakhar Zaman of Lahore Qalandars is the standout with 104* off 56 balls in Match 1. Babar Azam (71, Match 3) and Mohammad Nawaz (68*, Match 5) are other key performers.' },
-              { q: 'What is the biggest win in PSL 2026 so far?', a: 'The biggest win so far is Lahore Qalandars' 69-run victory over Hyderabad Kingsmen (Match 1, March 26). Lahore posted 219/3 and restricted Hyderabad to 150/9.' },
-              { q: 'When is the next PSL 2026 match?', a: 'The next match is Lahore Qalandars vs Karachi Kings on March 29, 2026 at 7:00 PM PKT at Gaddafi Stadium, Lahore. This El Clásico is expected to be the most-watched fixture of the early tournament stages.' },
+              { q: "What is the biggest win in PSL 2026 so far?", a: "The biggest win so far is Lahore Qalandars' 69-run victory over Hyderabad Kingsmen (Match 1, March 26). Lahore posted 219/3 and restricted Hyderabad to 150/9." },
+              { q: "When is the next PSL 2026 match?", a: "The next match is Lahore Qalandars vs Karachi Kings on March 29, 2026 at 7:00 PM PKT at Gaddafi Stadium, Lahore. This El Clasico is expected to be the most-watched fixture of the early tournament stages." },
             ].map((item, idx) => (
               <div key={idx} style={{ padding: '1.25rem 1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', backgroundColor: '#f9fafb' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '0.4rem', color: '#0A3258' }}>{item.q}</h3>

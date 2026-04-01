@@ -19,6 +19,18 @@ export const metadata = {
 const standings = [
   {
     pos: 1,
+    team: 'Multan Sultans',
+    shortName: 'MS',
+    img: '/MultanSultans.png',
+    p: 2, w: 2, l: 0, nr: 0, pts: 4, nrr: '+1.565',
+    nrrNum: 1.565,
+    form: ['W', 'W'],
+    qualified: true,
+    color: '#78350f',
+    squad: '/multan-sultans-squad',
+  },
+  {
+    pos: 2,
     team: 'Karachi Kings',
     shortName: 'KK',
     img: '/Karachi_Kings.png',
@@ -30,7 +42,7 @@ const standings = [
     squad: '/karachi-kings-squad',
   },
   {
-    pos: 2,
+    pos: 3,
     team: 'Peshawar Zalmi',
     shortName: 'PZ',
     img: '/Peshawar_Zalmi_logo.png',
@@ -42,7 +54,7 @@ const standings = [
     squad: '/peshawar-zalmi-squad',
   },
   {
-    pos: 3,
+    pos: 4,
     team: 'Lahore Qalandars',
     shortName: 'LQ',
     img: '/Lahore_Qalandars.png',
@@ -52,18 +64,6 @@ const standings = [
     qualified: true,
     color: '#003087',
     squad: '/lahore-qalandars-squad',
-  },
-  {
-    pos: 4,
-    team: 'Multan Sultans',
-    shortName: 'MS',
-    img: '/MultanSultans.png',
-    p: 1, w: 1, l: 0, nr: 0, pts: 2, nrr: '+0.825',
-    nrrNum: 0.825,
-    form: ['W'],
-    qualified: true,
-    color: '#78350f',
-    squad: '/multan-sultans-squad',
   },
   {
     pos: 5,
@@ -106,9 +106,9 @@ const standings = [
     team: 'Hyderabad Kingsmen',
     shortName: 'HHK',
     img: '/Hyderabad_Houston_Kingsmen_logo.png',
-    p: 2, w: 0, l: 2, nr: 0, pts: 0, nrr: '-2.725',
-    nrrNum: -2.725,
-    form: ['L', 'L'],
+    p: 3, w: 0, l: 3, nr: 0, pts: 0, nrr: '-3.125',
+    nrrNum: -3.125,
+    form: ['L', 'L', 'L'],
     qualified: false,
     color: '#92400e',
     squad: '/hyderabad-kingsmen-squad',
@@ -116,6 +116,7 @@ const standings = [
 ];
 
 const recentResults = [
+  { match: 8, date: 'Apr 1', teams: 'Multan Sultans vs Hyderabad Kingsmen', result: 'MS won by 6 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 7, date: 'Mar 31', teams: 'Islamabad United vs Peshawar Zalmi', result: 'Match Abandoned', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 6, date: 'Mar 29', teams: 'Lahore Qalandars vs Karachi Kings', result: 'KK won by 4 wkts', venue: 'Gaddafi Stadium', link: '/lahore-qalandars-vs-karachi-kings', highlight: false },
   { match: 5, date: 'Mar 29', teams: 'Quetta Gladiators vs Hyderabad Kingsmen', result: 'QG won by 39 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
@@ -133,7 +134,7 @@ export default function PointsTablePage() {
     startDate: '2026-03-26',
     endDate: '2026-05-03',
     sport: 'Cricket',
-    description: 'Current PSL 2026 standings showing team positions, wins, losses, points, and net run rate after 7 matches of the Pakistan Super League 11.',
+    description: 'Current PSL 2026 standings showing team positions, wins, losses, points, and net run rate after 8 matches of the Pakistan Super League 11.',
     organizer: { '@type': 'Organization', name: 'Pakistan Cricket Board' },
   };
 
@@ -233,7 +234,7 @@ export default function PointsTablePage() {
             🏆 8 Teams · 44 Matches · Top 4 Qualify for Playoffs
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
-            Updated after Match 7 · March 31, 2026
+            Updated after Match 8 · April 1, 2026
           </p>
 
           {/* Mini leader board strip */}
@@ -272,13 +273,13 @@ export default function PointsTablePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 Points Table — Quick Summary (After 7 Matches)
+            📊 PSL 2026 Points Table — Quick Summary (After 8 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 #1 Leader:</strong> Karachi Kings — 4 pts (P2, W2, NRR: +0.524)</li>
-            <li><strong>🥈 2nd Place:</strong> Peshawar Zalmi — 3 pts (P2, W1, NR1)</li>
-            <li><strong>Joint 3rd–5th:</strong> Lahore Qalandars (+1.567 NRR), Multan Sultans (+0.825), Quetta Gladiators (+0.650) — all on 2 pts</li>
-            <li><strong>Bottom:</strong> Hyderabad Kingsmen — 0 pts from 2 matches (NRR: -2.725)</li>
+            <li><strong>🥇 #1 Leader:</strong> Multan Sultans — 4 pts (P2, W2, NRR: +1.565)</li>
+            <li><strong>🥈 2nd Place:</strong> Karachi Kings — 4 pts (P2, W2, NRR: +0.524)</li>
+            <li><strong>3rd–5th:</strong> Peshawar Zalmi (3 pts), Lahore Qalandars (2 pts), Quetta Gladiators (2 pts)</li>
+            <li><strong>Bottom:</strong> Hyderabad Kingsmen — 0 pts from 3 matches (NRR: -3.125)</li>
             <li><strong>Playoff spots:</strong> Top 4 teams qualify. Playoffs start April 28, 2026.</li>
           </ul>
         </section>
@@ -288,7 +289,7 @@ export default function PointsTablePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <h2 style={{ marginTop: 0 }}>🏆 HBL PSL 11 (2026) — Live Points Table</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ Updated: After Match 7 · Mar 31, 2026
+              ✅ Updated: After Match 8 · Apr 1, 2026
             </span>
           </div>
 

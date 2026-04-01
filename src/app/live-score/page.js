@@ -20,6 +20,24 @@ export const metadata = {
 // ── All Completed Match Results — PSL 2026 (HBL PSL 11) ──
 const pastMatches = [
   {
+    match: 8,
+    date: 'Apr 1, 2026',
+    day: 'Wed',
+    time: '7:00 PM PKT',
+    teams: 'Multan Sultans vs Hyderabad Kingsmen',
+    team1: 'Multan Sultans',
+    team2: 'Hyderabad Kingsmen',
+    score1: '227/4 (18.4)',
+    score2: '225/5 (20)',
+    result: 'Multan Sultans won by 6 wickets',
+    winner: 'Multan Sultans',
+    venue: 'Gaddafi Stadium, Lahore',
+    potm: 'S. Farhan',
+    highlight: "Farhan blazes a magnificent 106* (57) to hunt down 226",
+    logo1: '/MultanSultans.png',
+    logo2: '/Hyderabad_Houston_Kingsmen_logo.png',
+  },
+  {
     match: 7,
     date: 'Mar 31, 2026',
     day: 'Tue',
@@ -148,9 +166,9 @@ const pastMatches = [
 ];
 
 const upcomingMatches = [
-  { match: 8,  date: 'Apr 1, 2026',  teams: 'Multan Sultans vs Hyderabad Kingsmen', time: '7:00 PM PKT', venue: 'Gaddafi Stadium' },
   { match: 9,  date: 'Apr 2, 2026',  teams: 'Quetta Gladiators vs Islamabad United',time: '2:30 PM PKT', venue: 'Gaddafi Stadium' },
   { match: 10, date: 'Apr 2, 2026',  teams: 'Rawalpindi Pindiz vs Karachi Kings',   time: '7:00 PM PKT', venue: 'Gaddafi Stadium' },
+  { match: 11, date: 'Apr 3, 2026',  teams: 'Lahore Qalandars vs Multan Sultans',    time: '7:00 PM PKT', venue: 'Gaddafi Stadium' },
 ];
 
 const breadcrumbSchema = {
@@ -254,7 +272,7 @@ export default function LiveScorePage() {
             <span style={{ color: '#c7fa3b' }}>Ball-by-Ball Updates</span>
           </h1>
           <p style={{ fontSize: '1.1rem', opacity: '0.9', marginBottom: '0.75rem' }}>
-            🏏 7 Matches Completed &nbsp;|&nbsp; 📅 37 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
+            🏏 8 Matches Completed &nbsp;|&nbsp; 📅 36 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
             Auto-updating every 15 seconds · Gaddafi Stadium, Lahore & National Bank Stadium, Karachi
@@ -263,10 +281,10 @@ export default function LiveScorePage() {
           {/* Mini match status strip */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
             {[
-              { label: 'Matches Played', value: '7', icon: '✅' },
-              { label: 'Matches Left', value: '37', icon: '📅' },
-              { label: 'League Leader', value: 'Karachi Kings', icon: '🥇' },
-              { label: 'Next Match', value: 'Apr 1 · 7PM', icon: '⏭️' },
+              { label: 'Matches Played', value: '8', icon: '✅' },
+              { label: 'Matches Left', value: '36', icon: '📅' },
+              { label: 'League Leader', value: 'Multan Sultans', icon: '🥇' },
+              { label: 'Next Match', value: 'Apr 2 · 2:30PM', icon: '⏭️' },
             ].map((stat, i) => (
               <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '0.75rem', padding: '0.5rem 0.9rem', textAlign: 'center', minWidth: '90px' }}>
                 <div style={{ fontSize: '1rem', marginBottom: '0.15rem' }}>{stat.icon}</div>
@@ -314,13 +332,13 @@ export default function LiveScorePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 — Quick Tournament Snapshot (After 7 Matches)
+            📊 PSL 2026 — Quick Tournament Snapshot (After 8 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 League Leader:</strong> Karachi Kings — 4 pts (P2, W2)</li>
-            <li><strong>🥈 2nd Place:</strong> Peshawar Zalmi — 3 pts (P2, W1, NR1)</li>
-            <li><strong>🏆 Biggest Win:</strong> Lahore Qalandars beat Hyderabad by 69 runs (Match 1)</li>
-            <li><strong>📅 Next Match:</strong> Multan Sultans vs Hyderabad Kingsmen — Apr 1, 7:00 PM PKT</li>
+            <li><strong>🥇 League Leader:</strong> Multan Sultans — 4 pts (P2, W2)</li>
+            <li><strong>🥈 2nd Place:</strong> Karachi Kings — 4 pts (P2, W2)</li>
+            <li><strong>🔥 Top Performer:</strong> S. Farhan (MS) scored 106* (57) vs Hyderabad</li>
+            <li><strong>📅 Next Match:</strong> Quetta Gladiators vs Islamabad United — Apr 2, 2:30 PM PKT</li>
           </ul>
         </section>
 
@@ -504,6 +522,10 @@ export default function LiveScorePage() {
           <h3>Match 7 — Islamabad United vs Peshawar Zalmi: Rain Wins</h3>
           <p>
             <strong>March 31, 2026</strong> — A heavy downpour in Lahore made any play impossible. Both teams were awarded 1 point each, propelling <Link href="/peshawar-zalmi-squad">Peshawar Zalmi</Link> to 3 points and the second spot on the table, while <Link href="/islamabad-united-squad">Islamabad United</Link> got their first point of the tournament.
+          </p>
+          <h3>Match 8 — Multan Sultans vs Hyderabad Kingsmen: The Farhan Show</h3>
+          <p>
+            <strong>April 1, 2026</strong> — In what will surely be remembered as one of the greatest run-chases in PSL history, <Link href="/multan-sultans-squad">Multan Sultans</Link> hunted down a massive 226-run target set by <Link href="/hyderabad-kingsmen-squad">Hyderabad Kingsmen</Link>. Hyderabad had posted a record-breaking 225/5, but Multan's <strong>S. Farhan blazed an unbeaten 106* off just 57 balls</strong>. His masterclass, supported by A. Minhas (26*), saw Multan cross the line with 8 balls to spare (227/4), taking them to the top of the table.
           </p>
         </article>
 

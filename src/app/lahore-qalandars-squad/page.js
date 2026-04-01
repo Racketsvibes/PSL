@@ -1,55 +1,267 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Lahore Qalandars Squad PSL 11 (2026) | Full Player List',
-  description: 'Authentic and complete Lahore Qalandars squad for PSL 11 2026. See the full player list captained by Shaheen Shah Afridi.',
+  title: 'Lahore Qalandars Squad PSL 11 (2026) | Official Players List & Captain',
+  description: 'Official Lahore Qalandars squad for PSL 2026. Shaheen Afridi leads the defending champions with Fakhar Zaman, Haris Rauf, and Sikandar Raza. Full roster analysis.',
+  keywords: 'lahore qalandars squad 2026, lq psl 11 players, shaheen afridi lahore qalandars, psl 11 squads, lahore qalandars captain 2026',
+};
+
+const squad = {
+  platinum: [
+    { name: 'Shaheen Shah Afridi', role: 'Bowler', variety: 'Left-arm Fast', country: 'Pakistan', status: 'Captain', img: '/Lahore_Qalandars.png' },
+    { name: 'Fakhar Zaman', role: 'Batter', variety: 'Left-handed', country: 'Pakistan', status: 'Domestic' },
+  ],
+  diamond: [
+    { name: 'Haris Rauf', role: 'Bowler', variety: 'Right-arm Fast', country: 'Pakistan', status: 'Domestic' },
+    { name: 'Sikandar Raza', role: 'All-Rounder', variety: 'Off-spin', country: 'Zimbabwe', status: 'Overseas' },
+    { name: 'Rashid Khan', role: 'Bowler', variety: 'Leg-spin', country: 'Afghanistan', status: 'Overseas' },
+    { name: 'Harry Brook', role: 'Batter', variety: 'Right-handed', country: 'England', status: 'Overseas' },
+  ],
+  gold: [
+    { name: 'Abdullah Shafique', role: 'Batter', variety: 'Right-handed', country: 'Pakistan', status: 'Domestic' },
+    { name: 'Zaman Khan', role: 'Bowler', variety: 'Right-arm Fast', country: 'Pakistan', status: 'Domestic' },
+    { name: 'Usama Mir', role: 'Bowler', variety: 'Leg-spin', country: 'Pakistan', status: 'Domestic' },
+  ],
+  silver: [
+    { name: 'Mirza Baig', role: 'Batter', variety: 'Opener', country: 'Pakistan', status: 'Domestic' },
+    { name: 'David Wiese', role: 'All-Rounder', variety: 'Fast-Medium', country: 'Namibia', status: 'Overseas' },
+    { name: 'Kamran Ghulam', role: 'Batter', variety: 'Right-handed', country: 'Pakistan', status: 'Domestic' },
+    { name: 'Mustafizur Rahman', role: 'Bowler', variety: 'Left-arm Fast', country: 'Bangladesh', status: 'Overseas' },
+    { name: 'Shai Hope', role: 'Wicketkeeper', variety: 'Right-handed', country: 'West Indies', status: 'Overseas' },
+  ],
+  emerging: [
+    { name: 'Syed Faridoun', role: 'Bowler', variety: 'Left-arm Spin', country: 'Pakistan', status: 'Local' },
+    { name: 'Jahandad Khan', role: 'All-Rounder', variety: 'Fast', country: 'Pakistan', status: 'Local' },
+  ],
+  supplementary: [
+    { name: 'Dan Lawrence', role: 'Batter', variety: 'Right-handed', country: 'England', status: 'Overseas' },
+    { name: 'Ahsan Hafeez Bhatti', role: 'All-Rounder', variety: 'Spin', country: 'Pakistan', status: 'Local' },
+  ]
 };
 
 export default function LahoreSquadPage() {
+  const teamSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SportsTeam',
+    name: 'Lahore Qalandars',
+    sport: 'Cricket',
+    coach: { '@type': 'Person', name: 'Dion Ibrahim' },
+    homeLocation: { '@type': 'Place', name: 'Gaddafi Stadium, Lahore' },
+    member: Object.values(squad).flat().map(p => ({
+      '@type': 'OrganizationRole',
+      member: { '@type': 'Person', name: p.name },
+      roleName: p.role
+    }))
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://psllive.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Lahore Qalandars Squad", "item": "https://psllive.vercel.app/lahore-qalandars-squad" }
+    ]
+  };
+
   return (
-    <div className="container" style={{ padding: '4rem 0' }}>
-      <article className="content-wrapper">
-        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <Image src="/Lahore_Qalandars.png" alt="Lahore Qalandars Official Logo PSL 2026 HBL" width={180} height={180} style={{ objectFit: 'contain' }} priority />
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+      {/* ── Hero Section ── */}
+      <section style={{
+        background: 'linear-gradient(135deg, #004d00 0%, #008236 50%, #ffffff 100%)',
+        color: 'white',
+        padding: '5rem 1.5rem',
+        textAlign: 'center',
+        position: 'relative'
+      }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(circle at 10% 10%, rgba(255,255,255,0.1) 0%, transparent 50%)', pointerEvents: 'none' }} />
+        
+        <div className="container" style={{ maxWidth: '900px', position: 'relative' }}>
+          <div style={{ marginBottom: '1.5rem' }}>
+             <Image src="/Lahore_Qalandars.png" alt="Lahore Qalandars Official Logo" width={140} height={140} style={{ objectFit: 'contain', filter: 'drop-shadow(0 0 20px rgba(255,255,255,0.2))' }} priority />
+          </div>
+          <h1 style={{ fontSize: '3rem', fontWeight: '900', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '-1px', color: '#fff' }}>
+            Lahore Qalandars <span style={{ color: '#c7fa3b' }}>Squad 2026</span>
+          </h1>
+          <p style={{ fontSize: '1.25rem', opacity: '0.9', marginBottom: '2rem', fontWeight: '500' }}>
+            Defending Champions Roster for HBL PSL 11 — Led by Shaheen Afridi
+          </p>
+
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <span style={{ backgroundColor: 'rgba(0,0,0,0.2)', padding: '0.5rem 1.25rem', borderRadius: '2rem', border: '1px solid rgba(255,255,255,0.2)', fontSize: '0.9rem', fontWeight: '600' }}>
+              🏟️ Venue: Gaddafi Stadium
+            </span>
+            <span style={{ backgroundColor: 'rgba(0,0,0,0.2)', padding: '0.5rem 1.25rem', borderRadius: '2rem', border: '1px solid rgba(255,255,255,0.2)', fontSize: '0.9rem', fontWeight: '600' }}>
+              👤 Coach: Dion Ibrahim
+            </span>
+          </div>
         </div>
-        <h1 style={{ textAlign: 'center' }}>Lahore Qalandars Squad - PSL 11 (2026)</h1>
+      </section>
+
+      <div className="container" style={{ padding: '4rem 1.5rem', maxWidth: '1000px' }}>
         
-        <p>The Lahore Qalandars enter PSL 2026 (PSL 11) with an immensely powerful roster, boasting a lethal pace attack and explosive top-order batsmen. Defending their legacy as one of the tournament's most fierce competitors, the team is captained by their spearhead fast bowler, <strong>Shaheen Shah Afridi</strong>.</p>
-        
-        <h2>Full Player List</h2>
-        <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem', border: '1px solid #e5e7eb' }}>
-          <thead>
-            <tr style={{ backgroundColor: '#008236', color: 'white', textAlign: 'left' }}>
-              <th style={{ padding: '0.75rem' }}>Player Name</th>
-              <th style={{ padding: '0.75rem' }}>Role</th>
-              <th style={{ padding: '0.75rem' }}>Category/Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}><strong>Shaheen Shah Afridi</strong></td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Bowler</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Captain / Platinum</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Fakhar Zaman</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Batter</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Platinum</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Haris Rauf</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Bowler</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Diamond</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Sikandar Raza</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>All-Rounder</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Diamond (Overseas)</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Abdullah Shafique</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Batter</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Gold</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Mustafizur Rahman</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Bowler</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Overseas</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Usama Mir</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Bowler</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Domestic</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Daniel Sams</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>All-Rounder</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Overseas</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Dunith Wellalage</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>All-Rounder</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Overseas</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Dasun Shanaka</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>All-Rounder</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Overseas</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Gudakesh Motie</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Bowler</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Overseas</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Asif Ali</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Batter</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Domestic</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Haseebullah Khan</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Wicketkeeper</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Domestic</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Tayyab Tahir</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Batter</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Domestic</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Ubaid Shah</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Bowler</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Emerging</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Mohammad Naeem</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Batter</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Overseas</td></tr>
-            <tr><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Parvez Hossain Emon</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Batter</td><td style={{ padding: '0.75rem', borderBottom: '1px solid #eee' }}>Overseas</td></tr>
-          </tbody>
-        </table>
-        
-        <div style={{ marginTop: '2rem' }}>
-          <a href="/where-to-watch-quetta-vs-lahore" className="btn">Back to Match Hub</a>
-        </div>
-      </article>
-    </div>
+        {/* ── Team Intro ── */}
+        <section style={{
+          backgroundColor: '#f0fdf4',
+          border: '1px solid #bbf7d0',
+          borderRadius: '1rem',
+          padding: '2.5rem',
+          marginBottom: '4rem',
+          boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)'
+        }}>
+          <h2 style={{ color: '#166534', marginTop: 0, fontSize: '1.75rem' }}>🦅 The Qalandar Spirit</h2>
+          <div style={{ color: '#15803d', lineHeight: '1.8', fontSize: '1.05rem' }}>
+            <p style={{ marginBottom: '1.25rem' }}>
+              Defending champions <strong>Lahore Qalandars</strong> enter PSL 11 (2026) with a squad that defines balance and explosive power. Under the fearless leadership of <strong>Shaheen Shah Afridi</strong>, the Qalandars have retained their core identity of high-octane fast bowling and aggressive top-order batting.
+            </p>
+            <p>
+              With <strong>Fakhar Zaman</strong> spearheading the attack and international stars like <strong>Rashid Khan</strong> and <strong>Sikandar Raza</strong> providing world-class versatility, Lahore is the heavy favorite to claim a historic third title. The electric atmosphere at Gaddafi Stadium remains their ultimate 12th man as they look to dominate the league phase.
+            </p>
+          </div>
+        </section>
+
+        {/* ── Squad Breakdown ── */}
+        <section style={{ marginBottom: '5rem' }}>
+          <h2 style={{ textAlign: 'center', fontSize: '2.25rem', marginBottom: '3rem', color: '#0f172a' }}>Official Player Roster — PSL 11</h2>
+          
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+            
+            {/* Category: Platinum & Diamond */}
+            <div>
+              <h3 style={{ borderLeft: '4px solid #008236', paddingLeft: '1rem', color: '#1e293b', marginBottom: '1.5rem' }}>🌟 Platinum & Diamond Core</h3>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                {[...squad.platinum, ...squad.diamond].map((player, i) => (
+                  <div key={i} style={{ backgroundColor: 'white', border: '1px solid #e2e8f0', borderRadius: '0.75rem', padding: '1.5rem', position: 'relative', overflow: 'hidden' }}>
+                    <div style={{ position: 'absolute', top: 0, right: 0, backgroundColor: player.status === 'Captain' ? '#C8102E' : '#008236', color: 'white', padding: '0.2rem 0.8rem', fontSize: '0.7rem', fontWeight: 'bold', borderRadius: '0 0 0 0.75rem' }}>
+                      {player.status}
+                    </div>
+                    <h4 style={{ margin: '0 0 0.5rem 0', fontSize: '1.2rem', color: '#0f172a' }}>{player.name}</h4>
+                    <p style={{ margin: 0, fontSize: '0.9rem', color: '#64748b', fontWeight: '500' }}>{player.role} · {player.variety}</p>
+                    <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.8rem', color: '#94a3b8' }}>🗺️ {player.country}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Category: Gold & Silver */}
+            <div>
+              <h3 style={{ borderLeft: '4px solid #64748b', paddingLeft: '1rem', color: '#1e293b', marginBottom: '1.5rem' }}>⚡ Gold & Silver Depth</h3>
+              <div style={{ overflowX: 'auto' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', backgroundColor: 'white', borderRadius: '0.75rem', overflow: 'hidden' }}>
+                  <thead>
+                    <tr style={{ backgroundColor: '#f1f5f9', textAlign: 'left' }}>
+                      <th style={{ padding: '1rem' }}>Player</th>
+                      <th style={{ padding: '1rem' }}>Role</th>
+                      <th style={{ padding: '1rem' }}>Category</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[...squad.gold, ...squad.silver].map((player, i) => (
+                      <tr key={i} style={{ borderBottom: '1px solid #f1f5f9' }}>
+                        <td style={{ padding: '1rem', fontWeight: '600' }}>{player.name}</td>
+                        <td style={{ padding: '1rem', color: '#64748b' }}>{player.role} ({player.variety})</td>
+                        <td style={{ padding: '1rem' }}>
+                          <span style={{ backgroundColor: squad.gold.includes(player) ? '#fef3c7' : '#f1f5f9', color: squad.gold.includes(player) ? '#92400e' : '#475569', padding: '0.2rem 0.6rem', borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: '700' }}>
+                            {squad.gold.includes(player) ? 'GOLD' : 'SILVER'}
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Category: Emerging & Supp */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+              <div style={{ backgroundColor: '#f0fdf4', padding: '1.5rem', borderRadius: '1rem', border: '1px solid #dcfce7' }}>
+                <h3 style={{ color: '#166534', marginTop: 0, fontSize: '1.1rem' }}>🌱 Emerging Talent</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {squad.emerging.map((p, i) => (
+                    <li key={i} style={{ fontSize: '0.95rem', color: '#14532d' }}>
+                      <strong>{p.name}</strong> <span style={{ opacity: 0.7 }}>— {p.role}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div style={{ backgroundColor: '#ecfeff', padding: '1.5rem', borderRadius: '1rem', border: '1px solid #cffafe' }}>
+                <h3 style={{ color: '#0e7490', marginTop: 0, fontSize: '1.1rem' }}>🧩 Supplementary</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {squad.supplementary.map((p, i) => (
+                    <li key={i} style={{ fontSize: '0.95rem', color: '#164e63' }}>
+                      <strong>{p.name}</strong> <span style={{ opacity: 0.7 }}>— {p.role}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* ── Quick Crawl Section ── */}
+        <section style={{ backgroundColor: '#0f172a', padding: '4rem 2rem', borderRadius: '1.5rem', color: 'white', marginBottom: '4rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+             <h2 style={{ color: '#c7fa3b', marginTop: 0 }}>Discover PSL 11 (2026)</h2>
+             <p style={{ opacity: 0.8, maxWidth: '600px', margin: '0.5rem auto' }}>Explore other team squads, match schedules, and official tournament updates.</p>
+          </div>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
+            <div>
+              <h3 style={{ fontSize: '1.1rem', color: '#c7fa3b', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Other Team Squads</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
+                <li><Link href="/karachi-kings-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Karachi Kings Squad</Link></li>
+                <li><Link href="/quetta-gladiators-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Quetta Gladiators Squad</Link></li>
+                <li><Link href="/islamabad-united-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Islamabad United Squad</Link></li>
+                <li><Link href="/multan-sultans-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Multan Sultans Squad</Link></li>
+                <li><Link href="/peshawar-zalmi-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Peshawar Zalmi Squad</Link></li>
+                <li><Link href="/rawalpindi-pindiz-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Rawalpindi Pindiz Squad</Link></li>
+                <li><Link href="/hyderabad-kingsmen-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Hyderabad Kingsmen Squad</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.1rem', color: '#c7fa3b', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Official Guides</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
+                <li><Link href="/psl-11-2026-schedule" style={{ color: '#e2e8f0', textDecoration: 'none' }}>PSL 2026 Timetable</Link></li>
+                <li><Link href="/live-score" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Live Ball-by-Ball Score</Link></li>
+                <li><Link href="/points-table" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Latest Points Standings</Link></li>
+                <li><Link href="/psl-live" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Streaming Channels Information</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.1rem', color: '#c7fa3b', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Tournament News</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
+                <li><Link href="/why-no-crowd-in-psl-2026" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Official No-Crowd Statement</Link></li>
+                <li><Link href="/psl-2026-venue-changes" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Venue Shift Analysis</Link></li>
+                <li><Link href="/psl-11-refund-policy" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Draft Ticket Refund Policy</Link></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* ── FAQ Section ── */}
+        <section style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Frequently Asked Questions</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+             <details style={{ backgroundColor: 'white', border: '1px solid #e2e8f0', borderRadius: '0.5rem', padding: '1rem' }}>
+                <summary style={{ fontWeight: '700', cursor: 'pointer', color: '#0f172a' }}>Who is the captain of Lahore Qalandars in 2026?</summary>
+                <p style={{ marginTop: '0.75rem', color: '#475569', lineHeight: '1.6' }}>The premier fast bowler Shaheen Shah Afridi continues to lead Lahore Qalandars in PSL 11 (2026), aiming for their third title.</p>
+             </details>
+             <details style={{ backgroundColor: 'white', border: '1px solid #e2e8f0', borderRadius: '0.5rem', padding: '1rem' }}>
+                <summary style={{ fontWeight: '700', cursor: 'pointer', color: '#0f172a' }}>Who is the head coach of Lahore Qalandars?</summary>
+                <p style={{ marginTop: '0.75rem', color: '#475569', lineHeight: '1.6' }}>Dion Ibrahim serves as the head coach for Lahore Qalandars in the 2026 season.</p>
+             </details>
+             <details style={{ backgroundColor: 'white', border: '1px solid #e2e8f0', borderRadius: '0.5rem', padding: '1rem' }}>
+                <summary style={{ fontWeight: '700', cursor: 'pointer', color: '#0f172a' }}>How many PSL titles has Lahore Qalandars won?</summary>
+                <p style={{ marginTop: '0.75rem', color: '#475569', lineHeight: '1.6' }}>Lahore Qalandars won back-to-back titles in 2022 and 2023, making them the first team in PSL history to successfully defend their trophy.</p>
+             </details>
+          </div>
+        </section>
+
+      </div>
+    </>
   );
 }

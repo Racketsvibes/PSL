@@ -20,6 +20,42 @@ export const metadata = {
 // ── All Completed Match Results — PSL 2026 (HBL PSL 11) ──
 const pastMatches = [
   {
+    match: 7,
+    date: 'Mar 31, 2026',
+    day: 'Tue',
+    time: '7:00 PM PKT',
+    teams: 'Islamabad United vs Peshawar Zalmi',
+    team1: 'Islamabad United',
+    team2: 'Peshawar Zalmi',
+    score1: '-',
+    score2: '-',
+    result: 'Match Abandoned (No Result)',
+    winner: 'None',
+    venue: 'Gaddafi Stadium, Lahore',
+    potm: 'N/A',
+    highlight: "Heavy rain in Lahore forces match to be called off without a ball bowled",
+    logo1: '/Islamabad_United.png',
+    logo2: '/Peshawar_Zalmi_logo.png',
+  },
+  {
+    match: 6,
+    date: 'Mar 29, 2026',
+    day: 'Sun',
+    time: '7:00 PM PKT',
+    teams: 'Lahore Qalandars vs Karachi Kings',
+    team1: 'Lahore Qalandars',
+    team2: 'Karachi Kings',
+    score1: '158/8 (20)',
+    score2: '162/6 (19.4)',
+    result: 'Karachi Kings won by 4 wickets',
+    winner: 'Karachi Kings',
+    venue: 'Gaddafi Stadium, Lahore',
+    potm: 'David Warner',
+    highlight: "Warner's 55 (38) guides Karachi to a thrilling El Clásico victory",
+    logo1: '/Lahore_Qalandars.png',
+    logo2: '/Karachi_Kings.png',
+  },
+  {
     match: 5,
     date: 'Mar 29, 2026',
     day: 'Sun',
@@ -112,8 +148,6 @@ const pastMatches = [
 ];
 
 const upcomingMatches = [
-  { match: 6,  date: 'Mar 29, 2026', teams: 'Lahore Qalandars vs Karachi Kings',    time: '7:00 PM PKT', venue: 'Gaddafi Stadium', link: '/lahore-qalandars-vs-karachi-kings' },
-  { match: 7,  date: 'Mar 31, 2026', teams: 'Islamabad United vs Peshawar Zalmi',   time: '7:00 PM PKT', venue: 'Gaddafi Stadium' },
   { match: 8,  date: 'Apr 1, 2026',  teams: 'Multan Sultans vs Hyderabad Kingsmen', time: '7:00 PM PKT', venue: 'Gaddafi Stadium' },
   { match: 9,  date: 'Apr 2, 2026',  teams: 'Quetta Gladiators vs Islamabad United',time: '2:30 PM PKT', venue: 'Gaddafi Stadium' },
   { match: 10, date: 'Apr 2, 2026',  teams: 'Rawalpindi Pindiz vs Karachi Kings',   time: '7:00 PM PKT', venue: 'Gaddafi Stadium' },
@@ -220,7 +254,7 @@ export default function LiveScorePage() {
             <span style={{ color: '#c7fa3b' }}>Ball-by-Ball Updates</span>
           </h1>
           <p style={{ fontSize: '1.1rem', opacity: '0.9', marginBottom: '0.75rem' }}>
-            🏏 5 Matches Completed &nbsp;|&nbsp; 📅 39 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
+            🏏 7 Matches Completed &nbsp;|&nbsp; 📅 37 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
             Auto-updating every 15 seconds · Gaddafi Stadium, Lahore & National Bank Stadium, Karachi
@@ -229,10 +263,10 @@ export default function LiveScorePage() {
           {/* Mini match status strip */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
             {[
-              { label: 'Matches Played', value: '5', icon: '✅' },
-              { label: 'Matches Left', value: '39', icon: '📅' },
+              { label: 'Matches Played', value: '7', icon: '✅' },
+              { label: 'Matches Left', value: '37', icon: '📅' },
               { label: 'League Leader', value: 'Karachi Kings', icon: '🥇' },
-              { label: 'Next Match', value: 'Mar 29 · 7PM', icon: '⏭️' },
+              { label: 'Next Match', value: 'Apr 1 · 7PM', icon: '⏭️' },
             ].map((stat, i) => (
               <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '0.75rem', padding: '0.5rem 0.9rem', textAlign: 'center', minWidth: '90px' }}>
                 <div style={{ fontSize: '1rem', marginBottom: '0.15rem' }}>{stat.icon}</div>
@@ -280,14 +314,13 @@ export default function LiveScorePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 — Quick Tournament Snapshot (After 5 Matches)
+            📊 PSL 2026 — Quick Tournament Snapshot (After 7 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 League Leader:</strong> Karachi Kings — 4 pts (P2, W2, NRR: +0.524)</li>
+            <li><strong>🥇 League Leader:</strong> Karachi Kings — 4 pts (P2, W2)</li>
+            <li><strong>🥈 2nd Place:</strong> Peshawar Zalmi — 3 pts (P2, W1, NR1)</li>
             <li><strong>🏆 Biggest Win:</strong> Lahore Qalandars beat Hyderabad by 69 runs (Match 1)</li>
-            <li><strong>💯 Top Knock:</strong> Fakhar Zaman — 104* off 56 balls (Match 1, LQ vs HK)</li>
-            <li><strong>🎯 Best Bowling:</strong> Mohammad Amir — 4/28 (Match 2, KK vs QG)</li>
-            <li><strong>📅 Next Match:</strong> Lahore Qalandars vs Karachi Kings — Mar 29, 7:00 PM PKT</li>
+            <li><strong>📅 Next Match:</strong> Multan Sultans vs Hyderabad Kingsmen — Apr 1, 7:00 PM PKT</li>
           </ul>
         </section>
 
@@ -296,7 +329,7 @@ export default function LiveScorePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.25rem' }}>
             <h2 style={{ marginTop: 0 }}>🏏 Past Match Results — HBL PSL 11 (2026)</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ All 5 Completed Matches
+              ✅ All 7 Completed/Abandoned Matches
             </span>
           </div>
 
@@ -463,9 +496,14 @@ export default function LiveScorePage() {
             <strong>March 28, 2026 (7:00 PM)</strong> — The evening fixture produced the most thrilling finish of the tournament so far. <Link href="/multan-sultans-squad">Multan Sultans</Link> posted 174/7 on a good batting track. <Link href="/islamabad-united-squad">Islamabad United</Link> responded superbly, with <strong>Shadab Khan contributing 2/24 with the ball and 41 runs in the chase</strong>. United crossed the line in 19.2 overs with 5 wickets in hand, denying Multan and securing 2 crucial points.
           </p>
 
-          <h3>Match 5 — Quetta Gladiators vs Hyderabad Kingsmen: Nawaz Powers Quetta</h3>
+          <h3>Match 6 — El Clásico: Karachi Kings edge Lahore Qalandars</h3>
           <p>
-            <strong>March 29, 2026 (2:30 PM)</strong> — After their opening loss, Quetta Gladiators bounced back strongly against Hyderabad. <strong>Mohammad Nawaz smashed 68* off just 40 balls</strong> to propel Quetta to an imposing 191/5. Hyderabad, chasing 192, managed only 152/9, with Quetta winning by 39 runs. For Hyderabad, it was a second defeat in two games, leaving them bottom of the <Link href="/points-table">PSL 2026 points table</Link>.
+            <strong>March 29, 2026 (7:00 PM)</strong> — The most anticipated fixture of the league stage saw <Link href="/karachi-kings-squad">Karachi Kings</Link> take on defending champions <Link href="/lahore-qalandars-squad">Lahore Qalandars</Link>. Lahore posted 158/8, but Karachi chased it down with 2 balls to spare. <strong>David Warner (55 off 38)</strong> anchored the chase, while Mohammad Amir again starred with the ball, keeping Lahore's big hitters in check.
+          </p>
+
+          <h3>Match 7 — Islamabad United vs Peshawar Zalmi: Rain Wins</h3>
+          <p>
+            <strong>March 31, 2026</strong> — A heavy downpour in Lahore made any play impossible. Both teams were awarded 1 point each, propelling <Link href="/peshawar-zalmi-squad">Peshawar Zalmi</Link> to 3 points and the second spot on the table, while <Link href="/islamabad-united-squad">Islamabad United</Link> got their first point of the tournament.
           </p>
         </article>
 

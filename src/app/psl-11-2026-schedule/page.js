@@ -16,14 +16,14 @@ export const metadata = {
 };
 
 const scheduleData = [
-  { date: 'Mar 26, 2026', day: 'Thu', match: 1,  teams: 'Lahore Qalandars vs Hyderabad Kingsmen',   venue: 'Lahore',   time: '7:00 PM PKT', status: 'completed', result: 'LQ won by 69 runs' },
-  { date: 'Mar 27, 2026', day: 'Fri', match: 2,  teams: 'Quetta Gladiators vs Karachi Kings',        venue: 'Lahore',   time: '7:00 PM PKT', status: 'completed', result: 'QG won by 14 runs' },
-  { date: 'Mar 28, 2026', day: 'Sat', match: 3,  teams: 'Peshawar Zalmi vs Rawalpindi Pindiz',       venue: 'Lahore',   time: '2:30 PM PKT', status: 'completed', result: 'PZ won by 22 runs' },
-  { date: 'Mar 28, 2026', day: 'Sat', match: 4,  teams: 'Multan Sultans vs Islamabad United',        venue: 'Lahore',   time: '7:00 PM PKT', status: 'completed', result: 'IU won by 5 wkts' },
-  { date: 'Mar 29, 2026', day: 'Sun', match: 5,  teams: 'Quetta Gladiators vs Hyderabad Kingsmen',  venue: 'Lahore',   time: '2:30 PM PKT', status: 'today' },
-  { date: 'Mar 29, 2026', day: 'Sun', match: 6,  teams: 'Lahore Qalandars vs Karachi Kings',         venue: 'Lahore',   time: '7:00 PM PKT', status: 'today', link: '/lahore-qalandars-vs-karachi-kings' },
-  { date: 'Mar 31, 2026', day: 'Tue', match: 7,  teams: 'Islamabad United vs Peshawar Zalmi',       venue: 'Lahore',   time: '7:00 PM PKT', status: 'upcoming' },
-  { date: 'Apr 1, 2026',  day: 'Wed', match: 8,  teams: 'Multan Sultans vs Hyderabad Kingsmen',     venue: 'Lahore',   time: '7:00 PM PKT', status: 'upcoming' },
+  { date: 'Mar 26, 2026', day: 'Thu', match: 1,  teams: 'Lahore Qalandars vs Hyderabad Kingsmen',   venue: 'Lahore',   time: '7:00 PM PKT', status: 'completed', result: 'Lahore Qalandars won by 69 runs' },
+  { date: 'Mar 27, 2026', day: 'Fri', match: 2,  teams: 'Quetta Gladiators vs Karachi Kings',        venue: 'Lahore',   time: '7:00 PM PKT', status: 'completed', result: 'Karachi Kings won by 14 runs' },
+  { date: 'Mar 28, 2026', day: 'Sat', match: 3,  teams: 'Peshawar Zalmi vs Rawalpindi Pindiz',       venue: 'Lahore',   time: '2:30 PM PKT', status: 'completed', result: 'Peshawar Zalmi won by 22 runs' },
+  { date: 'Mar 28, 2026', day: 'Sat', match: 4,  teams: 'Multan Sultans vs Islamabad United',        venue: 'Lahore',   time: '7:00 PM PKT', status: 'completed', result: 'Multan Sultans won by 5 wkts' },
+  { date: 'Mar 29, 2026', day: 'Sun', match: 5,  teams: 'Quetta Gladiators vs Hyderabad Kingsmen',  venue: 'Lahore',   time: '2:30 PM PKT', status: 'completed', result: 'Quetta Gladiators won by 39 runs' },
+  { date: 'Mar 29, 2026', day: 'Sun', match: 6,  teams: 'Lahore Qalandars vs Karachi Kings',         venue: 'Lahore',   time: '7:00 PM PKT', status: 'completed', result: 'Karachi Kings won by 4 wkts', link: '/lahore-qalandars-vs-karachi-kings' },
+  { date: 'Mar 31, 2026', day: 'Tue', match: 7,  teams: 'Islamabad United vs Peshawar Zalmi',       venue: 'Lahore',   time: '7:00 PM PKT', status: 'completed', result: 'Match Abandoned (No Result)' },
+  { date: 'Apr 1, 2026',  day: 'Wed', match: 8,  teams: 'Multan Sultans vs Hyderabad Kingsmen',     venue: 'Lahore',   time: '7:00 PM PKT', status: 'today' },
   { date: 'Apr 2, 2026',  day: 'Thu', match: 9,  teams: 'Quetta Gladiators vs Islamabad United',    venue: 'Lahore',   time: '2:30 PM PKT', status: 'upcoming' },
   { date: 'Apr 2, 2026',  day: 'Thu', match: 10, teams: 'Rawalpindi Pindiz vs Karachi Kings',       venue: 'Lahore',   time: '7:00 PM PKT', status: 'upcoming' },
   { date: 'Apr 3, 2026',  day: 'Fri', match: 11, teams: 'Lahore Qalandars vs Multan Sultans',       venue: 'Lahore',   time: '7:00 PM PKT', status: 'upcoming' },

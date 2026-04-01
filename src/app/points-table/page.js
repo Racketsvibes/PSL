@@ -15,7 +15,7 @@ export const metadata = {
   },
 };
 
-// ── Updated with Accurate PSL Standings ──
+// ── Updated with Accurate PSL Standings as of April 1, 2026 ──
 const standings = [
   {
     pos: 1,
@@ -31,6 +31,18 @@ const standings = [
   },
   {
     pos: 2,
+    team: 'Peshawar Zalmi',
+    shortName: 'PZ',
+    img: '/Peshawar_Zalmi_logo.png',
+    p: 2, w: 1, l: 0, nr: 1, pts: 3, nrr: '+0.674',
+    nrrNum: 0.674,
+    form: ['W', 'NR'],
+    qualified: true,
+    color: '#f59e0b',
+    squad: '/peshawar-zalmi-squad',
+  },
+  {
+    pos: 3,
     team: 'Lahore Qalandars',
     shortName: 'LQ',
     img: '/Lahore_Qalandars.png',
@@ -42,7 +54,7 @@ const standings = [
     squad: '/lahore-qalandars-squad',
   },
   {
-    pos: 3,
+    pos: 4,
     team: 'Multan Sultans',
     shortName: 'MS',
     img: '/MultanSultans.png',
@@ -52,18 +64,6 @@ const standings = [
     qualified: true,
     color: '#78350f',
     squad: '/multan-sultans-squad',
-  },
-  {
-    pos: 4,
-    team: 'Peshawar Zalmi',
-    shortName: 'PZ',
-    img: '/Peshawar_Zalmi_logo.png',
-    p: 1, w: 1, l: 0, nr: 0, pts: 2, nrr: '+0.674',
-    nrrNum: 0.674,
-    form: ['W'],
-    qualified: true,
-    color: '#f59e0b',
-    squad: '/peshawar-zalmi-squad',
   },
   {
     pos: 5,
@@ -79,6 +79,18 @@ const standings = [
   },
   {
     pos: 6,
+    team: 'Islamabad United',
+    shortName: 'IU',
+    img: '/Islamabad_United.png',
+    p: 2, w: 0, l: 1, nr: 1, pts: 1, nrr: '-0.825',
+    nrrNum: -0.825,
+    form: ['L', 'NR'],
+    qualified: false,
+    color: '#c41e3a',
+    squad: '/islamabad-united-squad',
+  },
+  {
+    pos: 7,
     team: 'Rawalpindi Pindiz',
     shortName: 'RWP',
     img: '/Rawalpindiz_Logo.png',
@@ -88,18 +100,6 @@ const standings = [
     qualified: false,
     color: '#0c4a6e',
     squad: '/rawalpindi-pindiz-squad',
-  },
-  {
-    pos: 7,
-    team: 'Islamabad United',
-    shortName: 'IU',
-    img: '/Islamabad_United.png',
-    p: 1, w: 0, l: 1, nr: 0, pts: 0, nrr: '-0.825',
-    nrrNum: -0.825,
-    form: ['L'],
-    qualified: false,
-    color: '#c41e3a',
-    squad: '/islamabad-united-squad',
   },
   {
     pos: 8,
@@ -116,11 +116,13 @@ const standings = [
 ];
 
 const recentResults = [
-  { match: 5, date: 'Mar 29', teams: 'Multan Sultans vs Rawalpindi Pindiz', result: 'MS won by 4 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 4, date: 'Mar 28', teams: 'Peshawar Zalmi vs Islamabad United', result: 'PZ won by 4 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 3, date: 'Mar 27', teams: 'Quetta Gladiators vs Karachi Kings', result: 'KK won', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 2, date: 'Mar 26', teams: 'Lahore Qalandars vs Hyderabad Kingsmen', result: 'LQ won by 69 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 1, date: 'Mar 26', teams: 'Karachi Kings vs Quetta Gladiators', result: 'KK won by 14 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 7, date: 'Mar 31', teams: 'Islamabad United vs Peshawar Zalmi', result: 'Match Abandoned', venue: 'Gaddafi Stadium', link: '/', highlight: false },
+  { match: 6, date: 'Mar 29', teams: 'Lahore Qalandars vs Karachi Kings', result: 'KK won by 4 wkts', venue: 'Gaddafi Stadium', link: '/lahore-qalandars-vs-karachi-kings', highlight: false },
+  { match: 5, date: 'Mar 29', teams: 'Quetta Gladiators vs Hyderabad Kingsmen', result: 'QG won by 39 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
+  { match: 4, date: 'Mar 28', teams: 'Multan Sultans vs Islamabad United', result: 'MS won by 5 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
+  { match: 3, date: 'Mar 28', teams: 'Peshawar Zalmi vs Rawalpindi Pindiz', result: 'PZ won by 22 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
+  { match: 2, date: 'Mar 27', teams: 'Quetta Gladiators vs Karachi Kings', result: 'KK won by 14 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
+  { match: 1, date: 'Mar 26', teams: 'Lahore Qalandars vs Hyderabad Kingsmen', result: 'LQ won by 69 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
 ];
 
 export default function PointsTablePage() {
@@ -131,7 +133,7 @@ export default function PointsTablePage() {
     startDate: '2026-03-26',
     endDate: '2026-05-03',
     sport: 'Cricket',
-    description: 'Current PSL 2026 standings showing team positions, wins, losses, points, and net run rate after 6 matches of the Pakistan Super League 11.',
+    description: 'Current PSL 2026 standings showing team positions, wins, losses, points, and net run rate after 7 matches of the Pakistan Super League 11.',
     organizer: { '@type': 'Organization', name: 'Pakistan Cricket Board' },
   };
 
@@ -144,7 +146,7 @@ export default function PointsTablePage() {
         name: 'Who is top of the PSL 2026 points table?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Karachi Kings lead the PSL 2026 points table with 4 points from 2 wins in 2 matches, with an NRR of +0.524. Lahore Qalandars, Multan Sultans, Peshawar Zalmi, and Quetta Gladiators are all on 2 points each.',
+          text: 'Karachi Kings lead the PSL 2026 points table with 4 points from 2 wins in 2 matches. Peshawar Zalmi follows in 2nd place with 3 points, while Lahore Qalandars, Multan Sultans, and Quetta Gladiators are on 2 points each.',
         },
       },
       {
@@ -231,7 +233,7 @@ export default function PointsTablePage() {
             🏆 8 Teams · 44 Matches · Top 4 Qualify for Playoffs
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
-            Updated after Match 5 · March 29, 2026
+            Updated after Match 7 · March 31, 2026
           </p>
 
           {/* Mini leader board strip */}
@@ -270,11 +272,12 @@ export default function PointsTablePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 Points Table — Quick Summary (After 5 Matches)
+            📊 PSL 2026 Points Table — Quick Summary (After 7 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
             <li><strong>🥇 #1 Leader:</strong> Karachi Kings — 4 pts (P2, W2, NRR: +0.524)</li>
-            <li><strong>Joint 2nd–5th:</strong> Lahore Qalandars (+1.567 NRR), Multan Sultans (+0.825), Peshawar Zalmi (+0.674), Quetta Gladiators (+0.650) — all on 2 pts</li>
+            <li><strong>🥈 2nd Place:</strong> Peshawar Zalmi — 3 pts (P2, W1, NR1)</li>
+            <li><strong>Joint 3rd–5th:</strong> Lahore Qalandars (+1.567 NRR), Multan Sultans (+0.825), Quetta Gladiators (+0.650) — all on 2 pts</li>
             <li><strong>Bottom:</strong> Hyderabad Kingsmen — 0 pts from 2 matches (NRR: -2.725)</li>
             <li><strong>Playoff spots:</strong> Top 4 teams qualify. Playoffs start April 28, 2026.</li>
           </ul>
@@ -285,7 +288,7 @@ export default function PointsTablePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <h2 style={{ marginTop: 0 }}>🏆 HBL PSL 11 (2026) — Live Points Table</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ Updated: After Match 5 · Mar 29, 2026
+              ✅ Updated: After Match 7 · Mar 31, 2026
             </span>
           </div>
 
@@ -434,10 +437,10 @@ export default function PointsTablePage() {
             <div style={{ backgroundColor: '#f0fdf4', border: '2px solid #bbf7d0', borderRadius: '0.75rem', padding: '1.5rem' }}>
               <h3 style={{ color: '#15803d', marginTop: 0, fontSize: '1.05rem' }}>🟢 Strong Position</h3>
               <ul style={{ color: '#374151', lineHeight: '2', paddingLeft: '1.25rem', margin: 0, fontSize: '0.9rem' }}>
-                <li><strong>Karachi Kings</strong> — Joint leaders, 2/2 wins, 4 pts</li>
+                <li><strong>Karachi Kings</strong> — Leaders, 2/2 wins, 4 pts</li>
+                <li><strong>Peshawar Zalmi</strong> — 3 pts, unbeaten (W1, NR1)</li>
                 <li><strong>Lahore Qalandars</strong> — 2 pts, best NRR among 2-pt teams (+1.567)</li>
-                <li><strong>Multan Sultans</strong> — 2 pts, strong NRR (+0.825)</li>
-                <li><strong>Peshawar Zalmi</strong> — 2 pts, won only match played (+0.674)</li>
+                <li><strong>Multan Sultans</strong> — 2 pts, won only match played (+0.825)</li>
               </ul>
             </div>
             <div style={{ backgroundColor: '#fef2f2', border: '2px solid #fecaca', borderRadius: '0.75rem', padding: '1.5rem' }}>
@@ -541,7 +544,7 @@ export default function PointsTablePage() {
           <h2>❓ PSL 2026 Points Table — FAQ</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem' }}>
             {[
-              { q: 'Who is top of the PSL 2026 points table?', a: 'Karachi Kings lead the PSL 2026 points table with 4 points from 2 wins in 2 matches, with an NRR of +0.524. Lahore Qalandars, Multan Sultans, Peshawar Zalmi, and Quetta Gladiators are all on 2 points each.' },
+              { q: 'Who is top of the PSL 2026 points table?', a: 'Karachi Kings lead the PSL 2026 points table with 4 points from 2 matches. Peshawar Zalmi is in second with 3 points after their match against Islamabad United was abandoned.' },
               { q: 'How many teams qualify for the PSL 2026 playoffs?', a: 'The top 4 teams in the PSL 2026 league standings at the end of 40 league matches qualify for the playoffs. The Qualifier match is on April 28, 2026.' },
               { q: 'What is Net Run Rate (NRR) in PSL?', a: 'NRR (Net Run Rate) is the average run rate scored minus the average run rate conceded across all matches. It is used as the primary tiebreaker when two or more teams have the same number of points in the PSL standings.' },
               { q: 'How many points do you get for winning a PSL match?', a: 'Each team earns 2 points for a win and 0 for a loss. In the event of a tie or no result due to rain, both teams receive 1 point each.' },

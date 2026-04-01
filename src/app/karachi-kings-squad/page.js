@@ -203,15 +203,51 @@ export default function KarachiSquadPage() {
           </div>
         </section>
 
-        {/* ── Internal Links ── */}
-        <section style={{ textAlign: 'center', backgroundColor: '#0f172a', padding: '4rem 2rem', borderRadius: '1.5rem', color: 'white', marginBottom: '4rem' }}>
-          <h2 style={{ color: '#FDB913', marginTop: 0 }}>Stay Updated with PSL 11</h2>
-          <p style={{ opacity: 0.8, marginBottom: '2.5rem', maxWidth: '600px', margin: '0 auto 2.5rem' }}>
-            Track Karachi Kings' progress in the league standings and find out when they play next.
-          </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/live-score" className="btn" style={{ backgroundColor: '#FDB913', color: '#0f172a', fontWeight: 'bold' }}>Live Scores</Link>
-            <Link href="/points-table" className="btn" style={{ backgroundColor: 'transparent', border: '2px solid white', color: '#fff' }}>Points Table</Link>
+        {/* ── Internal Links & Quick Indexing ── */}
+        <section style={{ backgroundColor: '#0f172a', padding: '4rem 2rem', borderRadius: '1.5rem', color: 'white', marginBottom: '4rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+             <h2 style={{ color: '#FDB913', marginTop: 0 }}>Discover PSL 11 (2026)</h2>
+             <p style={{ opacity: 0.8, maxWidth: '600px', margin: '0.5rem auto' }}>Explore other team squads, match schedules, and official tournament updates.</p>
+          </div>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
+            {/* Column 1: Team Squads */}
+            <div>
+              <h3 style={{ fontSize: '1.1rem', color: '#FDB913', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Other Team Squads</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
+                <li><Link href="/lahore-qalandars-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Lahore Qalandars Squad</Link></li>
+                <li><Link href="/quetta-gladiators-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Quetta Gladiators Squad</Link></li>
+                <li><Link href="/islamabad-united-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Islamabad United Squad</Link></li>
+                <li><Link href="/multan-sultans-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Multan Sultans Squad</Link></li>
+                <li><Link href="/peshawar-zalmi-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Peshawar Zalmi Squad</Link></li>
+                <li><Link href="/rawalpindi-pindiz-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Rawalpindi Pindiz Squad</Link></li>
+                <li><Link href="/hyderabad-kingsmen-squad" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Hyderabad Kingsmen Squad</Link></li>
+              </ul>
+            </div>
+
+            {/* Column 2: Key Guides */}
+            <div>
+              <h3 style={{ fontSize: '1.1rem', color: '#FDB913', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Official Guides</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
+                <li><Link href="/psl-11-2026-schedule" style={{ color: '#e2e8f0', textDecoration: 'none' }}>PSL 2026 Timetable</Link></li>
+                <li><Link href="/live-score" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Live Ball-by-Ball Score</Link></li>
+                <li><Link href="/points-table" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Latest Points Standings</Link></li>
+                <li><Link href="/psl-live" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Streaming Channels Information</Link></li>
+                <li><Link href="/lahore-qalandars-vs-karachi-kings" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Lahore vs Karachi Match Preview</Link></li>
+              </ul>
+            </div>
+
+            {/* Column 3: News & Policy */}
+            <div>
+              <h3 style={{ fontSize: '1.1rem', color: '#FDB913', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Tournament News</h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
+                <li><Link href="/why-no-crowd-in-psl-2026" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Official No-Crowd Statement</Link></li>
+                <li><Link href="/psl-11-behind-closed-doors-reason" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Closed Doors Logistics</Link></li>
+                <li><Link href="/psl-2026-venue-changes" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Venue Shift Analysis</Link></li>
+                <li><Link href="/psl-11-refund-policy" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Draft Ticket Refund Policy</Link></li>
+                <li><Link href="/gaddafi-stadium-psl-schedule" style={{ color: '#e2e8f0', textDecoration: 'none' }}>Lahore Matches Venue Guide</Link></li>
+              </ul>
+            </div>
           </div>
         </section>
 

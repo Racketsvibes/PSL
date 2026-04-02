@@ -15,31 +15,31 @@ export const metadata = {
   },
 };
 
-// ── Updated with Accurate PSL Standings as of April 1, 2026 ──
+// ── Updated with Accurate PSL Standings as of April 2, 2026 ──
 const standings = [
   {
     pos: 1,
+    team: 'Karachi Kings',
+    shortName: 'KK',
+    img: '/Karachi_Kings.png',
+    p: 3, w: 3, l: 0, nr: 0, pts: 6, nrr: '+0.850',
+    nrrNum: 0.850,
+    form: ['W', 'W', 'W'],
+    qualified: true,
+    color: '#C8102E',
+    squad: '/karachi-kings-squad',
+  },
+  {
+    pos: 2,
     team: 'Multan Sultans',
     shortName: 'MS',
     img: '/MultanSultans.png',
-    p: 2, w: 2, l: 0, nr: 0, pts: 4, nrr: '+1.565',
-    nrrNum: 1.565,
+    p: 2, w: 2, l: 0, nr: 0, pts: 4, nrr: '+0.868',
+    nrrNum: 0.868,
     form: ['W', 'W'],
     qualified: true,
     color: '#78350f',
     squad: '/multan-sultans-squad',
-  },
-  {
-    pos: 2,
-    team: 'Karachi Kings',
-    shortName: 'KK',
-    img: '/Karachi_Kings.png',
-    p: 2, w: 2, l: 0, nr: 0, pts: 4, nrr: '+0.524',
-    nrrNum: 0.524,
-    form: ['W', 'W'],
-    qualified: true,
-    color: '#C8102E',
-    squad: '/karachi-kings-squad',
   },
   {
     pos: 3,
@@ -55,48 +55,48 @@ const standings = [
   },
   {
     pos: 4,
+    team: 'Islamabad United',
+    shortName: 'IU',
+    img: '/Islamabad_United.png',
+    p: 3, w: 1, l: 1, nr: 1, pts: 3, nrr: '+0.133',
+    nrrNum: 0.133,
+    form: ['L', 'NR', 'W'],
+    qualified: true,
+    color: '#c41e3a',
+    squad: '/islamabad-united-squad',
+  },
+  {
+    pos: 5,
     team: 'Lahore Qalandars',
     shortName: 'LQ',
     img: '/Lahore_Qalandars.png',
     p: 2, w: 1, l: 1, nr: 0, pts: 2, nrr: '+1.567',
     nrrNum: 1.567,
     form: ['W', 'L'],
-    qualified: true,
+    qualified: false,
     color: '#003087',
     squad: '/lahore-qalandars-squad',
   },
   {
-    pos: 5,
+    pos: 6,
     team: 'Quetta Gladiators',
     shortName: 'QG',
     img: '/Quetta_Gladiators.png',
-    p: 2, w: 1, l: 1, nr: 0, pts: 2, nrr: '+0.650',
-    nrrNum: 0.650,
-    form: ['L', 'W'],
+    p: 3, w: 1, l: 2, nr: 0, pts: 2, nrr: '+0.093',
+    nrrNum: 0.093,
+    form: ['L', 'W', 'L'],
     qualified: false,
     color: '#1a0533',
     squad: '/quetta-gladiators-squad',
-  },
-  {
-    pos: 6,
-    team: 'Islamabad United',
-    shortName: 'IU',
-    img: '/Islamabad_United.png',
-    p: 2, w: 0, l: 1, nr: 1, pts: 1, nrr: '-0.825',
-    nrrNum: -0.825,
-    form: ['L', 'NR'],
-    qualified: false,
-    color: '#c41e3a',
-    squad: '/islamabad-united-squad',
   },
   {
     pos: 7,
     team: 'Rawalpindi Pindiz',
     shortName: 'RWP',
     img: '/Rawalpindiz_Logo.png',
-    p: 1, w: 0, l: 1, nr: 0, pts: 0, nrr: '-0.674',
-    nrrNum: -0.674,
-    form: ['L'],
+    p: 2, w: 0, l: 2, nr: 0, pts: 0, nrr: '-0.950',
+    nrrNum: -0.950,
+    form: ['L', 'L'],
     qualified: false,
     color: '#0c4a6e',
     squad: '/rawalpindi-pindiz-squad',
@@ -106,8 +106,8 @@ const standings = [
     team: 'Hyderabad Kingsmen',
     shortName: 'HHK',
     img: '/Hyderabad_Houston_Kingsmen_logo.png',
-    p: 3, w: 0, l: 3, nr: 0, pts: 0, nrr: '-3.125',
-    nrrNum: -3.125,
+    p: 3, w: 0, l: 3, nr: 0, pts: 0, nrr: '-2.077',
+    nrrNum: -2.077,
     form: ['L', 'L', 'L'],
     qualified: false,
     color: '#92400e',
@@ -116,6 +116,8 @@ const standings = [
 ];
 
 const recentResults = [
+  { match: 10, date: 'Apr 2', teams: 'Rawalpindi Pindiz vs Karachi Kings', result: 'KK won by 5 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
+  { match: 9, date: 'Apr 2', teams: 'Quetta Gladiators vs Islamabad United', result: 'IU won by 8 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 8, date: 'Apr 1', teams: 'Multan Sultans vs Hyderabad Kingsmen', result: 'MS won by 6 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 7, date: 'Mar 31', teams: 'Islamabad United vs Peshawar Zalmi', result: 'Match Abandoned', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 6, date: 'Mar 29', teams: 'Lahore Qalandars vs Karachi Kings', result: 'KK won by 4 wkts', venue: 'Gaddafi Stadium', link: '/lahore-qalandars-vs-karachi-kings', highlight: false },
@@ -134,7 +136,7 @@ export default function PointsTablePage() {
     startDate: '2026-03-26',
     endDate: '2026-05-03',
     sport: 'Cricket',
-    description: 'Current PSL 2026 standings showing team positions, wins, losses, points, and net run rate after 8 matches of the Pakistan Super League 11.',
+    description: 'Current PSL 2026 standings showing team positions, wins, losses, points, and net run rate after 10 matches of the Pakistan Super League 11.',
     organizer: { '@type': 'Organization', name: 'Pakistan Cricket Board' },
   };
 
@@ -234,7 +236,7 @@ export default function PointsTablePage() {
             🏆 8 Teams · 44 Matches · Top 4 Qualify for Playoffs
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
-            Updated after Match 8 · April 1, 2026
+            Updated after Match 10 · April 2, 2026
           </p>
 
           {/* Mini leader board strip */}
@@ -273,7 +275,7 @@ export default function PointsTablePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 Points Table — Quick Summary (After 8 Matches)
+            📊 PSL 2026 Points Table — Quick Summary (After 10 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
             <li><strong>🥇 #1 Leader:</strong> Multan Sultans — 4 pts (P2, W2, NRR: +1.565)</li>
@@ -289,7 +291,7 @@ export default function PointsTablePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <h2 style={{ marginTop: 0 }}>🏆 HBL PSL 11 (2026) — Live Points Table</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ Updated: After Match 8 · Apr 1, 2026
+              ✅ Updated: After Match 10 · Apr 2, 2026
             </span>
           </div>
 

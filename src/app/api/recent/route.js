@@ -7,18 +7,18 @@ export async function GET() {
     const data = {
       data: [
         {
-          id: 9991,
+          id: 10010,
           league: { name: 'Pakistan Super League 2026' },
-          localteam_id: 1,
-          visitorteam_id: 2,
+          localteam_id: 7, // Rawalpindi
+          visitorteam_id: 2, // Karachi
           localteam: { name: 'Rawalpindi Pindiz' },
-          visitorteam: { name: 'Peshawar Zalmi' },
-          note: 'Rawalpindi Pindiz won by 34 runs',
-          round: '3',
+          visitorteam: { name: 'Karachi Kings' },
+          note: 'Karachi Kings won by 5 wickets',
+          round: '10',
           status: 'Finished',
           runs: [
-            { team_id: 1, inning: 1, score: 214, wickets: 4, overs: 20 },
-            { team_id: 2, inning: 2, score: 180, wickets: 10, overs: 18.4 }
+            { team_id: 7, inning: 1, score: 197, wickets: 6, overs: 20 },
+            { team_id: 2, inning: 2, score: 198, wickets: 5, overs: 19.2 }
           ]
         }
       ]

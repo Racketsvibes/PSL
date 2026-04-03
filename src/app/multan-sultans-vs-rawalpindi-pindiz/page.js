@@ -189,6 +189,18 @@ export default function MultanVsPindizPage() {
           <p>
             <strong>Rawalpindi Pindustan (Pindiz)</strong>, led by the former Multan captain <strong>Mohammad Rizwan</strong>, will be looking to prove a point. With the ferocious pace of <strong>Naseem Shah</strong> and the experience of <strong>Mohammad Amir</strong>, they possess a bowling attack capable of rattling even the calmest batters.
           </p>
+
+          <div style={{ backgroundColor: '#fff7ed', border: '1px solid #ffedd5', borderRadius: '0.75rem', padding: '1.5rem', marginTop: '2rem' }}>
+            <h3 style={{ color: '#9a3412', marginTop: 0 }}>🌟 The Rizwan Factor: A Historical Homecoming</h3>
+            <p style={{ color: '#7c2d12', margin: 0, fontSize: '0.95rem' }}>
+              The biggest storyline is Mohammad Rizwan facing the franchise he led to multiple finals. Having moved to the new Rawalpindi expansion team, Rizwan's deep knowledge of the Multan lineup—from Usama Mir's variations to Mohammad Ali's death-bowling patterns—could be the decisive edge for the Pindiz.
+            </p>
+          </div>
+
+          <h3 style={{ marginTop: '2rem' }}>📈 Pitch Report: Gaddafi Stadium (Evening Match)</h3>
+          <p style={{ fontSize: '0.95rem', color: '#4b5563', lineHeight: '1.7' }}>
+            Being a 7:00 PM start, the <strong>dew factor</strong> will play a massive role at Gaddafi Stadium. In recent PSL matches, teams batting second have had a 30% higher success rate due to the wet ball making it nearly impossible for spinners to grip. Expect the toss-winning captain to choose <strong>fielding first</strong> without hesitation.
+          </p>
         </article>
 
         {/* ── Next Match Flow ── */}

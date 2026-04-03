@@ -209,6 +209,34 @@ export default function QuettaVsMultanPage() {
           <p>
             On the other hand, <strong>Quetta Gladiators</strong> find themselves in a mid-table scramble. Despite the individual brilliance of <strong>Saud Shakeel</strong> and the pace of <strong>Alzarri Joseph</strong>, the Gladiators have struggled to finish games. This Match 13 is pivotal for their campaign — a win against the league leaders would signal their title intent.
           </p>
+
+          <div style={{ backgroundColor: '#fff7ed', border: '1px solid #ffedd5', borderRadius: '0.75rem', padding: '1.5rem', marginTop: '2rem' }}>
+            <h3 style={{ color: '#9a3412', marginTop: 0 }}>🎯 Tactical Matchup: Saud Shakeel vs Usama Mir</h3>
+            <p style={{ color: '#7c2d12', margin: 0, fontSize: '0.95rem' }}>
+              The battle in the middle overs will likely decide the outcome. Saud Shakeel has been Quetta's anchor, but he faces a massive test against Usama Mir's leg-spin. Mir has already taken 7 wickets in PSL 11, and his ability to squeeze the run rate could force Saud into a risky error.
+            </p>
+          </div>
+
+          <h3 style={{ marginTop: '2rem' }}>📊 Head-to-Head: Quetta vs Multan (Last 5 PSL Games)</h3>
+          <div style={{ overflowX: 'auto', marginBottom: '2rem' }}>
+             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
+                <thead style={{ backgroundColor: '#1a0533', color: 'white' }}>
+                   <tr>
+                      <th style={{ padding: '0.75rem' }}>Season</th>
+                      <th style={{ padding: '0.75rem' }}>Winner</th>
+                      <th style={{ padding: '0.75rem' }}>Margin</th>
+                      <th style={{ padding: '0.75rem' }}>Venue</th>
+                   </tr>
+                </thead>
+                <tbody>
+                   <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '0.75rem' }}>PSL 10</td><td style={{ padding: '0.75rem' }}>Multan Sultans</td><td style={{ padding: '0.75rem' }}>79 Runs</td><td style={{ padding: '0.75rem' }}>Multan</td></tr>
+                   <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '0.75rem' }}>PSL 10</td><td style={{ padding: '0.75rem' }}>Quetta Gladiators</td><td style={{ padding: '0.75rem' }}>5 Wickets</td><td style={{ padding: '0.75rem' }}>Karachi</td></tr>
+                   <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '0.75rem' }}>PSL 9</td><td style={{ padding: '0.75rem' }}>Multan Sultans</td><td style={{ padding: '0.75rem' }}>9 Runs</td><td style={{ padding: '0.75rem' }}>Multan</td></tr>
+                   <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '0.75rem' }}>PSL 9</td><td style={{ padding: '0.75rem' }}>Multan Sultans</td><td style={{ padding: '0.75rem' }}>13 Runs</td><td style={{ padding: '0.75rem' }}>Karachi</td></tr>
+                   <tr><td style={{ padding: '0.75rem' }}>PSL 8</td><td style={{ padding: '0.75rem' }}>Multan Sultans</td><td style={{ padding: '0.75rem' }}>9 Wickets</td><td style={{ padding: '0.75rem' }}>Multan</td></tr>
+                </tbody>
+             </table>
+          </div>
         </article>
 
         {/* ── Next Match Context ── */}

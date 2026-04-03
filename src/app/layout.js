@@ -11,6 +11,10 @@ export const metadata = {
   verification: {
     google: 'xZGj4aLHKeyq9Xx01DC0vBUOBNJMDohKVK7R8uWk1zE',
   },
+  metadataBase: new URL('https://psllive.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
   other: {
     'google-adsense-account': 'ca-pub-8638783199172001',
   },

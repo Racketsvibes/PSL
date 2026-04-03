@@ -58,9 +58,9 @@ const standings = [
     team: 'Islamabad United',
     shortName: 'IU',
     img: '/Islamabad_United.png',
-    p: 3, w: 1, l: 1, nr: 1, pts: 3, nrr: '+0.133',
-    nrrNum: 0.133,
-    form: ['L', 'NR', 'W'],
+    p: 4, w: 2, l: 1, nr: 1, pts: 5, nrr: '+0.285',
+    nrrNum: 0.285,
+    form: ['L', 'NR', 'W', 'W'],
     qualified: true,
     color: '#c41e3a',
     squad: '/islamabad-united-squad',
@@ -94,9 +94,9 @@ const standings = [
     team: 'Rawalpindi Pindiz',
     shortName: 'RWP',
     img: '/Rawalpindiz_Logo.png',
-    p: 2, w: 0, l: 2, nr: 0, pts: 0, nrr: '-0.950',
-    nrrNum: -0.950,
-    form: ['L', 'L'],
+    p: 3, w: 0, l: 3, nr: 0, pts: 0, nrr: '-1.350',
+    nrrNum: -1.350,
+    form: ['L', 'L', 'L'],
     qualified: false,
     color: '#0c4a6e',
     squad: '/rawalpindi-pindiz-squad',
@@ -116,7 +116,7 @@ const standings = [
 ];
 
 const recentResults = [
-  { match: 12, date: 'Apr 4', teams: 'Rawalpindi Pindustan vs Islamabad United', result: 'LIVE: Pindiz 156/3 (16.2)', venue: 'Gaddafi Stadium', link: '/live-score', highlight: true },
+  { match: 12, date: 'Apr 4', teams: 'Rawalpindi Pindustan vs Islamabad United', result: 'IU won by 6 wickets', venue: 'Gaddafi Stadium', link: '/live-score', highlight: false },
   { match: 11, date: 'Apr 3', teams: 'Lahore Qalandars vs Multan Sultans', result: 'MS won by 6 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 10, date: 'Apr 2', teams: 'Rawalpindi Pindiz vs Karachi Kings', result: 'KK won by 5 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 9, date: 'Apr 2', teams: 'Quetta Gladiators vs Islamabad United', result: 'IU won by 8 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
@@ -238,7 +238,7 @@ export default function PointsTablePage() {
             🏆 8 Teams · 44 Matches · Top 4 Qualify for Playoffs
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
-            Updated after Match 11 · April 4, 2026
+            Updated after Match 12 · April 4, 2026
           </p>
 
           {/* Mini leader board strip */}
@@ -293,7 +293,7 @@ export default function PointsTablePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <h2 style={{ marginTop: 0 }}>🏆 HBL PSL 11 (2026) — Live Points Table</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ Updated: After Match 11 · Apr 4, 2026
+              ✅ Updated: After Match 12 · Apr 4, 2026
             </span>
           </div>
 

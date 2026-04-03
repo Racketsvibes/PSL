@@ -19,6 +19,18 @@ export const metadata = {
 const standings = [
   {
     pos: 1,
+    team: 'Multan Sultans',
+    shortName: 'MS',
+    img: '/MultanSultans.png',
+    p: 3, w: 3, l: 0, nr: 0, pts: 6, nrr: '+1.025',
+    nrrNum: 1.025,
+    form: ['W', 'W', 'W'],
+    qualified: true,
+    color: '#78350f',
+    squad: '/multan-sultans-squad',
+  },
+  {
+    pos: 2,
     team: 'Karachi Kings',
     shortName: 'KK',
     img: '/Karachi_Kings.png',
@@ -28,18 +40,6 @@ const standings = [
     qualified: true,
     color: '#C8102E',
     squad: '/karachi-kings-squad',
-  },
-  {
-    pos: 2,
-    team: 'Multan Sultans',
-    shortName: 'MS',
-    img: '/MultanSultans.png',
-    p: 2, w: 2, l: 0, nr: 0, pts: 4, nrr: '+0.868',
-    nrrNum: 0.868,
-    form: ['W', 'W'],
-    qualified: true,
-    color: '#78350f',
-    squad: '/multan-sultans-squad',
   },
   {
     pos: 3,
@@ -70,9 +70,9 @@ const standings = [
     team: 'Lahore Qalandars',
     shortName: 'LQ',
     img: '/Lahore_Qalandars.png',
-    p: 2, w: 1, l: 1, nr: 0, pts: 2, nrr: '+1.567',
-    nrrNum: 1.567,
-    form: ['W', 'L'],
+    p: 3, w: 1, l: 2, nr: 0, pts: 2, nrr: '+0.650',
+    nrrNum: 0.650,
+    form: ['W', 'L', 'L'],
     qualified: false,
     color: '#003087',
     squad: '/lahore-qalandars-squad',
@@ -116,6 +116,8 @@ const standings = [
 ];
 
 const recentResults = [
+  { match: 12, date: 'Apr 4', teams: 'Rawalpindi Pindustan vs Islamabad United', result: 'LIVE: Pindiz 156/3 (16.2)', venue: 'Gaddafi Stadium', link: '/live-score', highlight: true },
+  { match: 11, date: 'Apr 3', teams: 'Lahore Qalandars vs Multan Sultans', result: 'MS won by 6 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 10, date: 'Apr 2', teams: 'Rawalpindi Pindiz vs Karachi Kings', result: 'KK won by 5 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 9, date: 'Apr 2', teams: 'Quetta Gladiators vs Islamabad United', result: 'IU won by 8 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
   { match: 8, date: 'Apr 1', teams: 'Multan Sultans vs Hyderabad Kingsmen', result: 'MS won by 6 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
@@ -149,7 +151,7 @@ export default function PointsTablePage() {
         name: 'Who is top of the PSL 2026 points table?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Karachi Kings lead the PSL 2026 points table with 4 points from 2 wins in 2 matches. Peshawar Zalmi follows in 2nd place with 3 points, while Lahore Qalandars, Multan Sultans, and Quetta Gladiators are on 2 points each.',
+          text: 'Multan Sultans and Karachi Kings lead the PSL 2026 points table with 6 points from 3 wins each. Peshawar Zalmi follows in 3rd place with 3 points.',
         },
       },
       {
@@ -236,7 +238,7 @@ export default function PointsTablePage() {
             🏆 8 Teams · 44 Matches · Top 4 Qualify for Playoffs
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
-            Updated after Match 10 · April 2, 2026
+            Updated after Match 11 · April 4, 2026
           </p>
 
           {/* Mini leader board strip */}
@@ -291,7 +293,7 @@ export default function PointsTablePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <h2 style={{ marginTop: 0 }}>🏆 HBL PSL 11 (2026) — Live Points Table</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ Updated: After Match 10 · Apr 2, 2026
+              ✅ Updated: After Match 11 · Apr 4, 2026
             </span>
           </div>
 

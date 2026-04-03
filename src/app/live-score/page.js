@@ -20,6 +20,24 @@ export const metadata = {
 // ── All Completed Match Results — PSL 2026 (HBL PSL 11) ──
 const pastMatches = [
   {
+    match: 11,
+    date: 'Apr 3, 2026',
+    day: 'Fri',
+    time: '7:00 PM PKT',
+    teams: 'Lahore Qalandars vs Multan Sultans',
+    team1: 'Lahore Qalandars',
+    team2: 'Multan Sultans',
+    score1: '188/6 (20)',
+    score2: '189/6 (19.4)',
+    result: 'Multan Sultans won by 4 wickets',
+    winner: 'Multan Sultans',
+    venue: 'Gaddafi Stadium, Lahore',
+    potm: 'Mohammad Rizwan',
+    highlight: "Rizwan's 72 (45) leads Sultans to their 3rd straight win",
+    logo1: '/Lahore_Qalandars.png',
+    logo2: '/MultanSultans.png',
+  },
+  {
     match: 10,
     date: 'Apr 2, 2026',
     day: 'Thu',
@@ -202,8 +220,8 @@ const pastMatches = [
 ];
 
 const upcomingMatches = [
-  { match: 11, date: 'Apr 3, 2026',  teams: 'Lahore Qalandars vs Multan Sultans',    time: '7:00 PM PKT', venue: 'Gaddafi Stadium' },
-  { match: 12, date: 'Apr 4, 2026',  teams: 'Peshawar Zalmi vs Islamabad United',    time: '7:00 PM PKT', venue: 'National Bank Stadium' },
+  { match: 12, date: 'Apr 4, 2026',  teams: 'Rawalpindi Pindustan vs Islamabad United',    time: '7:00 PM PKT', venue: 'Gaddafi Stadium', link: '/live-score' },
+  { match: 13, date: 'Apr 5, 2026',  teams: 'Quetta Gladiators vs Multan Sultans',      time: '7:00 PM PKT', venue: 'Gaddafi Stadium' },
 ];
 
 const breadcrumbSchema = {
@@ -240,7 +258,7 @@ const faqSchema = {
       name: 'How many matches have been played in PSL 2026 so far?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'As of April 2, 2026, 10 matches have been completed in HBL PSL 11. Karachi Kings lead the points table with 6 points (3 wins from 3 matches), while Peshawar Zalmi and Islamabad United follow with 3 points each.',
+        text: 'As of April 3, 2026, 11 matches have been completed in HBL PSL 11. Multan Sultans and Karachi Kings lead the points table with 6 points each.',
       },
     },
     {
@@ -307,7 +325,7 @@ export default function LiveScorePage() {
             <span style={{ color: '#c7fa3b' }}>Ball-by-Ball Updates</span>
           </h1>
           <p style={{ fontSize: '1.1rem', opacity: '0.9', marginBottom: '0.75rem' }}>
-            🏏 10 Matches Completed &nbsp;|&nbsp; 34 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
+            🏏 11 Matches Completed &nbsp;|&nbsp; 33 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
             Auto-updating every 15 seconds · Gaddafi Stadium, Lahore & National Bank Stadium, Karachi
@@ -319,7 +337,7 @@ export default function LiveScorePage() {
               { label: 'Matches Played', value: '10', icon: '✅' },
               { label: 'Matches Left', value: '34', icon: '📅' },
               { label: 'League Leader', value: 'Karachi Kings', icon: '🥇' },
-              { label: 'Next Match', value: 'Apr 3 · 7:00PM', icon: '⏭️' },
+              { label: 'Next Match', value: 'Apr 4 · 7:00PM', icon: '⏭️' },
             ].map((stat, i) => (
               <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '0.75rem', padding: '0.5rem 0.9rem', textAlign: 'center', minWidth: '90px' }}>
                 <div style={{ fontSize: '1rem', marginBottom: '0.15rem' }}>{stat.icon}</div>
@@ -370,10 +388,9 @@ export default function LiveScorePage() {
             📊 PSL 2026 — Quick Tournament Snapshot (After 10 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 League Leader:</strong> Karachi Kings — 6 pts (P3, W3)</li>
-            <li><strong>🥈 2nd Place:</strong> Multan Sultans — 4 pts (P2, W2)</li>
-            <li><strong>🔥 Top Performer:</strong> David Warner (KK) with 84 vs Rawalpindi</li>
-            <li><strong>📅 Next Match:</strong> Lahore Qalandars vs Multan Sultans — Apr 3, 7:00 PM PKT</li>
+            <li><strong>🥇 League Leaders:</strong> Multan Sultans & Karachi Kings — 6 pts</li>
+            <li><strong>🔥 Top Performer:</strong> Mohammad Rizwan (MS) with 72 vs Lahore</li>
+            <li><strong>📅 Next Match:</strong> Rawalpindi Pindustan vs Islamabad United — Apr 4, 7:00 PM PKT</li>
           </ul>
         </section>
 
@@ -382,7 +399,7 @@ export default function LiveScorePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.25rem' }}>
             <h2 style={{ marginTop: 0 }}>🏏 Past Match Results — HBL PSL 11 (2026)</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ All 7 Completed/Abandoned Matches
+              ✅ All 11 Completed/Abandoned Matches
             </span>
           </div>
 

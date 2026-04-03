@@ -15,6 +15,22 @@ const newsItems = [
     borderColor: '#3b82f6',
     articles: [
       {
+        href: '/multan-sultans-vs-rawalpindi-pindiz',
+        title: 'Multan Sultans vs Rawalpindi Pindiz – PSL 2026 Match 14 Preview',
+        desc: 'Battle of the Captains: Ashton Turner vs Mohammad Rizwan. Full breakdown of the April 6 blockbuster at Gaddafi Stadium.',
+        badge: 'PREVIEW',
+        badgeColor: '#E0115F',
+        date: 'Apr 5, 2026',
+      },
+      {
+        href: '/quetta-gladiators-vs-multan-sultans',
+        title: 'Quetta Gladiators vs Multan Sultans – PSL 2026 Match 13 Preview',
+        desc: 'The Purple Force takes on the unbeaten Sultans. Can Saud Shakeel derail Multan on April 5? Full venue and match guide.',
+        badge: 'PREVIEW',
+        badgeColor: '#1a0533',
+        date: 'Apr 4, 2026',
+      },
+      {
         href: '/lahore-qalandars-vs-karachi-kings',
         title: 'Lahore Qalandars vs Karachi Kings – PSL 2026 Match 6 | El Clásico Preview',
         desc: 'The biggest rivalry in PSL history: Match 6 on March 29 at 7:00 PM PKT, Gaddafi Stadium. Head-to-head, key players, squads & live streaming guide.',

@@ -20,6 +20,42 @@ export const metadata = {
 // ── All Completed Match Results — PSL 2026 (HBL PSL 11) ──
 const pastMatches = [
   {
+    match: 14,
+    date: 'Apr 6, 2026',
+    day: 'Mon',
+    time: '7:00 PM PKT',
+    teams: 'Multan Sultans vs Rawalpindi Pindiz',
+    team1: 'Multan Sultans',
+    team2: 'Rawalpindi Pindustan',
+    score1: '204/4 (20)',
+    score2: '172/8 (20)',
+    result: 'Multan Sultans won by 32 runs',
+    winner: 'Multan Sultans',
+    venue: 'Gaddafi Stadium, Lahore',
+    potm: 'Usman Khan',
+    highlight: "Usman Khan's explosive 76 powers Sultans to a record 5-0 start",
+    logo1: '/MultanSultans.png',
+    logo2: '/Rawalpindiz_Logo.png',
+  },
+  {
+    match: 13,
+    date: 'Apr 5, 2026',
+    day: 'Sun',
+    time: '7:00 PM PKT',
+    teams: 'Quetta Gladiators vs Multan Sultans',
+    team1: 'Quetta Gladiators',
+    team2: 'Multan Sultans',
+    score1: '168/7 (20)',
+    score2: '169/4 (18.5)',
+    result: 'Multan Sultans won by 6 wickets',
+    winner: 'Multan Sultans',
+    venue: 'Gaddafi Stadium, Lahore',
+    potm: 'Mohammad Rizwan',
+    highlight: "Rizwan's captain's knock leads Multan to their 4th consecutive win",
+    logo1: '/Quetta_Gladiators.png',
+    logo2: '/MultanSultans.png',
+  },
+  {
     match: 12,
     date: 'Apr 4, 2026',
     day: 'Sat',
@@ -238,8 +274,8 @@ const pastMatches = [
 ];
 
 const upcomingMatches = [
-  { match: 13, date: 'Apr 5, 2026',  teams: 'Quetta Gladiators vs Multan Sultans',      time: '7:00 PM PKT', venue: 'Gaddafi Stadium', link: '/quetta-gladiators-vs-multan-sultans' },
-  { match: 14, date: 'Apr 6, 2026',  teams: 'Multan Sultans vs Rawalpindi Pindiz',      time: '7:00 PM PKT', venue: 'Gaddafi Stadium', link: '/multan-sultans-vs-rawalpindi-pindiz' },
+  { match: 15, date: 'Apr 8, 2026',  teams: 'Hyderabad Kingsmen vs Peshawar Zalmi',     time: '7:00 PM PKT', venue: 'National Bank Stadium', link: '/' },
+  { match: 16, date: 'Apr 9, 2026',  teams: 'Lahore Qalandars vs Islamabad United',     time: '2:30 PM PKT', venue: 'National Bank Stadium', link: '/' },
 ];
 
 const breadcrumbSchema = {
@@ -276,7 +312,7 @@ const faqSchema = {
       name: 'How many matches have been played in PSL 2026 so far?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'As of April 3, 2026, 11 matches have been completed in HBL PSL 11. Multan Sultans and Karachi Kings lead the points table with 6 points each.',
+        text: 'As of April 7, 2026, 14 matches have been completed in HBL PSL 11. Multan Sultans lead the points table with a perfect 5-0 record.',
       },
     },
     {
@@ -343,7 +379,7 @@ export default function LiveScorePage() {
             <span style={{ color: '#c7fa3b' }}>Ball-by-Ball Updates</span>
           </h1>
           <p style={{ fontSize: '1.1rem', opacity: '0.9', marginBottom: '0.75rem' }}>
-            🏏 12 Matches Completed &nbsp;|&nbsp; 32 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
+            🏏 14 Matches Completed &nbsp;|&nbsp; 30 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
             Auto-updating every 15 seconds · Gaddafi Stadium, Lahore & National Bank Stadium, Karachi
@@ -352,10 +388,10 @@ export default function LiveScorePage() {
           {/* Mini match status strip */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
             {[
-              { label: 'Matches Played', value: '12', icon: '✅' },
-              { label: 'Matches Left', value: '32', icon: '📅' },
+              { label: 'Matches Played', value: '14', icon: '✅' },
+              { label: 'Matches Left', value: '30', icon: '📅' },
               { label: 'League Leader', value: 'Multan Sultans', icon: '🥇' },
-              { label: 'Next Match', value: 'Apr 5 · 7:00PM', icon: '⏭️' },
+              { label: 'Next Match', value: 'Apr 8 · 7:00PM', icon: '⏭️' },
             ].map((stat, i) => (
               <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '0.75rem', padding: '0.5rem 0.9rem', textAlign: 'center', minWidth: '90px' }}>
                 <div style={{ fontSize: '1rem', marginBottom: '0.15rem' }}>{stat.icon}</div>
@@ -403,12 +439,12 @@ export default function LiveScorePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 — Quick Tournament Snapshot (After 10 Matches)
+            📊 PSL 2026 — Quick Tournament Snapshot (After 14 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 League Leader:</strong> Multan Sultans — 6 pts (3/3 Wins)</li>
-            <li><strong>🔥 Top Performer:</strong> Shadab Khan (IU) with 3/25 & 45* vs Pindiz</li>
-            <li><strong>📅 Next Match:</strong> Quetta Gladiators vs Multan Sultans — Apr 5, 7:00 PM PKT</li>
+            <li><strong>🥇 League Leader:</strong> Multan Sultans — 10 pts (5/5 Wins)</li>
+            <li><strong>🔥 Top Performer:</strong> Usman Khan (MS) with 76 (48) vs Pindiz</li>
+            <li><strong>📅 Next Match:</strong> Hyderabad Kingsmen vs Peshawar Zalmi — Apr 8, 7:00 PM PKT</li>
           </ul>
         </section>
 
@@ -417,7 +453,7 @@ export default function LiveScorePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.25rem' }}>
             <h2 style={{ marginTop: 0 }}>🏏 Past Match Results — HBL PSL 11 (2026)</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ All 12 Completed/Abandoned Matches
+              ✅ All 14 Completed/Abandoned Matches
             </span>
           </div>
 

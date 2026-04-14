@@ -173,10 +173,10 @@ export default function Home() {
                 </thead>
                 <tbody>
                   {[
-                    { name: 'Multan Sultans', wins: 5, loss: 0, pts: 10 },
-                    { name: 'Karachi Kings', wins: 3, loss: 0, pts: 6 },
-                    { name: 'Islamabad United', wins: 2, loss: 1, pts: 5 },
-                    { name: 'Peshawar Zalmi', wins: 1, loss: 0, pts: 3 },
+                    { name: 'Peshawar Zalmi', wins: 5, loss: 0, pts: 11 },
+                    { name: 'Multan Sultans', wins: 4, loss: 2, pts: 8 },
+                    { name: 'Islamabad United', wins: 3, loss: 2, pts: 7 },
+                    { name: 'Karachi Kings', wins: 3, loss: 2, pts: 6 },
                   ].map((team, i) => (
                     <tr key={i} style={{ borderBottom: '1px solid #f1f5f9' }}>
                       <td style={{ padding: '0.85rem 1rem', fontWeight: '700', fontSize: '0.95rem' }}>{team.name}</td>
@@ -195,10 +195,10 @@ export default function Home() {
             <h2 style={{ fontSize: '1.75rem', marginBottom: '1.5rem' }}>📈 Tournament Pulse</h2>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                {[
-                 { label: 'Total Runs', val: '3,850+', color: '#eff6ff', icon: '🏏' },
-                 { label: 'Wickets', val: '154+', color: '#fef2f2', icon: '☝️' },
-                 { label: 'Boundaries (6s)', val: '182', color: '#fffbeb', icon: '🔥' },
-                 { label: 'Matches Played', val: '14 / 44', color: '#f0fdf4', icon: '🏟️' },
+                 { label: 'Total Runs', val: '6,250+', color: '#eff6ff', icon: '🏏' },
+                 { label: 'Wickets', val: '245+', color: '#fef2f2', icon: '☝️' },
+                 { label: 'Boundaries (6s)', val: '280+', color: '#fffbeb', icon: '🔥' },
+                 { label: 'Matches Played', val: '22 / 44', color: '#f0fdf4', icon: '🏟️' },
                ].map((stat, i) => (
                  <div key={i} style={{ padding: '1.5rem', backgroundColor: stat.color, borderRadius: '1rem', textAlign: 'center' }}>
                     <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{stat.icon}</div>

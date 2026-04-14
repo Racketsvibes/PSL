@@ -312,7 +312,7 @@ const faqSchema = {
       name: 'How many matches have been played in PSL 2026 so far?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'As of April 7, 2026, 14 matches have been completed in HBL PSL 11. Multan Sultans lead the points table with a perfect 5-0 record.',
+        text: 'As of April 14, 2026, 22 matches have been completed in HBL PSL 11. Peshawar Zalmi lead the points table with an unbeaten 11 points.',
       },
     },
     {
@@ -379,7 +379,7 @@ export default function LiveScorePage() {
             <span style={{ color: '#c7fa3b' }}>Ball-by-Ball Updates</span>
           </h1>
           <p style={{ fontSize: '1.1rem', opacity: '0.9', marginBottom: '0.75rem' }}>
-            🏏 14 Matches Completed &nbsp;|&nbsp; 30 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
+            🏏 22 Matches Completed &nbsp;|&nbsp; 22 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
             Auto-updating every 15 seconds · Gaddafi Stadium, Lahore & National Bank Stadium, Karachi
@@ -388,9 +388,9 @@ export default function LiveScorePage() {
           {/* Mini match status strip */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
             {[
-              { label: 'Matches Played', value: '14', icon: '✅' },
-              { label: 'Matches Left', value: '30', icon: '📅' },
-              { label: 'League Leader', value: 'Multan Sultans', icon: '🥇' },
+              { label: 'Matches Played', value: '22', icon: '✅' },
+              { label: 'Matches Left', value: '22', icon: '📅' },
+              { label: 'League Leader', value: 'Peshawar Zalmi', icon: '🥇' },
               { label: 'Next Match', value: 'Apr 8 · 7:00PM', icon: '⏭️' },
             ].map((stat, i) => (
               <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '0.75rem', padding: '0.5rem 0.9rem', textAlign: 'center', minWidth: '90px' }}>
@@ -439,10 +439,10 @@ export default function LiveScorePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 — Quick Tournament Snapshot (After 14 Matches)
+            📊 PSL 2026 — Quick Tournament Snapshot (After 22 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 League Leader:</strong> Multan Sultans — 10 pts (5/5 Wins)</li>
+            <li><strong>🥇 League Leader:</strong> Peshawar Zalmi — 11 pts (5 Wins, 1 NR)</li>
             <li><strong>🔥 Top Performer:</strong> Usman Khan (MS) with 76 (48) vs Pindiz</li>
             <li><strong>📅 Next Match:</strong> Hyderabad Kingsmen vs Peshawar Zalmi — Apr 8, 7:00 PM PKT</li>
           </ul>
@@ -453,7 +453,7 @@ export default function LiveScorePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.25rem' }}>
             <h2 style={{ marginTop: 0 }}>🏏 Matches Uptill Now — HBL PSL 11 (2026)</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ All 14 Completed/Abandoned Matches
+              ✅ Recent Completed Matches
             </span>
           </div>
 
@@ -665,7 +665,7 @@ export default function LiveScorePage() {
             {[
               { q: 'Where can I watch PSL 2026 live score ball by ball?', a: 'You can follow PSL 2026 live ball-by-ball scores right here on PSLLive. Our scoreboard auto-updates every 15 seconds during active matches, providing runs, wickets, overs, CRR, and match status in real-time.' },
               { q: 'Which channel is showing PSL 2026 live in Pakistan?', a: 'PSL 2026 is broadcast live on PTV Sports and ARY Zap in Pakistan. Both channels offer free-to-air coverage throughout the tournament. Visit our live streaming page for online options.' },
-              { q: 'How many matches have been played in PSL 2026 so far?', a: 'As of April 7, 2026, 14 matches have been completed in HBL PSL 11. Multan Sultans lead the points table with a perfect 5-0 record.' },
+              { q: 'How many matches have been played in PSL 2026 so far?', a: 'As of April 14, 2026, 22 matches have been completed in HBL PSL 11. Peshawar Zalmi lead the points table with an unbeaten 11 points.' },
               { q: 'Who is the highest scorer in PSL 2026?', a: 'Fakhar Zaman of Lahore Qalandars is the standout with 104* off 56 balls in Match 1. S. Farhan (106*) and Usman Khan (76) have also played sensational knocks.' },
               { q: "What is the biggest win in PSL 2026 so far?", a: "The biggest win so far is Lahore Qalandars' 69-run victory over Hyderabad Kingsmen (Match 1, March 26). Lahore posted 219/3 and restricted Hyderabad to 150/9." },
               { q: "When is the next PSL 2026 match?", a: "The next match is Hyderabad Kingsmen vs Peshawar Zalmi on April 8, 2026 at 7:00 PM PKT at the National Bank Stadium, Karachi." },

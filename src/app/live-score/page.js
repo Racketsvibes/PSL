@@ -665,10 +665,10 @@ export default function LiveScorePage() {
             {[
               { q: 'Where can I watch PSL 2026 live score ball by ball?', a: 'You can follow PSL 2026 live ball-by-ball scores right here on PSLLive. Our scoreboard auto-updates every 15 seconds during active matches, providing runs, wickets, overs, CRR, and match status in real-time.' },
               { q: 'Which channel is showing PSL 2026 live in Pakistan?', a: 'PSL 2026 is broadcast live on PTV Sports and ARY Zap in Pakistan. Both channels offer free-to-air coverage throughout the tournament. Visit our live streaming page for online options.' },
-              { q: 'How many matches have been played in PSL 2026 so far?', a: 'As of March 29, 2026, 5 matches have been completed in HBL PSL 11. Karachi Kings lead the points table with 4 points (W2), while Lahore Qalandars, Peshawar Zalmi, Multan Sultans, and Quetta Gladiators each have 2 points.' },
-              { q: 'Who is the highest scorer in PSL 2026?', a: 'Fakhar Zaman of Lahore Qalandars is the standout with 104* off 56 balls in Match 1. Babar Azam (71, Match 3) and Mohammad Nawaz (68*, Match 5) are other key performers.' },
+              { q: 'How many matches have been played in PSL 2026 so far?', a: 'As of April 7, 2026, 14 matches have been completed in HBL PSL 11. Multan Sultans lead the points table with a perfect 5-0 record.' },
+              { q: 'Who is the highest scorer in PSL 2026?', a: 'Fakhar Zaman of Lahore Qalandars is the standout with 104* off 56 balls in Match 1. S. Farhan (106*) and Usman Khan (76) have also played sensational knocks.' },
               { q: "What is the biggest win in PSL 2026 so far?", a: "The biggest win so far is Lahore Qalandars' 69-run victory over Hyderabad Kingsmen (Match 1, March 26). Lahore posted 219/3 and restricted Hyderabad to 150/9." },
-              { q: "When is the next PSL 2026 match?", a: "The next match is Lahore Qalandars vs Karachi Kings on March 29, 2026 at 7:00 PM PKT at Gaddafi Stadium, Lahore. This El Clasico is expected to be the most-watched fixture of the early tournament stages." },
+              { q: "When is the next PSL 2026 match?", a: "The next match is Hyderabad Kingsmen vs Peshawar Zalmi on April 8, 2026 at 7:00 PM PKT at the National Bank Stadium, Karachi." },
             ].map((item, idx) => (
               <div key={idx} style={{ padding: '1.25rem 1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', backgroundColor: '#f9fafb' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '0.4rem', color: '#0A3258' }}>{item.q}</h3>

@@ -551,7 +551,7 @@ export default function PointsTablePage() {
           <h2>❓ PSL 2026 Points Table — FAQ</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem' }}>
             {[
-              { q: 'Who is top of the PSL 2026 points table?', a: 'Karachi Kings lead the PSL 2026 points table with 4 points from 2 matches. Peshawar Zalmi is in second with 3 points after their match against Islamabad United was abandoned.' },
+              { q: 'Who is top of the PSL 2026 points table?', a: 'Multan Sultans currently lead the PSL 2026 points table with 10 points from 5 consecutive wins. Karachi Kings are in second place with 6 points.' },
               { q: 'How many teams qualify for the PSL 2026 playoffs?', a: 'The top 4 teams in the PSL 2026 league standings at the end of 40 league matches qualify for the playoffs. The Qualifier match is on April 28, 2026.' },
               { q: 'What is Net Run Rate (NRR) in PSL?', a: 'NRR (Net Run Rate) is the average run rate scored minus the average run rate conceded across all matches. It is used as the primary tiebreaker when two or more teams have the same number of points in the PSL standings.' },
               { q: 'How many points do you get for winning a PSL match?', a: 'Each team earns 2 points for a win and 0 for a loss. In the event of a tie or no result due to rain, both teams receive 1 point each.' },

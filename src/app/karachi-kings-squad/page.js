@@ -251,6 +251,21 @@ export default function KarachiSquadPage() {
           </div>
         </section>
 
+        {/* ── Featured Gaming Partners ── */}
+        <section style={{ backgroundColor: '#0f172a', padding: '4rem 2rem', borderRadius: '1.5rem', marginBottom: '4rem', color: 'white' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+             <h2 style={{ color: '#FDB913', marginTop: 0, fontSize: '2.25rem', fontWeight: '900' }}>Featured Partnerships & Gaming Guides</h2>
+             <p style={{ opacity: 0.8, maxWidth: '600px', margin: '0.5rem auto', fontSize: '1.1rem' }}>Level up your game with our exclusive partners. Access the latest scripts, trading values, and advanced gaming tools.</p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+            <Link href="https://qr.ae/pFTZ0P" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Blox Fruits Discussions</Link>
+            <Link href="https://www.behance.net/gallery/247425453/UXUI-Case-Study-Optimizing-the-Blox-Fruits-Trading?platform=direct" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Trading Platform UX Case Study</Link>
+            <Link href="https://qumer.substack.com/p/the-weekly-blox-fruits-market-wrap" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Weekly Blox Fruits Market Wrap</Link>
+            <Link href="https://telegra.ph/Cheat-Sheet-Blox-Fruits-Trading-Values--April-2026-Codes-Working-04-13" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Trading Values Cheat Sheet</Link>
+            <Link href="https://bloxvalues.gitbook.io/bloxvalues-docs" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Bloxvalues Documentation</Link>
+          </div>
+        </section>
+
         {/* ── FAQ Section ── */}
         <section style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Frequently Asked Questions</h2>

@@ -451,7 +451,7 @@ export default function LiveScorePage() {
         {/* ── Past Match History ── */}
         <section style={{ marginBottom: '3rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.25rem' }}>
-            <h2 style={{ marginTop: 0 }}>🏏 Past Match Results — HBL PSL 11 (2026)</h2>
+            <h2 style={{ marginTop: 0 }}>🏏 Matches Uptill Now — HBL PSL 11 (2026)</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
               ✅ All 14 Completed/Abandoned Matches
             </span>

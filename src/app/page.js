@@ -281,6 +281,46 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ── Matches Uptill Now ── */}
+        <section style={{ marginBottom: '6rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+            <h2 style={{ fontSize: '2.25rem', fontWeight: '900', color: '#0A3258', margin: 0 }}>🏏 Matches Uptill Now</h2>
+            <Link href="/live-score" style={{ fontWeight: '700', color: '#0A3258', textDecoration: 'underline' }}>View All Results</Link>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+            {[
+              { match: 14, date: 'Apr 6', teams: 'Multan Sultans vs Rawalpindi Pindiz', result: 'Multan Sultans won by 32 runs' },
+              { match: 13, date: 'Apr 5', teams: 'Quetta Gladiators vs Multan Sultans', result: 'Multan Sultans won by 6 wickets' },
+              { match: 12, date: 'Apr 4', teams: 'Rawalpindi Pindustan vs Islamabad United', result: 'Islamabad United won by 6 wickets' }
+            ].map((m, i) => (
+              <div key={i} style={{ padding: '1.5rem', border: '1px solid #e2e8f0', borderRadius: '1rem', backgroundColor: 'white', transition: 'all 0.3s ease' }} className="hover-lift">
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
+                  <span style={{ backgroundColor: '#c7fa3b', color: '#0A3258', padding: '0.2rem 0.6rem', borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: '800' }}>MATCH {m.match}</span>
+                  <span style={{ color: '#64748b', fontSize: '0.85rem', fontWeight: '600' }}>{m.date}</span>
+                </div>
+                <h3 style={{ fontSize: '1.1rem', color: '#0f172a', margin: '0 0 0.5rem' }}>{m.teams}</h3>
+                <p style={{ color: '#008236', fontWeight: '700', fontSize: '0.95rem', margin: 0 }}>✓ {m.result}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── Featured Gaming Partners ── */}
+        <section style={{ backgroundColor: '#0f172a', padding: '4rem 2rem', borderRadius: '1.5rem', marginBottom: '4rem', color: 'white' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+             <h2 style={{ color: '#c7fa3b', marginTop: 0, fontSize: '2.25rem', fontWeight: '900' }}>Featured Partnerships & Gaming Guides</h2>
+             <p style={{ opacity: 0.8, maxWidth: '600px', margin: '0.5rem auto', fontSize: '1.1rem' }}>Level up your game with our exclusive partners. Access the latest scripts, trading values, and advanced gaming tools.</p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+            <Link href="https://gist.github.com/Racketsvibes/b121471065e36eed9f7eb7ec7944c3a0" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Blox Fruits Codes Script</Link>
+            <Link href="https://www.linkedin.com/pulse/blox-fruits-trading-calculator-free-complete-guide-15jkf" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Blox Fruits Trading Calculator</Link>
+            <Link href="https://pinterest.com/bloxvalue" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Blox Value Pinterest</Link>
+            <Link href="https://medium.com/@learningpoint79/what-is-blox-fruits-codes-april-2026-all-working-2x-exp-and-stat-reset-codes-de41ae8159f3" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Blox Fruits Codes April 2026</Link>
+            <Link href="https://www.scribd.com/document/1021922324/Blox-Fruits-2026-Legendary-Value-Report-Trading-Guide" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Legendary Value Report & Trading Guide</Link>
+            <Link href="https://docs.google.com/document/d/1g5WnNalfkQVTZbD7Tbx7sCiUjZSF4rFQHh9lRxoUkcQ/edit?tab=t.0" target="_blank" style={{ padding: '1rem 1.5rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '1rem', color: '#e2e8f0', textDecoration: 'none', fontWeight: '600', border: '1px solid rgba(255,255,255,0.1)', display: 'block', transition: 'all 0.3s ease' }} className="hover-lift">Blox Fruits Trading Guide</Link>
+          </div>
+        </section>
+
         {/* ── Broadcast & FAQ ── */}
         <section style={{ padding: '6rem 0', maxWidth: '900px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2.25rem', textAlign: 'center', marginBottom: '3rem' }}>Broadcasters & Fan Guide</h2>

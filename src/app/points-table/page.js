@@ -17,14 +17,14 @@ export const metadata = {
 
 // ── Updated with Accurate PSL Standings as of April 17, 2026 ──
 const standings = [
-  { pos: 1, team: 'Peshawar Zalmi', shortName: 'PES', img: '/Peshawar_Zalmi_logo.png', p: 7, w: 5, l: 1, nr: 1, pts: 11, nrr: '+0.850', nrrNum: 0.850, form: ['L', 'W', 'W', 'W', 'W'], qualified: true, color: '#f59e0b', squad: '/peshawar-zalmi-squad' },
-  { pos: 2, team: 'Multan Sultans', shortName: 'MS', img: '/MultanSultans.png', p: 6, w: 5, l: 1, nr: 0, pts: 10, nrr: '+1.100', nrrNum: 1.100, form: ['L', 'W', 'W', 'W', 'W'], qualified: true, color: '#78350f', squad: '/multan-sultans-squad' },
-  { pos: 3, team: 'Islamabad United', shortName: 'ISL', img: '/Islamabad_United.png', p: 7, w: 4, l: 2, nr: 1, pts: 9, nrr: '+0.550', nrrNum: 0.550, form: ['W', 'W', 'L', 'W', 'W'], qualified: true, color: '#c41e3a', squad: '/islamabad-united-squad' },
-  { pos: 4, team: 'Karachi Kings', shortName: 'KAR', img: '/Karachi_Kings.png', p: 6, w: 4, l: 2, nr: 0, pts: 8, nrr: '+0.420', nrrNum: 0.420, form: ['L', 'W', 'L', 'W', 'W'], qualified: true, color: '#C8102E', squad: '/karachi-kings-squad' },
-  { pos: 5, team: 'Lahore Qalandars', shortName: 'LAH', img: '/Lahore_Qalandars.png', p: 6, w: 3, l: 3, nr: 0, pts: 6, nrr: '+0.150', nrrNum: 0.150, form: ['W', 'L', 'W', 'L', 'L'], qualified: false, color: '#003087', squad: '/lahore-qalandars-squad' },
-  { pos: 6, team: 'Quetta Gladiators', shortName: 'QG', img: '/Quetta_Gladiators.png', p: 7, w: 2, l: 5, nr: 0, pts: 4, nrr: '-0.450', nrrNum: -0.450, form: ['L', 'W', 'L', 'L', 'L'], qualified: false, color: '#1a0533', squad: '/quetta-gladiators-squad' },
-  { pos: 7, team: 'Rawalpindi Pindustan', shortName: 'RAP', img: '/Rawalpindiz_Logo.png', p: 6, w: 2, l: 4, nr: 0, pts: 4, nrr: '-0.650', nrrNum: -0.650, form: ['W', 'W', 'L', 'L', 'L'], qualified: false, color: '#0c4a6e', squad: '/rawalpindi-pindiz-squad' },
-  { pos: 8, team: 'Hyderabad Kingsmen', shortName: 'HYK', img: '/Hyderabad_Houston_Kingsmen_logo.png', p: 7, w: 0, l: 7, nr: 0, pts: 0, nrr: '-1.500', nrrNum: -1.500, form: ['L', 'L', 'L', 'L', 'L'], qualified: false, color: '#92400e', squad: '/hyderabad-kingsmen-squad' },
+  { pos: 1, team: 'Peshawar Zalmi', shortName: 'PES', img: '/Peshawar_Zalmi_logo.png', p: 7, w: 6, l: 0, nr: 1, pts: 13, nrr: '+2.404', nrrNum: 2.404, form: ['W', 'W', 'W', 'W', 'NR'], qualified: true, color: '#f59e0b', squad: '/peshawar-zalmi-squad' },
+  { pos: 2, team: 'Islamabad United', shortName: 'ISL', img: '/Islamabad_United.png', p: 7, w: 4, l: 2, nr: 1, pts: 9, nrr: '+1.481', nrrNum: 1.481, form: ['W', 'W', 'W', 'L', 'NR'], qualified: true, color: '#c41e3a', squad: '/islamabad-united-squad' },
+  { pos: 3, team: 'Multan Sultans', shortName: 'MS', img: '/MultanSultans.png', p: 6, w: 4, l: 2, nr: 0, pts: 8, nrr: '+0.527', nrrNum: 0.527, form: ['W', 'L', 'W', 'W', 'L'], qualified: true, color: '#78350f', squad: '/multan-sultans-squad' },
+  { pos: 4, team: 'Hyderabad Kingsmen', shortName: 'HYK', img: '/Hyderabad_Houston_Kingsmen_logo.png', p: 7, w: 3, l: 4, nr: 0, pts: 6, nrr: '-0.470', nrrNum: -0.470, form: ['W', 'W', 'W', 'L', 'L'], qualified: true, color: '#92400e', squad: '/hyderabad-kingsmen-squad' },
+  { pos: 5, team: 'Karachi Kings', shortName: 'KAR', img: '/Karachi_Kings.png', p: 6, w: 3, l: 3, nr: 0, pts: 6, nrr: '-1.501', nrrNum: -1.501, form: ['L', 'L', 'L', 'W', 'W'], qualified: false, color: '#C8102E', squad: '/karachi-kings-squad' },
+  { pos: 6, team: 'Quetta Gladiators', shortName: 'QG', img: '/Quetta_Gladiators.png', p: 6, w: 2, l: 4, nr: 0, pts: 4, nrr: '+0.258', nrrNum: 0.258, form: ['L', 'W', 'L', 'L', 'W'], qualified: false, color: '#1a0533', squad: '/quetta-gladiators-squad' },
+  { pos: 7, team: 'Lahore Qalandars', shortName: 'LAH', img: '/Lahore_Qalandars.png', p: 5, w: 2, l: 3, nr: 0, pts: 4, nrr: '-0.863', nrrNum: -0.863, form: ['L', 'L', 'W', 'L', 'W'], qualified: false, color: '#003087', squad: '/lahore-qalandars-squad' },
+  { pos: 8, team: 'Rawalpindi Pindustan', shortName: 'RAP', img: '/Rawalpindiz_Logo.png', p: 6, w: 0, l: 6, nr: 0, pts: 0, nrr: '-1.821', nrrNum: -1.821, form: ['L', 'L', 'L', 'L', 'L'], qualified: false, color: '#0c4a6e', squad: '/rawalpindi-pindiz-squad' },
 ];
 
 const recentResults = [
@@ -193,10 +193,10 @@ export default function PointsTablePage() {
             📊 PSL 2026 Points Table — Quick Summary (After 26 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 #1 Leader:</strong> Peshawar Zalmi — 11 pts (P7, W5, NR1, NRR: +0.850)</li>
-            <li><strong>🥈 2nd Place:</strong> Multan Sultans — 10 pts (P6, W5, NRR: +1.100)</li>
-            <li><strong>3rd–4th:</strong> Islamabad United (9 pts), Karachi Kings (8 pts)</li>
-            <li><strong>Bottom:</strong> Hyderabad Kingsmen — 0 pts from 7 matches (NRR: -1.500)</li>
+            <li><strong>🥇 #1 Leader:</strong> Peshawar Zalmi — 13 pts (P7, W6, NR1, NRR: +2.404)</li>
+            <li><strong>🥈 2nd Place:</strong> Islamabad United — 9 pts (P7, W4, L2, NRR: +1.481)</li>
+            <li><strong>3rd–4th:</strong> Multan Sultans (8 pts), Hyderabad Kingsmen (6 pts)</li>
+            <li><strong>Bottom:</strong> Rawalpindi Pindustan — 0 pts from 6 matches (NRR: -1.821)</li>
             <li><strong>Playoff spots:</strong> Top 4 teams qualify. Playoffs start April 28, 2026.</li>
           </ul>
         </section>
@@ -355,18 +355,18 @@ export default function PointsTablePage() {
             <div style={{ backgroundColor: '#f0fdf4', border: '2px solid #bbf7d0', borderRadius: '0.75rem', padding: '1.5rem' }}>
               <h3 style={{ color: '#15803d', marginTop: 0, fontSize: '1.05rem' }}>🟢 Strong Position</h3>
               <ul style={{ color: '#374151', lineHeight: '2', paddingLeft: '1.25rem', margin: 0, fontSize: '0.9rem' }}>
-                <li><strong>Peshawar Zalmi</strong> — Leaders, 11 pts (+0.850)</li>
-                <li><strong>Multan Sultans</strong> — 10 pts from 6 matches</li>
+                <li><strong>Peshawar Zalmi</strong> — Leaders, 13 pts (+2.404)</li>
                 <li><strong>Islamabad United</strong> — 9 pts from 7 matches</li>
-                <li><strong>Karachi Kings</strong> — 8 pts from 6 matches</li>
+                <li><strong>Multan Sultans</strong> — 8 pts from 6 matches</li>
+                <li><strong>Hyderabad Kingsmen</strong> — 6 pts from 7 matches</li>
               </ul>
             </div>
             <div style={{ backgroundColor: '#fef2f2', border: '2px solid #fecaca', borderRadius: '0.75rem', padding: '1.5rem' }}>
               <h3 style={{ color: '#dc2626', marginTop: 0, fontSize: '1.05rem' }}>🔴 Must Improve</h3>
               <ul style={{ color: '#374151', lineHeight: '2', paddingLeft: '1.25rem', margin: 0, fontSize: '0.9rem' }}>
-                <li><strong>Lahore Qalandars</strong> — 6 pts outside playoff zone (+0.150)</li>
-                <li><strong>Quetta & Rawalpindi</strong> — 4 pts each but negative NRR</li>
-                <li><strong>Hyderabad Kingsmen</strong> — 0 pts from 7 matches (NRR: -1.500)</li>
+                <li><strong>Karachi Kings</strong> — 6 pts outside playoff zone (-1.501)</li>
+                <li><strong>Quetta & Lahore</strong> — 4 pts each</li>
+                <li><strong>Rawalpindi Pindiz</strong> — 0 pts from 6 matches (NRR: -1.821)</li>
                 <li><strong>Need strong return</strong> in the second half</li>
               </ul>
             </div>

@@ -173,10 +173,10 @@ export default function Home() {
                 </thead>
                 <tbody>
                   {[
-                    { name: 'Peshawar Zalmi', wins: 5, loss: 1, pts: 11 },
-                    { name: 'Multan Sultans', wins: 5, loss: 1, pts: 10 },
+                    { name: 'Peshawar Zalmi', wins: 6, loss: 0, pts: 13 },
                     { name: 'Islamabad United', wins: 4, loss: 2, pts: 9 },
-                    { name: 'Karachi Kings', wins: 4, loss: 2, pts: 8 },
+                    { name: 'Multan Sultans', wins: 4, loss: 2, pts: 8 },
+                    { name: 'Hyderabad Kingsmen', wins: 3, loss: 4, pts: 6 },
                   ].map((team, i) => (
                     <tr key={i} style={{ borderBottom: '1px solid #f1f5f9' }}>
                       <td style={{ padding: '0.85rem 1rem', fontWeight: '700', fontSize: '0.95rem' }}>{team.name}</td>

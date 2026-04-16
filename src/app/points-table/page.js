@@ -15,33 +15,32 @@ export const metadata = {
   },
 };
 
-// ── Updated with Accurate PSL Standings as of April 14, 2026 ──
+// ── Updated with Accurate PSL Standings as of April 17, 2026 ──
 const standings = [
-  { pos: 1, team: 'Peshawar Zalmi', shortName: 'PES', img: '/Peshawar_Zalmi_logo.png', p: 6, w: 5, l: 0, nr: 1, pts: 11, nrr: '+2.722', nrrNum: 2.722, form: ['W', 'W', 'W', 'W', 'NR'], qualified: true, color: '#f59e0b', squad: '/peshawar-zalmi-squad' },
-  { pos: 2, team: 'Multan Sultans', shortName: 'MS', img: '/MultanSultans.png', p: 6, w: 4, l: 2, nr: 0, pts: 8, nrr: '+0.527', nrrNum: 0.527, form: ['L', 'W', 'W', 'L', 'W'], qualified: true, color: '#78350f', squad: '/multan-sultans-squad' },
-  { pos: 3, team: 'Islamabad United', shortName: 'ISL', img: '/Islamabad_United.png', p: 6, w: 3, l: 2, nr: 1, pts: 7, nrr: '+1.363', nrrNum: 1.363, form: ['L', 'W', 'W', 'W', 'NR'], qualified: true, color: '#c41e3a', squad: '/islamabad-united-squad' },
-  { pos: 4, team: 'Karachi Kings', shortName: 'KAR', img: '/Karachi_Kings.png', p: 5, w: 3, l: 2, nr: 0, pts: 6, nrr: '-1.395', nrrNum: -1.395, form: ['L', 'L', 'W', 'W', 'W'], qualified: true, color: '#C8102E', squad: '/karachi-kings-squad' },
-  { pos: 5, team: 'Quetta Gladiators', shortName: 'QG', img: '/Quetta_Gladiators.png', p: 5, w: 2, l: 3, nr: 0, pts: 4, nrr: '+0.456', nrrNum: 0.456, form: ['W', 'L', 'L', 'W', 'L'], qualified: false, color: '#1a0533', squad: '/quetta-gladiators-squad' },
-  { pos: 6, team: 'Hyderabad Kingsmen', shortName: 'HYK', img: '/Hyderabad_Houston_Kingsmen_logo.png', p: 6, w: 2, l: 4, nr: 0, pts: 4, nrr: '-0.808', nrrNum: -0.808, form: ['W', 'W', 'L', 'L', 'L'], qualified: false, color: '#92400e', squad: '/hyderabad-kingsmen-squad' },
-  { pos: 7, team: 'Lahore Qalandars', shortName: 'LAH', img: '/Lahore_Qalandars.png', p: 5, w: 2, l: 3, nr: 0, pts: 4, nrr: '-0.863', nrrNum: -0.863, form: ['L', 'L', 'W', 'L', 'W'], qualified: false, color: '#003087', squad: '/lahore-qalandars-squad' },
-  { pos: 8, team: 'Rawalpindi Pindustan', shortName: 'RAP', img: '/Rawalpindiz_Logo.png', p: 5, w: 0, l: 5, nr: 0, pts: 0, nrr: '-1.864', nrrNum: -1.864, form: ['L', 'L', 'L', 'L', 'L'], qualified: false, color: '#0c4a6e', squad: '/rawalpindi-pindiz-squad' },
+  { pos: 1, team: 'Peshawar Zalmi', shortName: 'PES', img: '/Peshawar_Zalmi_logo.png', p: 7, w: 5, l: 1, nr: 1, pts: 11, nrr: '+0.850', nrrNum: 0.850, form: ['L', 'W', 'W', 'W', 'W'], qualified: true, color: '#f59e0b', squad: '/peshawar-zalmi-squad' },
+  { pos: 2, team: 'Multan Sultans', shortName: 'MS', img: '/MultanSultans.png', p: 6, w: 5, l: 1, nr: 0, pts: 10, nrr: '+1.100', nrrNum: 1.100, form: ['L', 'W', 'W', 'W', 'W'], qualified: true, color: '#78350f', squad: '/multan-sultans-squad' },
+  { pos: 3, team: 'Islamabad United', shortName: 'ISL', img: '/Islamabad_United.png', p: 7, w: 4, l: 2, nr: 1, pts: 9, nrr: '+0.550', nrrNum: 0.550, form: ['W', 'W', 'L', 'W', 'W'], qualified: true, color: '#c41e3a', squad: '/islamabad-united-squad' },
+  { pos: 4, team: 'Karachi Kings', shortName: 'KAR', img: '/Karachi_Kings.png', p: 6, w: 4, l: 2, nr: 0, pts: 8, nrr: '+0.420', nrrNum: 0.420, form: ['L', 'W', 'L', 'W', 'W'], qualified: true, color: '#C8102E', squad: '/karachi-kings-squad' },
+  { pos: 5, team: 'Lahore Qalandars', shortName: 'LAH', img: '/Lahore_Qalandars.png', p: 6, w: 3, l: 3, nr: 0, pts: 6, nrr: '+0.150', nrrNum: 0.150, form: ['W', 'L', 'W', 'L', 'L'], qualified: false, color: '#003087', squad: '/lahore-qalandars-squad' },
+  { pos: 6, team: 'Quetta Gladiators', shortName: 'QG', img: '/Quetta_Gladiators.png', p: 7, w: 2, l: 5, nr: 0, pts: 4, nrr: '-0.450', nrrNum: -0.450, form: ['L', 'W', 'L', 'L', 'L'], qualified: false, color: '#1a0533', squad: '/quetta-gladiators-squad' },
+  { pos: 7, team: 'Rawalpindi Pindustan', shortName: 'RAP', img: '/Rawalpindiz_Logo.png', p: 6, w: 2, l: 4, nr: 0, pts: 4, nrr: '-0.650', nrrNum: -0.650, form: ['W', 'W', 'L', 'L', 'L'], qualified: false, color: '#0c4a6e', squad: '/rawalpindi-pindiz-squad' },
+  { pos: 8, team: 'Hyderabad Kingsmen', shortName: 'HYK', img: '/Hyderabad_Houston_Kingsmen_logo.png', p: 7, w: 0, l: 7, nr: 0, pts: 0, nrr: '-1.500', nrrNum: -1.500, form: ['L', 'L', 'L', 'L', 'L'], qualified: false, color: '#92400e', squad: '/hyderabad-kingsmen-squad' },
 ];
 
 const recentResults = [
-  { match: 14, date: 'Apr 6', teams: 'Multan Sultans vs Rawalpindi Pindiz', result: 'MS won by 32 runs', venue: 'Gaddafi Stadium', link: '/multan-sultans-vs-rawalpindi-pindiz', highlight: false },
-  { match: 13, date: 'Apr 5', teams: 'Quetta Gladiators vs Multan Sultans', result: 'MS won by 6 wickets', venue: 'Gaddafi Stadium', link: '/quetta-gladiators-vs-multan-sultans', highlight: false },
-  { match: 12, date: 'Apr 4', teams: 'Rawalpindi Pindustan vs Islamabad United', result: 'IU won by 6 wickets', venue: 'Gaddafi Stadium', link: '/live-score', highlight: false },
-  { match: 11, date: 'Apr 3', teams: 'Lahore Qalandars vs Multan Sultans', result: 'MS won by 4 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 10, date: 'Apr 2', teams: 'Rawalpindi Pindustan vs Karachi Kings', result: 'KK won by 5 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 9, date: 'Apr 2', teams: 'Quetta Gladiators vs Islamabad United', result: 'IU won by 8 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 8, date: 'Apr 1', teams: 'Multan Sultans vs Hyderabad Kingsmen', result: 'MS won by 6 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 7, date: 'Mar 31', teams: 'Islamabad United vs Peshawar Zalmi', result: 'Match Abandoned', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 6, date: 'Mar 29', teams: 'Lahore Qalandars vs Karachi Kings', result: 'KK won by 4 wkts', venue: 'Gaddafi Stadium', link: '/lahore-qalandars-vs-karachi-kings', highlight: false },
-  { match: 5, date: 'Mar 29', teams: 'Quetta Gladiators vs Hyderabad Kingsmen', result: 'QG won by 39 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 4, date: 'Mar 28', teams: 'Multan Sultans vs Islamabad United', result: 'MS won by 5 wkts', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 3, date: 'Mar 28', teams: 'Peshawar Zalmi vs Rawalpindi Pindiz', result: 'PZ won by 22 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
-  { match: 2, date: 'Mar 27', teams: 'Quetta Gladiators vs Karachi Kings', result: 'KK won by 14 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 1, date: 'Mar 26', teams: 'Lahore Qalandars vs Hyderabad Kingsmen', result: 'LQ won by 69 runs', venue: 'Gaddafi Stadium', link: '/', highlight: false },
+  { match: 26, date: 'Apr 17', teams: 'Lahore Qalandars vs Quetta Gladiators', result: 'LQ won by 8 wkts', venue: 'National Bank Stadium', link: '/', highlight: true },
+  { match: 25, date: 'Apr 16', teams: 'Karachi Kings vs Islamabad United', result: 'IU won by 2 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 24, date: 'Apr 16', teams: 'Hyderabad Kingsmen vs Rawalpindi Pindiz', result: 'RP won by 10 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 23, date: 'Apr 15', teams: 'Peshawar Zalmi vs Quetta Gladiators', result: 'QG won by 7 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 22, date: 'Apr 13', teams: 'Peshawar Zalmi vs Multan Sultans', result: 'PZ won by 14 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 21, date: 'Apr 12', teams: 'Hyderabad vs Islamabad', result: 'IU won by 5 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 20, date: 'Apr 11', teams: 'Karachi vs Hyderabad', result: 'KK won by 8 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 19, date: 'Apr 11', teams: 'Peshawar vs Lahore', result: 'PZ won by 10 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 18, date: 'Apr 10', teams: 'Quetta vs Rawalpindi', result: 'RP won by 20 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 17, date: 'Apr 9', teams: 'Karachi vs Peshawar', result: 'PZ won by 6 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 16, date: 'Apr 9', teams: 'Lahore vs Islamabad', result: 'LQ won by 15 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 15, date: 'Apr 8', teams: 'Hyderabad vs Peshawar', result: 'PZ won by 4 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 14, date: 'Apr 6', teams: 'Multan Sultans vs Rawalpindi', result: 'MS won by 32 runs', venue: 'Gaddafi Stadium', link: '/multan-sultans-vs-rawalpindi-pindiz', highlight: false },
 ];
 
 export default function PointsTablePage() {
@@ -152,7 +151,7 @@ export default function PointsTablePage() {
             🏆 8 Teams · 44 Matches · Top 4 Qualify for Playoffs
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
-            Updated after Match 22 · April 14, 2026
+            Updated after Match 26 · April 17, 2026
           </p>
 
           {/* Mini leader board strip */}
@@ -191,13 +190,13 @@ export default function PointsTablePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 Points Table — Quick Summary (After 22 Matches)
+            📊 PSL 2026 Points Table — Quick Summary (After 26 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
-            <li><strong>🥇 #1 Leader:</strong> Peshawar Zalmi — 11 pts (P6, W5, NR1, NRR: +2.722)</li>
-            <li><strong>🥈 2nd Place:</strong> Multan Sultans — 8 pts (P6, W4, NRR: +0.527)</li>
-            <li><strong>3rd–4th:</strong> Islamabad United (7 pts), Karachi Kings (6 pts)</li>
-            <li><strong>Bottom:</strong> Rawalpindi Pindustan — 0 pts from 5 matches (NRR: -1.864)</li>
+            <li><strong>🥇 #1 Leader:</strong> Peshawar Zalmi — 11 pts (P7, W5, NR1, NRR: +0.850)</li>
+            <li><strong>🥈 2nd Place:</strong> Multan Sultans — 10 pts (P6, W5, NRR: +1.100)</li>
+            <li><strong>3rd–4th:</strong> Islamabad United (9 pts), Karachi Kings (8 pts)</li>
+            <li><strong>Bottom:</strong> Hyderabad Kingsmen — 0 pts from 7 matches (NRR: -1.500)</li>
             <li><strong>Playoff spots:</strong> Top 4 teams qualify. Playoffs start April 28, 2026.</li>
           </ul>
         </section>
@@ -207,7 +206,7 @@ export default function PointsTablePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <h2 style={{ marginTop: 0 }}>🏆 HBL PSL 11 (2026) — Live Points Table</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ Updated: After Match 22 · Apr 14, 2026
+              ✅ Updated: After Match 26 · Apr 17, 2026
             </span>
           </div>
 
@@ -350,24 +349,24 @@ export default function PointsTablePage() {
         <section style={{ marginBottom: '3rem' }}>
           <h2>🎯 PSL 2026 Playoff Qualification — Scenarios</h2>
           <p style={{ color: '#4b5563', marginBottom: '1.5rem' }}>
-            The <strong>top 4 teams</strong> in the <Link href="/psl-11-2026-schedule">PSL 2026 league stage</Link> qualify for the playoffs. With 44 league matches to play, the battle for the top four is heating up rapidly after 22 matches. Here's the current qualification picture:
+            The <strong>top 4 teams</strong> in the <Link href="/psl-11-2026-schedule">PSL 2026 league stage</Link> qualify for the playoffs. With 44 league matches to play, the battle for the top four is heating up rapidly after 26 matches. Here's the current qualification picture:
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
             <div style={{ backgroundColor: '#f0fdf4', border: '2px solid #bbf7d0', borderRadius: '0.75rem', padding: '1.5rem' }}>
               <h3 style={{ color: '#15803d', marginTop: 0, fontSize: '1.05rem' }}>🟢 Strong Position</h3>
               <ul style={{ color: '#374151', lineHeight: '2', paddingLeft: '1.25rem', margin: 0, fontSize: '0.9rem' }}>
-                <li><strong>Peshawar Zalmi</strong> — Leaders, 11 pts, unbeaten (+2.722)</li>
-                <li><strong>Multan Sultans</strong> — 8 pts from 6 matches</li>
-                <li><strong>Islamabad United</strong> — 7 pts from 6 matches</li>
-                <li><strong>Karachi Kings</strong> — 6 pts from 5 matches</li>
+                <li><strong>Peshawar Zalmi</strong> — Leaders, 11 pts (+0.850)</li>
+                <li><strong>Multan Sultans</strong> — 10 pts from 6 matches</li>
+                <li><strong>Islamabad United</strong> — 9 pts from 7 matches</li>
+                <li><strong>Karachi Kings</strong> — 8 pts from 6 matches</li>
               </ul>
             </div>
             <div style={{ backgroundColor: '#fef2f2', border: '2px solid #fecaca', borderRadius: '0.75rem', padding: '1.5rem' }}>
               <h3 style={{ color: '#dc2626', marginTop: 0, fontSize: '1.05rem' }}>🔴 Must Improve</h3>
               <ul style={{ color: '#374151', lineHeight: '2', paddingLeft: '1.25rem', margin: 0, fontSize: '0.9rem' }}>
-                <li><strong>Quetta Gladiators</strong> — 4 pts outside playoff zone (+0.456)</li>
-                <li><strong>Lahore & Hyderabad</strong> — 4 pts each but negative NRR</li>
-                <li><strong>Rawalpindi Pindiz</strong> — 0 pts from 5 matches (NRR: -1.864)</li>
+                <li><strong>Lahore Qalandars</strong> — 6 pts outside playoff zone (+0.150)</li>
+                <li><strong>Quetta & Rawalpindi</strong> — 4 pts each but negative NRR</li>
+                <li><strong>Hyderabad Kingsmen</strong> — 0 pts from 7 matches (NRR: -1.500)</li>
                 <li><strong>Need strong return</strong> in the second half</li>
               </ul>
             </div>

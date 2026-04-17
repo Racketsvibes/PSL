@@ -291,7 +291,7 @@ export default function Home() {
             {[
               { match: 26, date: 'Apr 17', teams: 'Lahore Qalandars vs Quetta Gladiators', result: 'Lahore Qalandars won by 8 wickets' },
               { match: 25, date: 'Apr 16', teams: 'Karachi Kings vs Islamabad United', result: 'Islamabad United won by 2 runs' },
-              { match: 24, date: 'Apr 16', teams: 'Hyderabad Kingsmen vs Rawalpindi Pindiz', result: 'Rawalpindi Pindiz won by 10 wickets' }
+              { match: 24, date: 'Apr 16', teams: 'Hyderabad Kingsmen vs Rawalpindi Pindiz', result: 'Hyderabad Kingsmen won by 10 wickets' }
             ].map((m, i) => (
               <div key={i} style={{ padding: '1.5rem', border: '1px solid #e2e8f0', borderRadius: '1rem', backgroundColor: 'white', transition: 'all 0.3s ease' }} className="hover-lift">
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>

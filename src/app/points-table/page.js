@@ -18,29 +18,22 @@ export const metadata = {
 // ── Updated with Accurate PSL Standings as of April 17, 2026 ──
 const standings = [
   { pos: 1, team: 'Peshawar Zalmi', shortName: 'PES', img: '/Peshawar_Zalmi_logo.png', p: 7, w: 6, l: 0, nr: 1, pts: 13, nrr: '+2.404', nrrNum: 2.404, form: ['W', 'W', 'W', 'W', 'NR'], qualified: true, color: '#f59e0b', squad: '/peshawar-zalmi-squad' },
-  { pos: 2, team: 'Islamabad United', shortName: 'ISL', img: '/Islamabad_United.png', p: 7, w: 4, l: 2, nr: 1, pts: 9, nrr: '+1.481', nrrNum: 1.481, form: ['W', 'W', 'W', 'L', 'NR'], qualified: true, color: '#c41e3a', squad: '/islamabad-united-squad' },
-  { pos: 3, team: 'Multan Sultans', shortName: 'MS', img: '/MultanSultans.png', p: 6, w: 4, l: 2, nr: 0, pts: 8, nrr: '+0.527', nrrNum: 0.527, form: ['W', 'L', 'W', 'W', 'L'], qualified: true, color: '#78350f', squad: '/multan-sultans-squad' },
-  { pos: 4, team: 'Hyderabad Kingsmen', shortName: 'HYK', img: '/Hyderabad_Houston_Kingsmen_logo.png', p: 7, w: 3, l: 4, nr: 0, pts: 6, nrr: '-0.470', nrrNum: -0.470, form: ['W', 'W', 'W', 'L', 'L'], qualified: true, color: '#92400e', squad: '/hyderabad-kingsmen-squad' },
-  { pos: 5, team: 'Karachi Kings', shortName: 'KAR', img: '/Karachi_Kings.png', p: 6, w: 3, l: 3, nr: 0, pts: 6, nrr: '-1.501', nrrNum: -1.501, form: ['L', 'L', 'L', 'W', 'W'], qualified: false, color: '#C8102E', squad: '/karachi-kings-squad' },
-  { pos: 6, team: 'Quetta Gladiators', shortName: 'QG', img: '/Quetta_Gladiators.png', p: 6, w: 2, l: 4, nr: 0, pts: 4, nrr: '+0.258', nrrNum: 0.258, form: ['L', 'W', 'L', 'L', 'W'], qualified: false, color: '#1a0533', squad: '/quetta-gladiators-squad' },
-  { pos: 7, team: 'Lahore Qalandars', shortName: 'LAH', img: '/Lahore_Qalandars.png', p: 5, w: 2, l: 3, nr: 0, pts: 4, nrr: '-0.863', nrrNum: -0.863, form: ['L', 'L', 'W', 'L', 'W'], qualified: false, color: '#003087', squad: '/lahore-qalandars-squad' },
-  { pos: 8, team: 'Rawalpindi Pindustan', shortName: 'RAP', img: '/Rawalpindiz_Logo.png', p: 6, w: 0, l: 6, nr: 0, pts: 0, nrr: '-1.821', nrrNum: -1.821, form: ['L', 'L', 'L', 'L', 'L'], qualified: false, color: '#0c4a6e', squad: '/rawalpindi-pindiz-squad' },
+  { pos: 2, team: 'Multan Sultans', shortName: 'MS', img: '/MultanSultans.png', p: 6, w: 5, l: 1, nr: 0, pts: 10, nrr: '+0.527', nrrNum: 0.527, form: ['W', 'L', 'W', 'W', 'W'], qualified: true, color: '#78350f', squad: '/multan-sultans-squad' },
+  { pos: 3, team: 'Islamabad United', shortName: 'ISL', img: '/Islamabad_United.png', p: 7, w: 4, l: 2, nr: 1, pts: 9, nrr: '+1.481', nrrNum: 1.481, form: ['W', 'W', 'W', 'L', 'NR'], qualified: true, color: '#c41e3a', squad: '/islamabad-united-squad' },
+  { pos: 4, team: 'Karachi Kings', shortName: 'KAR', img: '/Karachi_Kings.png', p: 6, w: 4, l: 2, nr: 0, pts: 8, nrr: '-1.501', nrrNum: -1.501, form: ['L', 'L', 'L', 'W', 'W'], qualified: true, color: '#C8102E', squad: '/karachi-kings-squad' },
+  { pos: 5, team: 'Lahore Qalandars', shortName: 'LAH', img: '/Lahore_Qalandars.png', p: 7, w: 4, l: 3, nr: 0, pts: 8, nrr: '-0.420', nrrNum: -0.420, form: ['L', 'W', 'L', 'W', 'W'], qualified: false, color: '#003087', squad: '/lahore-qalandars-squad' },
+  { pos: 6, team: 'Quetta Gladiators', shortName: 'QG', img: '/Quetta_Gladiators.png', p: 7, w: 2, l: 5, nr: 0, pts: 4, nrr: '+0.258', nrrNum: 0.258, form: ['L', 'W', 'L', 'L', 'L'], qualified: false, color: '#1a0533', squad: '/quetta-gladiators-squad' },
+  { pos: 7, team: 'Hyderabad Kingsmen', shortName: 'HYK', img: '/Hyderabad_Houston_Kingsmen_logo.png', p: 7, w: 1, l: 6, nr: 0, pts: 2, nrr: '-0.470', nrrNum: -0.470, form: ['W', 'L', 'L', 'L', 'L'], qualified: false, color: '#92400e', squad: '/hyderabad-kingsmen-squad' },
+  { pos: 8, team: 'Rawalpindi Pindustan', shortName: 'RAP', img: '/Rawalpindiz_Logo.png', p: 7, w: 0, l: 7, nr: 0, pts: 0, nrr: '-2.150', nrrNum: -2.150, form: ['L', 'L', 'L', 'L', 'L'], qualified: false, color: '#0c4a6e', squad: '/rawalpindi-pindiz-squad' },
 ];
 
 const recentResults = [
-  { match: 26, date: 'Apr 17', teams: 'Lahore Qalandars vs Quetta Gladiators', result: 'LQ won by 8 wkts', venue: 'National Bank Stadium', link: '/', highlight: true },
+  { match: 27, date: 'Apr 18', teams: 'Lahore Qalandars vs Rawalpindi Pindiz', result: 'LQ won by 48 runs', venue: 'National Bank Stadium', link: '/', highlight: true },
+  { match: 26, date: 'Apr 17', teams: 'Lahore Qalandars vs Quetta Gladiators', result: 'LQ won by 8 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
   { match: 25, date: 'Apr 16', teams: 'Karachi Kings vs Islamabad United', result: 'IU won by 2 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 24, date: 'Apr 16', teams: 'Hyderabad Kingsmen vs Rawalpindi Pindiz', result: 'HK won by 10 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
+  { match: 24, date: 'Apr 16', teams: 'Hyderabad Kingsmen vs Rawalpindi Pindiz', result: 'HYK won by 10 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
   { match: 23, date: 'Apr 15', teams: 'Peshawar Zalmi vs Quetta Gladiators', result: 'PZ won by 7 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
   { match: 22, date: 'Apr 13', teams: 'Peshawar Zalmi vs Multan Sultans', result: 'PZ won by 14 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 21, date: 'Apr 12', teams: 'Hyderabad vs Islamabad', result: 'IU won by 5 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 20, date: 'Apr 11', teams: 'Karachi vs Hyderabad', result: 'KK won by 8 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 19, date: 'Apr 11', teams: 'Peshawar vs Lahore', result: 'PZ won by 10 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 18, date: 'Apr 10', teams: 'Quetta vs Rawalpindi', result: 'QG won by 20 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 17, date: 'Apr 9', teams: 'Karachi vs Peshawar', result: 'PZ won by 6 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 16, date: 'Apr 9', teams: 'Lahore vs Islamabad', result: 'LQ won by 15 runs', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 15, date: 'Apr 8', teams: 'Hyderabad vs Peshawar', result: 'PZ won by 4 wkts', venue: 'National Bank Stadium', link: '/', highlight: false },
-  { match: 14, date: 'Apr 6', teams: 'Multan Sultans vs Rawalpindi', result: 'MS won by 32 runs', venue: 'Gaddafi Stadium', link: '/multan-sultans-vs-rawalpindi-pindiz', highlight: false },
 ];
 
 export default function PointsTablePage() {
@@ -151,7 +144,7 @@ export default function PointsTablePage() {
             🏆 8 Teams · 44 Matches · Top 4 Qualify for Playoffs
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
-            Updated after Match 26 · April 17, 2026
+            Updated after Match 27 · April 18, 2026
           </p>
 
           {/* Mini leader board strip */}
@@ -190,7 +183,7 @@ export default function PointsTablePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 Points Table — Quick Summary (After 26 Matches)
+            📊 PSL 2026 Points Table — Quick Summary (After 27 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
             <li><strong>🥇 #1 Leader:</strong> Peshawar Zalmi — 13 pts (P7, W6, NR1, NRR: +2.404)</li>
@@ -206,7 +199,7 @@ export default function PointsTablePage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <h2 style={{ marginTop: 0 }}>🏆 HBL PSL 11 (2026) — Live Points Table</h2>
             <span style={{ backgroundColor: '#dcfce7', color: '#16a34a', padding: '0.3rem 0.85rem', borderRadius: '1rem', fontWeight: '700', fontSize: '0.8rem', border: '1px solid #bbf7d0' }}>
-              ✅ Updated: After Match 26 · Apr 17, 2026
+              ✅ Updated: After Match 27 · Apr 18, 2026
             </span>
           </div>
 

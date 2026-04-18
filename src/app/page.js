@@ -73,7 +73,7 @@ export default function Home() {
         
         <div className="container" style={{ maxWidth: '1000px', position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', backgroundColor: '#c7fa3b', color: '#0A3258', padding: '0.4rem 1.25rem', borderRadius: '2rem', fontWeight: '800', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1.5rem', letterSpacing: '0.5px' }}>
-             <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#0A3258', animation: 'pulse 1.5s infinite' }} /> NEXT MATCH - APRIL 18
+             <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#0A3258', animation: 'pulse 1.5s infinite' }} /> NEXT MATCH - APRIL 19
           </div>
           
           <h1 style={{ fontSize: '3.75rem', fontWeight: '900', marginBottom: '1.25rem', lineHeight: '1.1', textShadow: '0 4px 10px rgba(0,0,0,0.3)' }}>
@@ -98,20 +98,20 @@ export default function Home() {
             textAlign: 'left'
           }}>
              <div style={{ textAlign: 'center' }}>
-                <Image src="/Lahore_Qalandars.png" alt="LQ" width={50} height={50} style={{ objectFit: 'contain' }} />
-                <p style={{ margin: '0.5rem 0 0', fontSize: '0.75rem', fontWeight: '700' }}>LQ</p>
+                <Image src="/Karachi_Kings.png" alt="KK" width={50} height={50} style={{ objectFit: 'contain' }} />
+                <p style={{ margin: '0.5rem 0 0', fontSize: '0.75rem', fontWeight: '700' }}>KK</p>
              </div>
              <div style={{ textAlign: 'center' }}>
                 <p style={{ fontSize: '1.5rem', fontWeight: '900', margin: 0, opacity: '0.4' }}>VS</p>
                 <Link href="/live-score" style={{ color: '#c7fa3b', fontSize: '0.85rem', textDecoration: 'none', fontWeight: 'bold' }}>MATCH CENTER</Link>
              </div>
              <div style={{ textAlign: 'center' }}>
-                <Image src="/Rawalpindiz_Logo.png" alt="RP" width={50} height={50} style={{ objectFit: 'contain' }} />
-                <p style={{ margin: '0.5rem 0 0', fontSize: '0.75rem', fontWeight: '700' }}>RP</p>
+                <Image src="/MultanSultans.png" alt="MS" width={50} height={50} style={{ objectFit: 'contain' }} />
+                <p style={{ margin: '0.5rem 0 0', fontSize: '0.75rem', fontWeight: '700' }}>MS</p>
              </div>
              <div style={{ borderLeft: '1px solid rgba(255,255,255,0.2)', paddingLeft: '2rem' }}>
                 <p style={{ fontSize: '0.7rem', opacity: '0.7', textTransform: 'uppercase', margin: 0 }}>Start Time</p>
-                <p style={{ fontSize: '1.1rem', fontWeight: '800', margin: 0 }}>7:00 PM PKT</p>
+                <p style={{ fontSize: '1.1rem', fontWeight: '800', margin: 0 }}>2:30 PM PKT</p>
              </div>
           </div>
 
@@ -174,9 +174,9 @@ export default function Home() {
                 <tbody>
                   {[
                     { name: 'Peshawar Zalmi', wins: 6, loss: 0, pts: 13 },
+                    { name: 'Multan Sultans', wins: 5, loss: 1, pts: 10 },
                     { name: 'Islamabad United', wins: 4, loss: 2, pts: 9 },
-                    { name: 'Multan Sultans', wins: 4, loss: 2, pts: 8 },
-                    { name: 'Hyderabad Kingsmen', wins: 3, loss: 4, pts: 6 },
+                    { name: 'Lahore Qalandars', wins: 4, loss: 3, pts: 8 },
                   ].map((team, i) => (
                     <tr key={i} style={{ borderBottom: '1px solid #f1f5f9' }}>
                       <td style={{ padding: '0.85rem 1rem', fontWeight: '700', fontSize: '0.95rem' }}>{team.name}</td>
@@ -198,7 +198,7 @@ export default function Home() {
                  { label: 'Total Runs', val: '7,400+', color: '#eff6ff', icon: '🏏' },
                  { label: 'Wickets', val: '290+', color: '#fef2f2', icon: '☝️' },
                  { label: 'Boundaries (6s)', val: '330+', color: '#fffbeb', icon: '🔥' },
-                 { label: 'Matches Played', val: '26 / 44', color: '#f0fdf4', icon: '🏟️' },
+                 { label: 'Matches Played', val: '27 / 44', color: '#f0fdf4', icon: '🏟️' },
                ].map((stat, i) => (
                  <div key={i} style={{ padding: '1.5rem', backgroundColor: stat.color, borderRadius: '1rem', textAlign: 'center' }}>
                     <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{stat.icon}</div>
@@ -289,9 +289,9 @@ export default function Home() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
             {[
+              { match: 27, date: 'Apr 18', teams: 'Lahore Qalandars vs Rawalpindi Pindiz', result: 'Lahore Qalandars won by 48 runs' },
               { match: 26, date: 'Apr 17', teams: 'Lahore Qalandars vs Quetta Gladiators', result: 'Lahore Qalandars won by 8 wickets' },
-              { match: 25, date: 'Apr 16', teams: 'Karachi Kings vs Islamabad United', result: 'Islamabad United won by 2 runs' },
-              { match: 24, date: 'Apr 16', teams: 'Hyderabad Kingsmen vs Rawalpindi Pindiz', result: 'Hyderabad Kingsmen won by 10 wickets' }
+              { match: 25, date: 'Apr 16', teams: 'Karachi Kings vs Islamabad United', result: 'Islamabad United won by 2 runs' }
             ].map((m, i) => (
               <div key={i} style={{ padding: '1.5rem', border: '1px solid #e2e8f0', borderRadius: '1rem', backgroundColor: 'white', transition: 'all 0.3s ease' }} className="hover-lift">
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>

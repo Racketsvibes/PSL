@@ -20,6 +20,24 @@ export const metadata = {
 // ── All Completed Match Results — PSL 2026 (HBL PSL 11) ──
 const pastMatches = [
   {
+    match: 27,
+    date: 'Apr 18, 2026',
+    day: 'Sat',
+    time: '7:00 PM PKT',
+    teams: 'Lahore Qalandars vs Rawalpindi Pindiz',
+    team1: 'Lahore Qalandars',
+    team2: 'Rawalpindi Pindiz',
+    score1: '210/4 (20)',
+    score2: '162/8 (20)',
+    result: 'Lahore Qalandars won by 48 runs',
+    winner: 'Lahore Qalandars',
+    venue: 'National Bank Stadium, Karachi',
+    potm: 'Fakhar Zaman',
+    highlight: "Fakhar's 84 anchors Lahore to a massive 210, Rawalpindi continue winless streak",
+    logo1: '/Lahore_Qalandars.png',
+    logo2: '/Rawalpindiz_Logo.png',
+  },
+  {
     match: 26,
     date: 'Apr 17, 2026',
     day: 'Fri',
@@ -256,8 +274,8 @@ const pastMatches = [
 ];
 
 const upcomingMatches = [
-  { match: 27, date: 'Apr 18, 2026',  teams: 'Lahore Qalandars vs Rawalpindi Pindiz',     time: '7:00 PM PKT', venue: 'National Bank Stadium', link: '/' },
   { match: 28, date: 'Apr 19, 2026',  teams: 'Karachi Kings vs Multan Sultans',          time: '2:30 PM PKT', venue: 'National Bank Stadium', link: '/' },
+  { match: 29, date: 'Apr 19, 2026',  teams: 'Peshawar Zalmi vs Quetta Gladiators',      time: '7:00 PM PKT', venue: 'National Bank Stadium', link: '/' },
 ];
 
 const breadcrumbSchema = {
@@ -294,7 +312,7 @@ const faqSchema = {
       name: 'How many matches have been played in PSL 2026 so far?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'As of April 17, 2026, 26 matches have been completed in HBL PSL 11. Peshawar Zalmi lead the points table with 11 points.',
+        text: 'As of April 18, 2026, 27 matches have been completed in HBL PSL 11. Peshawar Zalmi lead the points table with 13 points.',
       },
     },
     {
@@ -361,7 +379,7 @@ export default function LiveScorePage() {
             <span style={{ color: '#c7fa3b' }}>Ball-by-Ball Updates</span>
           </h1>
           <p style={{ fontSize: '1.1rem', opacity: '0.9', marginBottom: '0.75rem' }}>
-            🏏 26 Matches Completed &nbsp;|&nbsp; 18 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
+            🏏 27 Matches Completed &nbsp;|&nbsp; 17 More to Go &nbsp;|&nbsp; 🏆 8 Teams · T20 Format
           </p>
           <p style={{ fontSize: '0.95rem', color: '#a7f3d0', marginBottom: '2rem' }}>
             Auto-updating every 15 seconds · Gaddafi Stadium, Lahore & National Bank Stadium, Karachi
@@ -370,10 +388,10 @@ export default function LiveScorePage() {
           {/* Mini match status strip */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
             {[
-              { label: 'Matches Played', value: '26', icon: '✅' },
-              { label: 'Matches Left', value: '18', icon: '📅' },
+              { label: 'Matches Played', value: '27', icon: '✅' },
+              { label: 'Matches Left', value: '17', icon: '📅' },
               { label: 'League Leader', value: 'Peshawar Zalmi', icon: '🥇' },
-              { label: 'Next Match', value: 'Apr 18 · 7:00PM', icon: '⏭️' },
+              { label: 'Next Match', value: 'Apr 19 · 2:30PM', icon: '⏭️' },
             ].map((stat, i) => (
               <div key={i} style={{ backgroundColor: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '0.75rem', padding: '0.5rem 0.9rem', textAlign: 'center', minWidth: '90px' }}>
                 <div style={{ fontSize: '1rem', marginBottom: '0.15rem' }}>{stat.icon}</div>
@@ -421,12 +439,12 @@ export default function LiveScorePage() {
           marginBottom: '2.5rem',
         }}>
           <h2 style={{ color: '#1d4ed8', marginTop: 0, fontSize: '1.2rem' }}>
-            📊 PSL 2026 — Quick Tournament Snapshot (After 26 Matches)
+            📊 PSL 2026 — Quick Tournament Snapshot (After 27 Matches)
           </h2>
           <ul style={{ color: '#1e3a5f', lineHeight: '2', paddingLeft: '1.25rem', margin: 0 }}>
             <li><strong>🥇 League Leader:</strong> Peshawar Zalmi — 13 pts (6 Wins, 1 NR)</li>
             <li><strong>🔥 Top Performer:</strong> Fakhar Zaman (LQ) with 88* vs Quetta</li>
-            <li><strong>📅 Next Match:</strong> Lahore Qalandars vs Rawalpindi Pindiz — Apr 18, 7:00 PM PKT</li>
+            <li><strong>📅 Next Match:</strong> Karachi Kings vs Multan Sultans — Apr 19, 2:30 PM PKT</li>
           </ul>
         </section>
 
@@ -647,10 +665,10 @@ export default function LiveScorePage() {
             {[
               { q: 'Where can I watch PSL 2026 live score ball by ball?', a: 'You can follow PSL 2026 live ball-by-ball scores right here on PSLLive. Our scoreboard auto-updates every 15 seconds during active matches, providing runs, wickets, overs, CRR, and match status in real-time.' },
               { q: 'Which channel is showing PSL 2026 live in Pakistan?', a: 'PSL 2026 is broadcast live on PTV Sports and ARY Zap in Pakistan. Both channels offer free-to-air coverage throughout the tournament. Visit our live streaming page for online options.' },
-              { q: 'How many matches have been played in PSL 2026 so far?', a: 'As of April 17, 2026, 26 matches have been completed in HBL PSL 11. Peshawar Zalmi lead the points table with 13 points.' },
+              { q: 'How many matches have been played in PSL 2026 so far?', a: 'As of April 18, 2026, 27 matches have been completed in HBL PSL 11. Peshawar Zalmi lead the points table with 13 points.' },
               { q: 'Who is the highest scorer in PSL 2026?', a: 'Fakhar Zaman of Lahore Qalandars is the standout with 104* off 56 balls in Match 1 and 88* in Match 26. S. Farhan (106*) and Usman Khan (76) have also played sensational knocks.' },
               { q: "What is the biggest win in PSL 2026 so far?", a: "The biggest win so far is Lahore Qalandars' 69-run victory over Hyderabad Kingsmen (Match 1, March 26). Lahore posted 219/3 and restricted Hyderabad to 150/9." },
-              { q: "When is the next PSL 2026 match?", a: "The next match is Lahore Qalandars vs Rawalpindi Pindiz on April 18, 2026 at 7:00 PM PKT at the National Bank Stadium, Karachi." },
+              { q: "When is the next PSL 2026 match?", a: "The next match is Karachi Kings vs Multan Sultans on April 19, 2026 at 2:30 PM PKT at the National Bank Stadium, Karachi." },
             ].map((item, idx) => (
               <div key={idx} style={{ padding: '1.25rem 1.5rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem', backgroundColor: '#f9fafb' }}>
                 <h3 style={{ fontSize: '1rem', marginBottom: '0.4rem', color: '#0A3258' }}>{item.q}</h3>

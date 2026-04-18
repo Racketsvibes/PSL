@@ -4,14 +4,29 @@ import Image from 'next/image';
 export const metadata = {
   title: 'PSL 2026 Points Table | HBL PSL 11 Current Standings & Rankings',
   description:
-    'Live updated PSL 2026 points table and standings for HBL PSL 11. Check who leads the Pakistan Super League table — wins, losses, net run rate, and playoff qualification scenarios after 14 matches.',
+    'Live updated PSL 2026 points table and standings for HBL PSL 11. Check who leads the Pakistan Super League table — wins, losses, net run rate, and playoff qualification scenarios after 27 matches.',
   keywords:
     'psl 2026 points table, psl 11 standings, pakistan super league 2026 table, psl points table today, psl 11 points table, hbl psl 2026 standings, psl table 2026, psl ranking 2026, psl playoff qualification 2026, psl nrr 2026',
   openGraph: {
     title: 'PSL 2026 Points Table — HBL PSL 11 Current Standings',
     description:
-      'Live PSL 2026 rankings updated after Match 14. Who leads the table? Check NRR, wins, losses, and playoff scenarios.',
+      'Live PSL 2026 rankings updated after Match 27. Who leads the table? Check NRR, wins, losses, and playoff scenarios.',
     type: 'article',
+  },
+  alternates: {
+    canonical: 'https://psllive.vercel.app/points-table',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -44,7 +59,8 @@ export default function PointsTablePage() {
     startDate: '2026-03-26',
     endDate: '2026-05-03',
     sport: 'Cricket',
-    description: 'Current PSL 2026 standings showing team positions, wins, losses, points, and net run rate after 14 matches of the Pakistan Super League 11.',
+    eventStatus: 'https://schema.org/EventScheduled',
+    description: 'Current PSL 2026 standings showing team positions, wins, losses, points, and net run rate after 27 matches of the Pakistan Super League 11.',
     organizer: { '@type': 'Organization', name: 'Pakistan Cricket Board' },
   };
 

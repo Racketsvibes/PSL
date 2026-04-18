@@ -5,6 +5,21 @@ export const metadata = {
   title: 'HBL PSL 2026 Live | Scores, Points Table, Schedule & Squads',
   description: 'Official HBL PSL 11 (2026) fan portal. Get real-time ball-by-ball live scores, updated points table, full 44-match schedule, and all 8 franchise squads. Your home for Pakistan Super League 2026.',
   keywords: 'psl live 2026, psl 11 live score, psl points table 2026, psl 2026 schedule, psl 11 squads, pakistan super league 2026 streaming',
+  alternates: {
+    canonical: 'https://psllive.vercel.app',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function Home() {
@@ -52,10 +67,33 @@ export default function Home() {
     "organizer": { "@type": "Organization", "name": "PCB" }
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://psllive.vercel.app" }
+    ]
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PSL Live 2026",
+    "url": "https://psllive.vercel.app",
+    "logo": "https://psllive.vercel.app/Lahore_Qalandars.png",
+    "sameAs": [
+      "https://facebook.com/psl",
+      "https://twitter.com/psl",
+      "https://instagram.com/psl"
+    ]
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(tournamentSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
 
       {/* ── Premium Hero Section ── */}
       <section style={{ 

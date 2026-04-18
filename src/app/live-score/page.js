@@ -15,6 +15,18 @@ export const metadata = {
       'Ball-by-ball live scores, scorecards, and complete past match results for HBL PSL 11 (2026).',
     type: 'article',
   },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 // ── All Completed Match Results — PSL 2026 (HBL PSL 11) ──
@@ -349,10 +361,43 @@ const sportsEventSchema = {
   ],
 };
 
+const liveBlogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LiveBlogPosting',
+  '@id': 'https://psllive.vercel.app/live-score#liveblog',
+  headline: 'PSL 2026 Live Ball-by-Ball Score Updates',
+  description: 'Real-time live cricket score updates for HBL PSL 11 (2026). Ball by ball commentary and scorecard.',
+  about: {
+    '@type': 'Event',
+    name: 'Pakistan Super League 2026'
+  },
+  coverageStartTime: '2026-03-26T14:30:00Z',
+  coverageEndTime: '2026-05-03T23:59:59Z',
+  liveBlogUpdate: pastMatches.slice(0, 5).map(m => ({
+    '@type': 'BlogPosting',
+    headline: `Match ${m.match}: ${m.teams} Result`,
+    datePublished: new Date(m.date).toISOString(),
+    articleBody: m.result + ". " + m.highlight
+  }))
+};
+
+const broadcastSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BroadcastEvent',
+  name: 'PSL 2026 Live Broadcast',
+  isLiveBroadcast: true,
+  startDate: '2026-04-18T14:00:00Z',
+  endDate: '2026-04-18T18:00:00Z',
+  broadcastOfEvent: sportsEventSchema,
+  videoFormat: 'HD'
+};
+
 export default function LiveScorePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsEventSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(liveBlogSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(broadcastSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 

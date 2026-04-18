@@ -13,6 +13,21 @@ export const metadata = {
       'Complete Pakistan Super League 2026 fixture list with dates, venues, and match times. Gaddafi Stadium and National Bank Stadium hosts.',
     type: 'article',
   },
+  alternates: {
+    canonical: 'https://psllive.vercel.app/psl-11-2026-schedule',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 const scheduleData = [
@@ -63,19 +78,29 @@ const scheduleData = [
 ];
 
 export default function PslSchedulePage() {
-  const scheduleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'SportsEvent',
-    name: 'HBL Pakistan Super League 11 (PSL 2026)',
-    startDate: '2026-03-26',
-    endDate: '2026-05-03',
-    location: [
-      { '@type': 'Place', name: 'Gaddafi Stadium, Lahore' },
-      { '@type': 'Place', name: 'National Bank Stadium, Karachi' },
-    ],
-    sport: 'Cricket',
-    description: 'The 11th edition of the Pakistan Super League (HBL PSL 11), running from March 26 to May 3, 2026.',
     organizer: { '@type': 'Organization', name: 'Pakistan Cricket Board (PCB)' },
+    eventStatus: 'https://schema.org/EventScheduled',
+  };
+
+  const matchItemsSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'PSL 2026 Match Fixtures',
+    itemListElement: scheduleData.map((m, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: `Match ${m.match}: ${typeof m.teams === 'string' ? m.teams : m.match}`,
+      url: `https://psllive.vercel.app/psl-11-2026-schedule#match-${m.match}`
+    }))
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://psllive.vercel.app" },
+      { "@type": "ListItem", "position": 2, "name": "PSL 2026 Schedule", "item": "https://psllive.vercel.app/psl-11-2026-schedule" }
+    ]
   };
 
   const faqSchema = {
@@ -128,6 +153,8 @@ export default function PslSchedulePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(scheduleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(matchItemsSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* ── Hero ── */}
